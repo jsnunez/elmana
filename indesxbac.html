@@ -22,7 +22,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="/index.html" class="active">Catalógo</a></li>
+                    <li><a href="/catalogo.html" class="active">Catalógo</a></li>
                     <li><a href="#">Nuestras Sedes</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -242,7 +242,6 @@
     <section id="catalogo" class="catalogo" style="display: none;">
         <div class="container" id="encabezado">
             <h1 id="TipoProducto"> Panaderia</h1>
-            <div class="icon-row">
             <div class="icon-circle large" data-section="panaderia-section">
                 <img src="Iconos/Svg/Icono-05.svg" alt="Panadería">
             </div>
@@ -258,17 +257,17 @@
             <div class="icon-circle large" data-section="santandereano-section">
                 <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
             </div>
-            </div>
         </div>
         <div class="catalogo-layout">
 
 
             <aside class="sidebar sidebar-filtros">
                 <!-- Línea vertical decorativa al lado izquierdo, 10% más larga -->
-                 <div id="linea-vertical"                   >
+                 <div
+                    style=" display: flex; height: 50%; width: 2px; background: #d4af37; border-radius: 2px; z-index: 1;">
                 </div>
-                <div class="filtros-catalogo">
-                   <div class="subfiltro">
+                <div>
+                   
                     <h3>Sede</h3>
                     <select name="sede" id="sede-select">
                         <option value="" disabled selected>Seleccione una sede</option>
@@ -280,8 +279,6 @@
                         <option value="cañaveral">Cañaveral</option>
                         <option value="cie">CIE</option>
                     </select>
-                    </div>
-                    <div class="subfiltro">
                     <h3>Categoria</h3>
                     <select name="clase-producto" id="clase-producto">
                         <option value="">Selecciona una clase</option>
@@ -293,7 +290,6 @@
                         <option value="funcional">Funcional</option>
                         <option value="temporada">Temporada</option>
                     </select>
-                    </div>
                 </div>
                 <div class="foto-sede" style="text-align:center; margin-bottom:15px;">
                     <img id="foto-sede-img" src="images/sedes/centro.jpg" alt="Foto de la sede"
@@ -304,7 +300,7 @@
                         const sede = this.value;
                         const img = document.getElementById('foto-sede-img');
                         let src = 'images/sedes/default.jpg';
-                        if (sede == 'centro') src = 'images/sedes/centro.jpg';
+                        if (sede === 'centro') src = 'images/sedes/centro.jpg';
                         else if (sede === 'antoniaSantos') src = 'images/sedes/antoniaSantos.jpg';
                         else if (sede === 'paseoDelComercio') src = 'images/sedes/paseoDelComercio.jpg';
                         else if (sede === 'cabecera') src = 'images/sedes/cabecera.jpg';

@@ -49,29 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function () {
-            if (mainNav.classList.contains('mobile-open')) {
-                mainNav.classList.remove('mobile-open');
-                mainNav.style.display = '';
-                mainNav.style.position = '';
-                mainNav.style.top = '';
-                mainNav.style.left = '';
-                mainNav.style.width = '';
-                mainNav.style.flexDirection = '';
-                mainNav.style.background = '';
-                mainNav.style.boxShadow = '';
-                mainNav.style.zIndex = '';
-            } else {
-                mainNav.classList.add('mobile-open');
-                mainNav.style.display = 'flex';
-                mainNav.style.position = 'absolute';
-                mainNav.style.top = '60px';
-                mainNav.style.left = '0';
-                mainNav.style.width = '100vw';
-                mainNav.style.flexDirection = 'row';
-                mainNav.style.background = '#fff';
-                mainNav.style.boxShadow = '0 4px 16px rgba(0,0,0,0.15)';
-                mainNav.style.zIndex = '1000';
-            }
+            mainNav.style.display = mainNav.style.display === 'block' ? 'none' : 'block';
         });
     }
 
@@ -262,7 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             carrito.push({
                 nombre: `${producto.nombre} - ${varianteTexto}`,
-                cantidad:cantidad,
                 precio: precio * cantidad
             });
             actualizarCarrito();
@@ -357,13 +334,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const sede = sedeSelect.value;
         const img = document.getElementById('foto-sede-img');
         let src = 'images/sedes/default.jpg';
-        if (sede == 'centro') src = 'images/sedes/centro.jpg';
-        else if (sede === 'antoniaSantos') src = 'images/sedes/antoniaSantos.jpg';
-        else if (sede === 'paseoDelComercio') src = 'images/sedes/paseoDelComercio.jpg';
-        else if (sede === 'cabecera') src = 'images/sedes/cabecera.jpg';
-        else if (sede === 'mejorasPublicas') src = 'images/sedes/mejorasPublicas.jpg';
-        else if (sede === 'cañaveral') src = 'images/sedes/cañaveral.jpg';
-        else if (sede === 'cie') src = 'images/sedes/cie.jpg';
+        if (sede === 'bucaramanga') src = 'images/sedes/centro.jpg';
+        else if (sede === 'floridablanca') src = 'images/sedes/floridablanca.jpg';
+        else if (sede === 'giron') src = 'images/sedes/giron.jpg';
+        else if (sede === 'piedecuesta') src = 'images/sedes/piedecuesta.jpg';
+        else if (sede === 'cucuta') src = 'images/sedes/cucuta.jpg';
         img.src = src;
         const claseSelect1 = document.getElementById('clase-producto'); // categoría fija en HTML
         const categoria = claseSelect1.value;
@@ -570,7 +545,7 @@ function actualizarCarrito() {
     carrito.forEach((item, index) => {
         total += item.precio;
         const li = document.createElement('li');
-        li.textContent = `${item.nombre} -${item.cantidad} - $${item.precio}`;
+        li.textContent = `${item.nombre} - $${item.precio}`;
         const btn = document.createElement('button');
         btn.textContent = 'Eliminar';
         btn.style.marginLeft = '10px';
