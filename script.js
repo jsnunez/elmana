@@ -619,3 +619,28 @@ vaciarBtn.addEventListener('click', () => {
 });
 
 
+/**
+ * Cambia todas las imágenes rotas por una imagen "X" por defecto.
+ */
+(function () {
+    // Ruta de la imagen "X" (ajusta según tu estructura de archivos)
+    const imagenX = 'images/x.jpg';
+
+    // Delegación para imágenes cargadas dinámicamente
+    document.body.addEventListener('error', function (e) {
+        if (e.target.tagName === 'IMG') {
+            e.target.onerror = null; // Evita bucle infinito si la imagen X tampoco existe
+            e.target.src = imagenX;
+        }
+    }, true);
+
+    // Para imágenes ya presentes en el DOM al cargar
+    window.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('img').forEach(function (img) {
+            img.onerror = function () {
+                this.onerror = null;
+                this.src = imagenX;
+            };
+        });
+    });
+})();
