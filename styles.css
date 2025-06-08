@@ -300,7 +300,23 @@ h3 {
     transform: scale(2.5);
     /* Agranda desde el centro */
 }
+.dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    transform-origin: center;
+}
 
+.dot1.active {
+    background-color: transparent;
+    border: 2px solid #f59e0b;
+    transform: scale(2.5);
+    /* Agranda desde el centro */
+}
 
 /* Products Section */
 .products {
@@ -351,7 +367,22 @@ h3 {
     align-items: center;
 }
 
-
+.slider-dots {
+    margin-left: 35%;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 00;
+    /* Aumenta el z-index para estar por encima */
+    background: #fff;
+    /* Fondo blanco */
+    width: 30%;
+    height: 10vh;
+    align-items: center;
+}
 .icon-circle.large {
     width: 60px;
     height: 60px;
@@ -680,4 +711,8 @@ select {
      border-radius: 10%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
 
