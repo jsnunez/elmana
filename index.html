@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>el Maná - Tradición de hogar</title>
     <link rel="stylesheet" href="styles2.css">
-    .    <link rel="stylesheet" href="styleSedes.css">
+    .
+    <link rel="stylesheet" href="styleSedes.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
-    <link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles2.css">
 
 <body>
     <header class="header">
@@ -25,11 +26,33 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="#productos" onclick="document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' }); return false;">Catálogo</a></li>
                     <li>
-                        <a href="#sedes" onclick="const section = document.querySelector('.sedes-section'); if(section){ window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' }); } return false;">
+                        <a href="#productos" onclick="
+                            const productosSection = document.querySelector('.products');
+                            if (productosSection && productosSection.style.display === 'none') {
+                                const section = document.querySelector('.sedes-section').style.display = 'none';
+                                productosSection.style.display = '';
+                            }
+                            document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            return false;
+                        ">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="#sedes" onclick="
+                            const section = document.querySelector('.sedes-section');
+                            const catalogo = document.getElementById('catalogo');
+                            const productosSection1 = document.querySelector('.products');
+                            const topSection = document.getElementById('top');
+                            if (topSection) productosSection1.style.display = 'none';
+                            if (catalogo) catalogo.style.display = 'none';
+                            if (section) {
+                                section.style.display = '';
+                                window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            }
+                            return false;">
                             Nuestras Sedes
                         </a>
+                    </li>
                     </li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -59,45 +82,45 @@
     </header>
 
 
-     <section id="top" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1>Tradición<br>de Hogar</h1>
-                    <p>Descubre nuestro catálogo de productos.</p>
+    <section id="top" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Tradición<br>de Hogar</h1>
+                <p>Descubre nuestro catálogo de productos.</p>
 
-                    <div class="delivery-info">
-                        <div class="info-card">
-                            <div class="icon-hero">
-                                <img src="images/car.png" alt="">
-                            </div>
-                            <div class="info-text">
-                                <h4>Pide a <strong>Domicilio</strong></h4>
-                                <p>Si lo haces hoy antes de las 4:00 p.m recibirás tu pedido al día siguiente.</p>
-                            </div>
+                <div class="delivery-info">
+                    <div class="info-card">
+                        <div class="icon-hero">
+                            <img src="images/car.png" alt="">
                         </div>
+                        <div class="info-text">
+                            <h4>Pide a <strong>Domicilio</strong></h4>
+                            <p>Si lo haces hoy antes de las 4:00 p.m recibirás tu pedido al día siguiente.</p>
+                        </div>
+                    </div>
 
-                        <div class="info-card">
-                            <div class="icon-hero">
-                                <img src="images/calendario.png" alt="">
-                            </div>
-                            <div class="info-text">
-                                <p>Los pedidos que hagas </p>
-                                <h4>sábados, domingos o festivos</h4>
-                                <p>serán entregados al día hábil siguiente.</p>
-                            </div>
+                    <div class="info-card">
+                        <div class="icon-hero">
+                            <img src="images/calendario.png" alt="">
+                        </div>
+                        <div class="info-text">
+                            <p>Los pedidos que hagas </p>
+                            <h4>sábados, domingos o festivos</h4>
+                            <p>serán entregados al día hábil siguiente.</p>
                         </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                </div>
             </div>
-            <div class="slider-dots">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot active"></span>
+            <div class="hero-image">
             </div>
-        </section>
+        </div>
+        <div class="slider-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+        </div>
+    </section>
     <section id="productos" class="products">
 
 
@@ -141,7 +164,7 @@
                         Variedad de panes y pasteles dulces para disfrutar.
                     </p>
                 </div>
-                <div class="product-card catalog-card" data-category="rellenos" data-tipo="panaderia">  
+                <div class="product-card catalog-card" data-category="rellenos" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/cascarita.jpg" alt="Tradicional">
                     </div>
@@ -165,7 +188,8 @@
                     <p style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">Panes
                         especiales con ingredientes funcionales para tu bienestar.</p>
                 </div>
-                <div class="product-card catalog-card" data-category="temporada" data-tipo="panaderia" style="display: none;">
+                <div class="product-card catalog-card" data-category="temporada" data-tipo="panaderia"
+                    style="display: none;">
                     <div class="product-image">
                         <img src="images/cascarita.jpg" alt="Tradicional">
                     </div>
@@ -183,27 +207,27 @@
             <h2>Bizcochería</h2>
             <div class="section-divider"></div>
             <div class="product-grid">
-            <div class="product-card catalog-card" data-category="torta_artesanal" data-tipo="bizcocheria">
-            <div class="product-image">
-            <img src="images/bizcocho-polvorosa.jpg" alt="Torta artesanal">
-            </div>
-            <h3>Torta artesanal</h3>
-            <p>Bizcocho tradicional, crujiente y delicioso.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="dulces" data-tipo="bizcocheria">
-            <div class="product-image">
-            <img src="images/bizcocho-roscon.jpg" alt="Dulces">
-            </div>
-            <h3>Dulces</h3>
-            <p>Bizcocho relleno de bocadillo o arequipe.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="salados" data-tipo="bizcocheria">
-            <div class="product-image">
-            <img src="images/bizcocho-galleta.jpg" alt="Salados">
-            </div>
-            <h3>Salados</h3>
-            <p>Galletas artesanales de mantequilla.</p>
-            </div>
+                <div class="product-card catalog-card" data-category="torta_artesanal" data-tipo="bizcocheria">
+                    <div class="product-image">
+                        <img src="images/bizcocho-polvorosa.jpg" alt="Torta artesanal">
+                    </div>
+                    <h3>Torta artesanal</h3>
+                    <p>Bizcocho tradicional, crujiente y delicioso.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="dulces" data-tipo="bizcocheria">
+                    <div class="product-image">
+                        <img src="images/bizcocho-roscon.jpg" alt="Dulces">
+                    </div>
+                    <h3>Dulces</h3>
+                    <p>Bizcocho relleno de bocadillo o arequipe.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="salados" data-tipo="bizcocheria">
+                    <div class="product-image">
+                        <img src="images/bizcocho-galleta.jpg" alt="Salados">
+                    </div>
+                    <h3>Salados</h3>
+                    <p>Galletas artesanales de mantequilla.</p>
+                </div>
             </div>
         </div>
 
@@ -211,20 +235,20 @@
             <h2>Cafetería</h2>
             <div class="section-divider"></div>
             <div class="product-grid">
-            <div class="product-card catalog-card" data-category="onces" data-tipo="cafeteria">
-            <div class="product-image">
-            <img src="images/cafe-tinto.jpg" alt="Onces">
-            </div>
-            <h3>Onces</h3>
-            <p>Café colombiano recién preparado.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="bebidas" data-tipo="cafeteria">
-            <div class="product-image">
-            <img src="images/cafe-capuchino.jpg" alt="Bebidas">
-            </div>
-            <h3>Bebidas</h3>
-            <p>Espuma de leche y café, una combinación perfecta.</p>
-            </div>
+                <div class="product-card catalog-card" data-category="onces" data-tipo="cafeteria">
+                    <div class="product-image">
+                        <img src="images/cafe-tinto.jpg" alt="Onces">
+                    </div>
+                    <h3>Onces</h3>
+                    <p>Café colombiano recién preparado.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="bebidas" data-tipo="cafeteria">
+                    <div class="product-image">
+                        <img src="images/cafe-capuchino.jpg" alt="Bebidas">
+                    </div>
+                    <h3>Bebidas</h3>
+                    <p>Espuma de leche y café, una combinación perfecta.</p>
+                </div>
             </div>
         </div>
 
@@ -232,27 +256,27 @@
             <h2>Rincón Santandereano</h2>
             <div class="section-divider"></div>
             <div class="product-grid">
-            <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
-            <div class="product-image">
-            <img src="images/hormiga-culona.jpg" alt="Tamal">
-            </div>
-            <h3>Tamal</h3>
-            <p>Delicadeza típica de Santander.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
-            <div class="product-image">
-            <img src="images/arepa-santandereana.jpg" alt="Carnes frías">
-            </div>
-            <h3>Carnes frías</h3>
-            <p>Arepa crocante y sabrosa, receta tradicional.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="ayacos" data-tipo="santandereano">
-            <div class="product-image">
-            <img src="images/pepitoria.jpg" alt="Ayacos">
-            </div>
-            <h3>Ayacos</h3>
-            <p>Plato típico santandereano, lleno de sabor.</p>
-            </div>
+                <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/hormiga-culona.jpg" alt="Tamal">
+                    </div>
+                    <h3>Tamal</h3>
+                    <p>Delicadeza típica de Santander.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/arepa-santandereana.jpg" alt="Carnes frías">
+                    </div>
+                    <h3>Carnes frías</h3>
+                    <p>Arepa crocante y sabrosa, receta tradicional.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="ayacos" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/pepitoria.jpg" alt="Ayacos">
+                    </div>
+                    <h3>Ayacos</h3>
+                    <p>Plato típico santandereano, lleno de sabor.</p>
+                </div>
             </div>
         </div>
 
@@ -260,27 +284,27 @@
             <h2>Restaurante</h2>
             <div class="section-divider"></div>
             <div class="product-grid">
-            <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
-            <div class="product-image">
-            <img src="images/bandeja-paisa.jpg" alt="Combos">
-            </div>
-            <h3>Combos</h3>
-            <p>Plato tradicional colombiano con variedad de ingredientes.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
-            <div class="product-image">
-            <img src="images/ajiaco.jpg" alt="Menú del día">
-            </div>
-            <h3>Menú del día</h3>
-            <p>Sopa típica de Bogotá, con pollo y papa.</p>
-            </div>
-            <div class="product-card catalog-card" data-category="ensaladas" data-tipo="restaurante">
-            <div class="product-image">
-            <img src="images/sancocho.jpg" alt="Ensaladas">
-            </div>
-            <h3>Ensaladas</h3>
-            <p>Caldo tradicional con carnes y verduras.</p>
-            </div>
+                <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/bandeja-paisa.jpg" alt="Combos">
+                    </div>
+                    <h3>Combos</h3>
+                    <p>Plato tradicional colombiano con variedad de ingredientes.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/ajiaco.jpg" alt="Menú del día">
+                    </div>
+                    <h3>Menú del día</h3>
+                    <p>Sopa típica de Bogotá, con pollo y papa.</p>
+                </div>
+                <div class="product-card catalog-card" data-category="ensaladas" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/sancocho.jpg" alt="Ensaladas">
+                    </div>
+                    <h3>Ensaladas</h3>
+                    <p>Caldo tradicional con carnes y verduras.</p>
+                </div>
             </div>
         </div>
 
@@ -290,21 +314,21 @@
         <div class="container" id="encabezado">
             <h1 id="TipoProducto"> Panaderia</h1>
             <div class="icon-row">
-            <div class="icon-circle large" data-section="panaderia-section">
-                <img src="Iconos/Svg/Icono-05.svg" alt="Panadería">
-            </div>
-            <div class="icon-circle large" data-section="restaurante-section">
-                <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
-            </div>
-            <div class="icon-circle large" data-section="cafeteria-section">
-                <img src="Iconos/Svg/Icono-06.svg" alt="Cafetería">
-            </div>
-            <div class="icon-circle large" data-section="bizcocheria-section">
-                <img src="Iconos/Svg/Icono-10.svg" alt="Cafetería">
-            </div>
-            <div class="icon-circle large" data-section="santandereano-section">
-                <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
-            </div>
+                <div class="icon-circle large" data-section="panaderia-section">
+                    <img src="Iconos/Svg/Icono-05.svg" alt="Panadería">
+                </div>
+                <div class="icon-circle large" data-section="restaurante-section">
+                    <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
+                </div>
+                <div class="icon-circle large" data-section="cafeteria-section">
+                    <img src="Iconos/Svg/Icono-06.svg" alt="Cafetería">
+                </div>
+                <div class="icon-circle large" data-section="bizcocheria-section">
+                    <img src="Iconos/Svg/Icono-10.svg" alt="Cafetería">
+                </div>
+                <div class="icon-circle large" data-section="santandereano-section">
+                    <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
+                </div>
             </div>
         </div>
         <div class="catalogo-layout">
@@ -312,34 +336,34 @@
 
             <aside class="sidebar sidebar-filtros">
                 <!-- Línea vertical decorativa al lado izquierdo, 10% más larga -->
-                 <div id="linea-vertical"                   >
+                <div id="linea-vertical">
                 </div>
                 <div class="filtros-catalogo">
-                   <div class="subfiltro">
-                    <h3>Sede</h3>
-                    <select name="sede" id="sede-select">
-                        <option value="" disabled selected>Seleccione una sede</option>
-                        <option value="centro">Centro</option>
-                        <option value="antoniaSantos">Antonia Santos</option>
-                        <option value="paseoDelComercio">Paseo del Comercio</option>
-                        <option value="cabecera">Cabecera</option>
-                        <option value="mejorasPublicas">Mejoras Públicas</option>
-                        <option value="cañaveral">Cañaveral</option>
-                        <option value="cie">CIE</option>
-                    </select>
+                    <div class="subfiltro">
+                        <h3>Sede</h3>
+                        <select name="sede" id="sede-select">
+                            <option value="" disabled selected>Seleccione una sede</option>
+                            <option value="centro">Centro</option>
+                            <option value="antoniaSantos">Antonia Santos</option>
+                            <option value="paseoDelComercio">Paseo del Comercio</option>
+                            <option value="cabecera">Cabecera</option>
+                            <option value="mejorasPublicas">Mejoras Públicas</option>
+                            <option value="cañaveral">Cañaveral</option>
+                            <option value="cie">CIE</option>
+                        </select>
                     </div>
                     <div class="subfiltro">
-                    <h3>Categoria</h3>
-                    <select name="clase-producto" id="clase-producto">
-                        <option value="">Selecciona una clase</option>
-                        <option value="todo">Todo</option>
-                        <option value="tradicional">Tradicional</option>
-                        <option value="dulce">Dulce</option>
-                        <option value="rellenos">Rellenos</option>
-                        <option value="integral">Integral</option>
-                        <option value="funcional">Funcional</option>
-                        <option value="temporada">Temporada</option>
-                    </select>
+                        <h3>Categoria</h3>
+                        <select name="clase-producto" id="clase-producto">
+                            <option value="">Selecciona una clase</option>
+                            <option value="todo">Todo</option>
+                            <option value="tradicional">Tradicional</option>
+                            <option value="dulce">Dulce</option>
+                            <option value="rellenos">Rellenos</option>
+                            <option value="integral">Integral</option>
+                            <option value="funcional">Funcional</option>
+                            <option value="temporada">Temporada</option>
+                        </select>
                     </div>
                 </div>
                 <div class="foto-sede" style="text-align:center; margin-bottom:15px;">
@@ -351,13 +375,13 @@
                         const sede = this.value;
                         const img = document.getElementById('foto-sede-img');
                         let src = 'images/sedes/default.jpg';
-                        if (sede == 'centro') src = 'images/sedes/centro.jpg';
-                        else if (sede === 'antoniaSantos') src = 'images/sedes/antoniaSantos.jpg';
-                        else if (sede === 'paseoDelComercio') src = 'images/sedes/paseoDelComercio.jpg';
-                        else if (sede === 'cabecera') src = 'images/sedes/cabecera.jpg';
-                        else if (sede === 'mejorasPublicas') src = 'images/sedes/mejorasPublicas.jpg';
-                        else if (sede === 'cañaveral') src = 'images/sedes/cañaveral.jpg';
-                        else if (sede === 'cie') src = 'images/sedes/cie.jpg';
+                        if (sede == 'centro') src = 'images/sedes/sede1.jpg';
+                        else if (sede === 'antoniaSantos') src = 'images/sedes/sede2.jpg';
+                        else if (sede === 'paseoDelComercio') src = 'images/sedes/sede3.jpg';
+                        else if (sede === 'cabecera') src = 'images/sedes/sede4.jpg';
+                        else if (sede === 'mejorasPublicas') src = 'images/sedes/sede5.jpg';
+                        else if (sede === 'cañaveral') src = 'images/sedes/sede6.jpg';
+                        else if (sede === 'cie') src = 'images/sedes/sede7.jpg';
                         img.src = src;
                     });
                 </script>
@@ -485,15 +509,15 @@
     </section>
 
 
-     <section id="sedes" class="sedes-section">
+    <section id="sedes" class="sedes-section">
         <div class="section-title">
             <h2>Nuestras Sedes</h2>
         </div>
 
         <div class="carousel-container">
             <div class="carousel-wrapper" id="carouselWrapper">
-          
-                   <!-- Sede 7 -->
+
+                <!-- Sede 7 -->
                 <div class="sede-card side" style="display:none;height:100%;min-height:320px;max-height:420px;">
                     <div class="sede-image">
                         <img src="images/sedes/sede7.jpg" alt="Cafe y Pan CIE" class="sede-img">
@@ -503,7 +527,8 @@
                         <p>CIE LOCAL 219</p>
                         <p>Cel: 3165000009</p>
                         <div class="description">
-                            Un espacio único en el CIE, especializado en café y panadería artesanal para disfrutar en cualquier momento.
+                            Un espacio único en el CIE, especializado en café y panadería artesanal para disfrutar en
+                            cualquier momento.
                         </div>
                     </div>
                 </div>
@@ -518,7 +543,8 @@
                         <p>Tel: 6076425198</p>
                         <p>Cel: 3173487430</p>
                         <div class="description">
-                            Nuestra sede principal en el centro de Bucaramanga, con atención cálida y variedad de productos frescos todos los días.
+                            Nuestra sede principal en el centro de Bucaramanga, con atención cálida y variedad de
+                            productos frescos todos los días.
                         </div>
                     </div>
                 </div>
@@ -532,7 +558,8 @@
                         <p>CR 21 # 32 - 46 ANTONIA SANTOS</p>
                         <p>Cel: 3176192258</p>
                         <div class="description">
-                            Ubicada en el tradicional barrio Antonia Santos, ideal para disfrutar en familia y con amigos en un ambiente acogedor.
+                            Ubicada en el tradicional barrio Antonia Santos, ideal para disfrutar en familia y con
+                            amigos en un ambiente acogedor.
                         </div>
                     </div>
                 </div>
@@ -546,7 +573,8 @@
                         <p>CL 35 # 13 -17 CENTRO</p>
                         <p>Cel: 3155125588</p>
                         <div class="description">
-                            En el corazón comercial de la ciudad, perfecta para una pausa deliciosa durante tus compras o actividades diarias.
+                            En el corazón comercial de la ciudad, perfecta para una pausa deliciosa durante tus compras
+                            o actividades diarias.
                         </div>
                     </div>
                 </div>
@@ -560,7 +588,8 @@
                         <p>CR 35 A # 52 - 32</p>
                         <p>Cel: 3158070804</p>
                         <div class="description">
-                            Sede ubicada en Cabecera, con ambiente moderno y excelente atención para compartir momentos especiales.
+                            Sede ubicada en Cabecera, con ambiente moderno y excelente atención para compartir momentos
+                            especiales.
                         </div>
                     </div>
                 </div>
@@ -575,7 +604,8 @@
                         <p>Tel: 6076822282</p>
                         <p>Cel: 3153962533</p>
                         <div class="description">
-                            Ideal para llevar a casa el pan más delicioso y fresco, perfecto para compartir en familia o sorprender a tus seres queridos con un sabor inolvidable.
+                            Ideal para llevar a casa el pan más delicioso y fresco, perfecto para compartir en familia o
+                            sorprender a tus seres queridos con un sabor inolvidable.
                         </div>
                     </div>
                 </div>
@@ -589,7 +619,8 @@
                         <p>CL 31 # 24 - 41 FLORIDABLANCA</p>
                         <p>Cel: 3043161907</p>
                         <div class="description">
-                            En Floridablanca, nuestra sede Cañaveral ofrece productos frescos y atención personalizada en una zona estratégica.
+                            En Floridablanca, nuestra sede Cañaveral ofrece productos frescos y atención personalizada
+                            en una zona estratégica.
                         </div>
                     </div>
                 </div>
@@ -603,11 +634,12 @@
                         <p>CIE LOCAL 219</p>
                         <p>Cel: 3165000009</p>
                         <div class="description">
-                            Un espacio único en el CIE, especializado en café y panadería para disfrutar en cualquier momento.
+                            Un espacio único en el CIE, especializado en café y panadería para disfrutar en cualquier
+                            momento.
                         </div>
                     </div>
                 </div>
-           <!-- Sede 1 -->
+                <!-- Sede 1 -->
                 <div class="sede-card center" style="height:100%;min-height:320px;max-height:420px;">
                     <div class="sede-image">
                         <img src="images/sedes/sede1.jpg" alt="Centro" class="sede-img">
@@ -618,7 +650,8 @@
                         <p>Tel: 6076425198</p>
                         <p>Cel: 3173487430</p>
                         <div class="description">
-                            Nuestra sede principal en el centro de Bucaramanga, con atención cálida y variedad de productos frescos todos los días.
+                            Nuestra sede principal en el centro de Bucaramanga, con atención cálida y variedad de
+                            productos frescos todos los días.
                         </div>
                     </div>
                 </div>
@@ -635,7 +668,7 @@
             <span class="indicator" data-slide="4"></span>
             <span class="indicator" data-slide="5"></span>
             <span class="indicator" data-slide="6"></span>
-             <span class="indicator" data-slide="7"></span>
+            <span class="indicator" data-slide="7"></span>
             <span class="indicator" data-slide="8"></span>
         </div>
     </section>
@@ -674,51 +707,58 @@
             </div>
         </div>
     </footer>
-        <!-- WhatsApp Floating Button -->
-    <a href="https://linktr.ee/ElManaOficial?fbclid=PAAaYGcB9BXAG-o2A7sk7Bzy0i8lmEot04W-sW1xim2Chz1PFOjGgPX7kmhqw" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://linktr.ee/ElManaOficial?fbclid=PAAaYGcB9BXAG-o2A7sk7Bzy0i8lmEot04W-sW1xim2Chz1PFOjGgPX7kmhqw"
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
     </a>
- 
+
     <script src="script.js"></script>
     <script>
-    // Cambia la clase 'active' en el nav según la sección visible al hacer scroll
-    document.addEventListener('DOMContentLoaded', function () {
-        const navLinks = document.querySelectorAll('.main-nav a');
-        const sections = [
-            { id: 'top', link: 'index.html' },
-            { id: 'productos', link: '#productos' },
-            { id: 'sedes', link: '#sedes' },
-            // Puedes agregar más secciones si es necesario
-        ];
+        // Cambia la clase 'active' en el nav según la sección visible al hacer scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.main-nav a');
+            const sections = [
+                { id: 'top', link: 'index.html' },
+                { id: 'productos', link: '#productos' },
+                { id: 'catalogo', link: '#productos' }, // catalogo también cuenta como productos
+                { id: 'sedes', link: '#sedes' },
+            ];
 
-        function getSectionTop(id) {
-            const el = document.getElementById(id) || document.querySelector('.' + id);
-            return el ? el.getBoundingClientRect().top + window.scrollY : Infinity;
-        }
-
-        function onScroll() {
-            let scrollPos = window.scrollY + window.innerHeight / 3;
-            let currentSection = sections[0].id;
-            for (let i = 0; i < sections.length; i++) {
-                if (getSectionTop(sections[i].id) <= scrollPos) {
-                    currentSection = sections[i].id;
-                }
+            function getSectionTop(id) {
+                const el = document.getElementById(id) || document.querySelector('.' + id);
+                if (!el) return Infinity;
+                const style = window.getComputedStyle(el);
+                if (style.display === 'none' || style.visibility === 'hidden') return Infinity;
+                return el.getBoundingClientRect().top + window.scrollY;
             }
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (
-                    (currentSection === 'top' && link.getAttribute('href') === 'index.html') ||
-                    (currentSection === 'productos' && link.getAttribute('href').includes('#productos')) ||
-                    (currentSection === 'sedes' && link.getAttribute('href').includes('#sedes'))
-                ) {
-                    link.classList.add('active');
-                }
-            });
-        }
 
-        window.addEventListener('scroll', onScroll);
-        onScroll();
-    });
+            function onScroll() {
+                let scrollPos = window.scrollY + window.innerHeight / 3;
+                let currentSection = sections[0].id;
+                for (let i = 0; i < sections.length; i++) {
+                    if (getSectionTop(sections[i].id) <= scrollPos) {
+                        currentSection = sections[i].id;
+                    }
+                }
+                // Si la sección actual es "catalogo", tratarla como "productos"
+                if (currentSection === 'catalogo') currentSection = 'productos';
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (
+                        (currentSection === 'top' && link.getAttribute('href') === 'index.html') ||
+                        (currentSection === 'productos' && link.getAttribute('href').includes('#productos')) ||
+                        (currentSection === 'sedes' && link.getAttribute('href').includes('#sedes'))
+                    ) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+        });
     </script>
 
 </body>

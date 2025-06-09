@@ -372,13 +372,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const sede = sedeSelect.value;
         const img = document.getElementById('foto-sede-img');
         let src = 'images/sedes/default.jpg';
-        if (sede == 'centro') src = 'images/sedes/centro.jpg';
-        else if (sede === 'antoniaSantos') src = 'images/sedes/antoniaSantos.jpg';
-        else if (sede === 'paseoDelComercio') src = 'images/sedes/paseoDelComercio.jpg';
-        else if (sede === 'cabecera') src = 'images/sedes/cabecera.jpg';
-        else if (sede === 'mejorasPublicas') src = 'images/sedes/mejorasPublicas.jpg';
-        else if (sede === 'cañaveral') src = 'images/sedes/cañaveral.jpg';
-        else if (sede === 'cie') src = 'images/sedes/cie.jpg';
+        if (sede == 'centro') src = 'images/sedes/sede1.jpg';
+        else if (sede === 'antoniaSantos') src = 'images/sedes/sede2.jpg';
+        else if (sede === 'paseoDelComercio') src = 'images/sedes/sede3.jpg';
+        else if (sede === 'cabecera') src = 'images/sedes/sede4.jpg';
+        else if (sede === 'mejorasPublicas') src = 'images/sedes/sede5.jpg';
+        else if (sede === 'cañaveral') src = 'images/sedes/sede6.jpg';
+        else if (sede === 'cie') src = 'images/sedes/sede7.jpg';
         img.src = src;
         const claseSelect1 = document.getElementById('clase-producto'); // categoría fija en HTML
         const categoria = claseSelect1.value;
@@ -554,6 +554,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
             console.log(category);
             console.log(tipoProducto);
+            // Ocultar la sección "top"
+            const topSection = document.getElementById('top');
+
+            
+            if (topSection) {
+                topSection.style.display = 'none';
+            }
+            document.getElementById('sedes').style.display = "none";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             document.getElementById('catalogo').style.display = "flex";
             document.getElementById('TipoProducto').innerHTML = tipoProducto.charAt(0).toUpperCase() + tipoProducto.slice(1);
             document.getElementById('productos').style.display = "none";
