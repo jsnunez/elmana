@@ -758,3 +758,5 @@ function resetAutoSlide() {
 updateCarousel();
 startAutoSlide();
 
+
+

@@ -29,9 +29,36 @@
                     <li>
                         <a href="#productos" onclick="
                             const productosSection = document.querySelector('.products');
+                            const catalogo1 = document.getElementById('catalogo');
+                            const sedesSection = document.querySelector('.sedes-section');
+                            const panaderiaSection = document.querySelector('.panaderia-section');
+                            if (panaderiaSection && panaderiaSection.style.display === 'none') {
+                                panaderiaSection.style.display = '';
+                            }
+                            if (catalogo1 && catalogo1.style.display !== 'none') {
+                                catalogo1.style.display = 'none';
+                            }
                             if (productosSection && productosSection.style.display === 'none') {
-                                const section = document.querySelector('.sedes-section').style.display = 'none';
+                                // Oculta sedes con transición suave
+                                if (sedesSection) {
+                                    sedesSection.style.transition = 'opacity 0.5s';
+                                    sedesSection.style.opacity = '0';
+                                    setTimeout(() => {
+                                        sedesSection.style.display = 'none';
+                                        sedesSection.style.opacity = '';
+                                        sedesSection.style.transition = '';
+                                    }, 500);
+                                }
+                                // Muestra productos con transición suave
+                                productosSection.style.opacity = '0';
                                 productosSection.style.display = '';
+                                setTimeout(() => {
+                                    productosSection.style.transition = 'opacity 0.5s';
+                                    productosSection.style.opacity = '1';
+                                    setTimeout(() => {
+                                        productosSection.style.transition = '';
+                                    }, 500);
+                                }, 10);
                             }
                             document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
                             return false;
@@ -43,16 +70,19 @@
                             const catalogo = document.getElementById('catalogo');
                             const productosSection1 = document.querySelector('.products');
                             const topSection = document.getElementById('top');
-                            if (topSection) productosSection1.style.display = 'none';
-                            if (catalogo) catalogo.style.display = 'none';
-                            if (section) {
-                                section.style.display = '';
-                                window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            // Si top está oculto, mostrar solo sedes y ocultar las demás
+                            if (topSection && (topSection.style.display === 'none' || window.getComputedStyle(topSection).display === 'none')) {
+                                if (productosSection1) productosSection1.style.display = 'none';
+                                if (catalogo) catalogo.style.display = 'none';
+                                if (section) section.style.display = '';
                             }
+                            // Manejo de clases 'active' en el menú
+                            document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
                             return false;">
                             Nuestras Sedes
                         </a>
-                    </li>
                     </li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
