@@ -730,7 +730,14 @@ h3 {
     .mobile-menu-btn {
         display: block;
     }
-
+    .products{
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+.description{
+    display: none;
+}
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(40vw, 2fr));
         width: 100vw;
