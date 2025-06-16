@@ -784,7 +784,7 @@ align-items: center;
     width: 20vw;}
     .whatsapp-float {
     position: fixed;
-    bottom: 150vw;
+    top: -100vw;
     right: 5vw;
     z-index: 9999;
     display: flex
