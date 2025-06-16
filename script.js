@@ -260,10 +260,10 @@ document.addEventListener('DOMContentLoaded', function () {
         ).join('')}
                 </select>
             </div>
-            <div style="margin:8px 0;">
+            <div style="display:none;">
                 <label>Cantidad: <input type="number" id="modal-cantidad" value="1" min="1" style="width:60px;"></label>
             </div>
-            <button id="modal-agregar-btn" style="background:#d4af37;color:#fff;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Agregar</button>
+            <button style="display:none;" id="modal-agregar-btn" style="background:#d4af37;color:#fff;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Agregar</button>
             </div>
         `;
         modal.style.display = 'flex';
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `<option>${tam}: $${precio}</option>`
             ).join('')}
           </select>
-          <button style="background: #d4af37; border: none; border-radius: 50%; width: 28px; height: 28px; color: #fff; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center;">+</button>
+          <button style="background: #d4af37; border: none; border-radius: 50%; width: 28px; height: 28px; color: #fff; font-size: 20px; cursor: pointer; display: none; align-items: center; justify-content: center;">+</button>
         </div>
       `;
 
@@ -468,45 +468,70 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Pedir sede al cargar con Swal, y preguntar si desea cambiar si ya hay una guardada
-    async function pedirSede() {
-        // Verificar si hay una sede guardada en localStorage
-        let sedeGuardada = localStorage.getItem('sedeSeleccionada');
-        if (sedeGuardada) {
-            // Preguntar si desea cambiar de sede
-            const { isConfirmed } = await Swal.fire({
-                title: 'Sede seleccionada',
-                text: `Actualmente tiene seleccionada la sede: ${sedes.find(s => s.id === sedeGuardada)?.nombre || sedeGuardada}. ¿Desea cambiarla?`,
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonText: 'Cambiar sede',
-                cancelButtonText: 'Conservar'
-            });
-            if (!isConfirmed) {
-                sedeSelect.value = sedeGuardada;
-                productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
-                return;
-            } else {
-                // Advertencia de vaciado de carrito
-                const { isConfirmed: vaciar } = await Swal.fire({
-                    title: 'Advertencia',
-                    text: 'Al cambiar de sede, el carrito se vaciará. ¿Desea continuar?',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonText: 'Sí, continuar',
-                    cancelButtonText: 'No'
-                });
-                if (!vaciar) {
-                    sedeSelect.value = sedeGuardada;
-                    productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
-                    return;
-                }
-                // Si cambia la sede, vacía el carrito
-                carrito.length = 0;
-                actualizarCarrito();
-            }
-        }
+    // async function pedirSede() {
+    //     // Verificar si hay una sede guardada en localStorage
+    //     let sedeGuardada = localStorage.getItem('sedeSeleccionada');
+    //     if (sedeGuardada) {
+    //         // Preguntar si desea cambiar de sede
+    //         const { isConfirmed } = await Swal.fire({
+    //             title: 'Sede seleccionada',
+    //             text: `Actualmente tiene seleccionada la sede: ${sedes.find(s => s.id === sedeGuardada)?.nombre || sedeGuardada}. ¿Desea cambiarla?`,
+    //             icon: 'question',
+    //             showCancelButton: true,
+    //             confirmButtonText: 'Cambiar sede',
+    //             cancelButtonText: 'Conservar'
+    //         });
+    //         if (!isConfirmed) {
+    //             sedeSelect.value = sedeGuardada;
+    //             productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
+    //             return;
+    //         } else {
+    //             // Advertencia de vaciado de carrito
+    //             const { isConfirmed: vaciar } = await Swal.fire({
+    //                 title: 'Advertencia',
+    //                 text: 'Al cambiar de sede, el carrito se vaciará. ¿Desea continuar?',
+    //                 icon: 'warning',
+    //                 showCancelButton: true,
+    //                 confirmButtonText: 'Sí, continuar',
+    //                 cancelButtonText: 'No'
+    //             });
+    //             if (!vaciar) {
+    //                 sedeSelect.value = sedeGuardada;
+    //                 productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
+    //                 return;
+    //             }
+    //             // Si cambia la sede, vacía el carrito
+    //             carrito.length = 0;
+    //             actualizarCarrito();
+    //         }
+    //     }
+    //
+    //     // Pedir sede con Swal
+    //     const { value: sedeSeleccionada } = await Swal.fire({
+    //         title: 'Seleccione una sede',
+    //         input: 'select',
+    //         inputOptions: sedes.reduce((obj, sede) => {
+    //             obj[sede.id] = sede.nombre;
+    //             return obj;
+    //         }, {}),
+    //         inputPlaceholder: 'Elija una sede',
+    //         showCancelButton: false,
+    //         confirmButtonText: 'Confirmar',
+    //         inputValidator: (value) => {
+    //             return value ? null : 'Debe seleccionar una sede';
+    //         }
+    //     });
+    //
+    //     if (sedeSeleccionada) {
+    //         sedeSelect.value = sedeSeleccionada;
+    //         productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
+    //         // Guardar la sede seleccionada en localStorage
+    //         localStorage.setItem('sedeSeleccionada', sedeSeleccionada);
+    //     }
+    // }
 
-        // Pedir sede con Swal
+    // Nueva función unificada: siempre pide seleccionar la sede
+    async function pedirSede() {
         const { value: sedeSeleccionada } = await Swal.fire({
             title: 'Seleccione una sede',
             input: 'select',
@@ -525,8 +550,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (sedeSeleccionada) {
             sedeSelect.value = sedeSeleccionada;
             productosLista.innerHTML = '<p>Seleccione una clase para ver productos.</p>';
-            // Guardar la sede seleccionada en localStorage
             localStorage.setItem('sedeSeleccionada', sedeSeleccionada);
+            // Vacía el carrito cada vez que se selecciona una sede
+            carrito.length = 0;
+            actualizarCarrito();
         }
     }
 
@@ -614,7 +641,7 @@ function actualizarCarrito() {
     vaciarBtn.disabled = carrito.length === 0;
     const selectSede = document.getElementById('sede-select');
     if (selectSede) {
-        selectSede.disabled = true;
+        selectSede.disabled = false; // Habilitar el select de sede
     }
 }
 
@@ -760,3 +787,27 @@ startAutoSlide();
 
 
 
+/**
+ * Oculta el carrito, el botón "Agregar" y el botón "+" de productos.
+ */
+
+// Ocultar el carrito
+if (carritoContainer) {
+    carritoContainer.style.display = 'none';
+}
+
+// Ocultar todos los botones "Agregar" en modales y tarjetas
+document.querySelectorAll('#modal-agregar-btn, #modal-producto #modal-agregar-btn').forEach(btn => {
+    btn.style.display = 'none';
+});
+
+// Ocultar todos los botones "+" en las tarjetas de producto
+document.querySelectorAll('.opciones-producto button').forEach(btn => {
+    btn.style.display = 'none';
+});
+/**
+ * Oculta los íconos del header (header-icons).
+ */
+document.querySelectorAll('.header-icons').forEach(icon => {
+    icon.style.display = 'none';
+});
