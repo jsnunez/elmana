@@ -264,6 +264,7 @@
     .sede-card.side {
         display: none;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -302,4 +303,5 @@
     .nav-button.next {
         right: 10px;
     }
+
 }
