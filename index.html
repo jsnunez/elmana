@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>el Maná - Tradición de hogar</title>
     <link rel="stylesheet" href="styles2.css">
-    .
     <link rel="stylesheet" href="styleSedes.css">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -110,51 +111,218 @@
                 style="background: #d4af37; color: #fff; border: none; border-radius: 4px; padding: 8px 16px; margin-top: 10px; cursor: pointer;">Comprar</button>
         </div>
     </header>
-  <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Floating Button -->
     <a href="https://linktr.ee/ElManaOficial?fbclid=PAAaYGcB9BXAG-o2A7sk7Bzy0i8lmEot04W-sW1xim2Chz1PFOjGgPX7kmhqw"
         class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
     </a>
-
     <section id="top" class="hero">
         <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Tradición<br>de Hogar</h1>
-                <p>Descubre nuestro catálogo de productos.</p>
-
-                <div class="delivery-info">
-                    <div class="info-card">
-                        <div class="icon-hero">
-                            <img src="images/car.png" alt="">
-                        </div>
-                        <div class="info-text">
-                            <h4>Pide a <strong>Domicilio</strong></h4>
-                            <p>Si lo haces hoy antes de las 4:00 p.m recibirás tu pedido al día siguiente.</p>
+            <div class="hero-carousel">
+                <div class="hero-slide active" data-bg="images/fondos/home.jpg">
+                    <div class="hero-content">
+                        <h1>Tradición<br>de Hogar</h1>
+                        <p>Descubre nuestro catálogo de productos.</p>
+                        <div class="delivery-info">
+                            <div class="info-card">
+                                <div class="icon-hero">
+                                    <img src="images/car.png" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h4>Pide a <strong>Domicilio</strong></h4>
+                                    <p>Si lo haces hoy antes de las 4:00 p.m recibirás tu pedido al día siguiente.</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="icon-hero">
+                                    <img src="images/calendario.png" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <p>Los pedidos que hagas </p>
+                                    <h4>sábados, domingos o festivos</h4>
+                                    <p>serán entregados al día hábil siguiente.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="hero-image"></div>
+                </div>
+                <div id="restaurante" class="hero-slide" data-bg="images/fondos/almuerzo.jpg">
 
-                    <div class="info-card">
-                        <div class="icon-hero">
-                            <img src="images/calendario.png" alt="">
-                        </div>
-                        <div class="info-text">
-                            <p>Los pedidos que hagas </p>
-                            <h4>sábados, domingos o festivos</h4>
-                            <p>serán entregados al día hábil siguiente.</p>
-                        </div>
+                    <div style="display: flex;margin-top: 60vh;margin-left: 17vw;width: 42vw;justify-content: space-around;"
+                        class="hero-content">
+
+                        <button class="menu-button">
+                            Centro
+                            <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
+                        </button>
+                        <button class="menu-button">
+
+                            Cabecera <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-slide " data-bg="images/fondos/historia.jpg">
+
+                    <div style="position: absolute;
+    left: 18%;top: 66%;" class="hero-content">
+
+                        <button class="menu-button">
+                            Ver Mas
+                            <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="hero-slide" data-bg="images/fondos/boletin.jpg">
+
+                    <div style="position: absolute;
+    right: 18%;top: 67%;" class="hero-content">
+
+                    <button class="menu-button">
+                            Ver Mas
+                            <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
+                        </button>
+
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
-            </div>
+            <button class="hero-prev" aria-label="Anterior"
+                style="background:none;border:none;position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:2rem;z-index:2;">&#10094;</button>
+            <button class="hero-next" aria-label="Siguiente"
+                style="background:none;border:none;position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:2rem;z-index:2;">&#10095;</button>
         </div>
-        <div class="slider-dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="slider-dots" style="text-align:center;margin-top:1rem;">
             <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
+
+        <script>
+
+            // Hero slider con avance automático cada 5 segundos y transición suave
+            document.addEventListener('DOMContentLoaded', function () {
+                const slides = document.querySelectorAll('.hero-slide');
+                const dots = document.querySelectorAll('.slider-dots .dot');
+                const prevBtn = document.querySelector('.hero-prev');
+                const nextBtn = document.querySelector('.hero-next');
+                let current = 0;
+                let autoSlideInterval;
+                let isTransitioning = false;
+
+                // Establece el fondo inicial del section
+                const heroSection = document.getElementById('top');
+                if (slides.length > 0 && heroSection) {
+                    const bg = slides[0].getAttribute('data-bg');
+                    heroSection.style.backgroundImage = `url('${bg}')`;
+                    heroSection.style.backgroundSize = "cover";
+                    heroSection.style.backgroundPosition = "center";
+                    heroSection.style.backgroundRepeat = "no-repeat";
+                }
+
+                function showSlide(idx) {
+                    if (isTransitioning || idx === current) return;
+                    isTransitioning = true;
+                    const prev = current;
+                    current = idx;
+
+                    // Transición de opacidad
+                    slides[prev].style.transition = 'opacity 0.7s';
+                    slides[prev].style.opacity = '0';
+                    setTimeout(() => {
+                        slides[prev].style.display = 'none';
+                        slides[prev].style.transition = '';
+                        slides[current].style.display = '';
+                        slides[current].style.opacity = '0';
+                        slides[current].style.transition = 'opacity 0.7s';
+                        setTimeout(() => {
+                            slides[current].style.opacity = '1';
+                        }, 10);
+
+                        setTimeout(() => {
+                            slides[current].style.transition = '';
+                            isTransitioning = false;
+                        }, 700);
+                    }, 700);
+
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === current);
+                    });
+
+                    // Cambia el fondo del section según el slide
+                    const heroSection = document.getElementById('top');
+                    const bg = slides[current].getAttribute('data-bg');
+                    heroSection.style.transition = 'background-image 0.7s';
+                    heroSection.style.backgroundImage = `url('${bg}')`;
+                    heroSection.style.backgroundSize = "cover";
+                    if (current == 2) {
+                                            console.log(current);
+
+                        heroSection.style.backgroundPosition = "left";
+                    } else if (current == 3) {
+                        heroSection.style.backgroundPosition = "right";
+                    } 
+                    else {
+                        heroSection.style.backgroundPosition = "center";
+                    }
+                    heroSection.style.backgroundRepeat = "no-repeat";
+                    const heroContainer = document.querySelector('.hero-container');
+                    if (current === 1 && heroContainer) {
+                        heroContainer.style.display = 'flex';
+                    } else if (heroContainer) {
+                        heroContainer.style.display = '';
+                    }
+                }
+
+                function nextSlide() {
+                    let next = (current + 1) % slides.length;
+                    showSlide(next);
+                }
+
+                function prevSlide() {
+                    let prev = (current - 1 + slides.length) % slides.length;
+                    showSlide(prev);
+                }
+
+                function startAutoSlide() {
+                    autoSlideInterval = setInterval(nextSlide, 5000);
+                }
+
+                function stopAutoSlide() {
+                    clearInterval(autoSlideInterval);
+                }
+
+                nextBtn.addEventListener('click', function() {
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                prevBtn.addEventListener('click', function() {
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => {
+                        showSlide(i);
+                        stopAutoSlide();
+                        startAutoSlide();
+                    });
+                });
+
+                // Inicializa
+                slides.forEach((slide, i) => {
+                    slide.style.opacity = i === 0 ? '1' : '0';
+                    slide.style.display = i === 0 ? '' : 'none';
+                });
+                showSlide(0);
+                startAutoSlide();
+            });
+        </script>
     </section>
+
     <section id="productos" class="products">
 
 
@@ -691,11 +859,14 @@
                 </div>
             </div>
 
-            <button class="nav-button prev" id="prevBtn" style="height: 64px; width: 64px; border-radius: 50%; overflow: hidden; padding: 0; display: flex; align-items: center; justify-content: center;">
+            <button class="nav-button prev" id="prevBtn"
+                style="height: 64px; width: 64px; border-radius: 50%; overflow: hidden; padding: 0; display: flex; align-items: center; justify-content: center;">
                 <img src="Iconos/Png/Icono-07.png" alt="Anterior" style="height: 100%; width: 100%; object-fit: cover;">
             </button>
-            <button class="nav-button next" id="nextBtn" style="height: 64px; width: 64px; border-radius: 50%; overflow: hidden; padding: 0; display: flex; align-items: center; justify-content: center;">
-                <img src="Iconos/Png/Icono-08.png" alt="Siguiente" style="height: 100%; width: 100%; object-fit: cover;">
+            <button class="nav-button next" id="nextBtn"
+                style="height: 64px; width: 64px; border-radius: 50%; overflow: hidden; padding: 0; display: flex; align-items: center; justify-content: center;">
+                <img src="Iconos/Png/Icono-08.png" alt="Siguiente"
+                    style="height: 100%; width: 100%; object-fit: cover;">
             </button>
         </div>
 
@@ -745,7 +916,7 @@
             </div>
         </div>
     </footer>
-  
+
 
     <script src="script.js"></script>
     <script>

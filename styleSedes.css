@@ -3,6 +3,9 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-title {
@@ -65,11 +68,9 @@
 .sede-card.center {
     background-color: #ffffff;
     border-radius: 20px;
-    border: 2px solid #f4c430;
     padding-left: 3vw;
-        padding-right: 3vw;
-
-    box-shadow: 0 8px 32px rgba(244, 196, 48, 0.18), 0 2px 8px rgba(0,0,0,0.08);
+    padding-right: 3vw;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.18), 0 2px 8px rgba(0,0,0,0.08);
      min-width: 50%;
     opacity: 1;
     transform: scale(1);
@@ -217,7 +218,7 @@
 }
 
 .indicators {
- margin-left: 35%;
+
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -229,8 +230,10 @@
     background: #fff;
     /* Fondo blanco */
     width: 30%;
-    height: 10vh;
+    height: 5vh;
     align-items: center;
+        margin-top: 5vh;
+
     margin-bottom: 5vh;
 }
 
