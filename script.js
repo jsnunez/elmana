@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <strong>Variantes:</strong>
                 <select id="modal-variante" style="margin-bottom:8px;">
                 ${Object.entries(producto.variantes).map(([tam, precio]) =>
-            `<option value="${tam}">${tam}: $${precio}</option>`
+            `<option value="${tam}">${precio}</option>`
         ).join('')}
                 </select>
             </div>
@@ -430,13 +430,16 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="product-image">
           <img src="${prod.imagen}" alt="${prod.nombre}">
         </div>
+          <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
         <h3>${prod.nombre}</h3>
         <div class="opciones-producto">
           <select>
             ${Object.entries(prod.variantes).map(([tam, precio]) =>
-                `<option>${tam}: $${precio}</option>`
+                `<option> ${precio}</option>`
             ).join('')}
           </select>
+                  </div>
+
           <button style="background: #d4af37; border: none; border-radius: 50%; width: 28px; height: 28px; color: #fff; font-size: 20px; cursor: pointer; display: none; align-items: center; justify-content: center;">+</button>
         </div>
       `;

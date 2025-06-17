@@ -206,7 +206,7 @@ ul {
     font-weight: 600 !important;
     font-size: 1.1rem !important;
     padding: 10px 32px !important;
-    border: 4px solid #FFD700 !important;
+    border: 4px solid  var(--primary-color)  !important;
     transition: background 0.3s, color 0.3s, transform 0.2s !important;
 }
 
@@ -480,9 +480,11 @@ h3 {
 .product-card p {
     color: #666;
     font-size: 0.8rem;
-    margin-left: 10%;
     line-height: 1;
 
+}
+.product-card h3{
+    padding: 0%;
 }
 
 
@@ -700,7 +702,7 @@ h3 {
 
 .opciones-producto {
     display: flex;
-    justify-content: space-evenly;
+justify-content: flex-start;
     margin-top: 2vh;
 }
 
