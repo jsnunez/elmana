@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirección WhatsApp</title>
+    <style>
+        :root {
+            --primary-color: rgb(203, 167, 57);
+            --secondary-color: rgb(33, 25, 21);
+            --naranja: rgb(248, 152, 40);
+            --background-color: #fff;
+            --text-color: #666;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 90px;
+            height: 90px;
+            display: block;
+        }
+
+        .links {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .wa-link {
+            background: var(--primary-color);
+            color: var(--background-color);
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            text-align: center;
+            transition: background 0.2s;
+            font-weight: bold;
+        }
+
+        .wa-link:hover {
+            background: var(--naranja);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <!-- Logo local y texto al lado -->
+        <div style="display: flex; align-items: center; gap: 16px;">
+            <img src="images/logoOscuro.png" alt="Logo Oscuro"
+            style="width: 150px; height: 100px; object-fit: contain; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            <img src="icons/whatsapp.png" alt="Logo WhatsApp"
+            style="width: 60px; height: 100px; object-fit: contain;">
+        </div>
+    </div>
+    <div class="links">
+        <a class="wa-link" href="https://wa.me/+573173487430?text=Quiero%20hacer%20un%20pedido" target="_blank">Centro</a>
+        <a class="wa-link" href="https://wa.me/+573158070804?text=Quiero%20hacer%20un%20pedido" target="_blank">Cabecera</a>
+        <a class="wa-link" href="https://wa.me/+573176192258?text=Quiero%20hacer%20un%20pedido" target="_blank">Antonia Santos</a>
+        <a class="wa-link" href="https://wa.me/+573153962533?text=Quiero%20hacer%20un%20pedido" target="_blank">Mejoras Públicas</a>
+        <a class="wa-link" href="https://wa.me/+573155125588?text=Quiero%20hacer%20un%20pedido" target="_blank">Paseo del Comercial</a>
+        <a class="wa-link" href="https://wa.me/+573165000009?text=Quiero%20hacer%20un%20pedido" target="_blank">Café y Pan CIE</a>
+        <a class="wa-link" href="https://wa.me/+573043161907?text=Quiero%20hacer%20un%20pedido" target="_blank">Cañaveral</a>
+
+    </div>
+</body>
+
+</html>

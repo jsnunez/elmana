@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>el Maná - Tradición de hogar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styleSedes.css">
     <link
@@ -112,13 +113,13 @@
         </div>
     </header>
     <!-- WhatsApp Floating Button -->
-    <a href="https://linktr.ee/ElManaOficial?fbclid=PAAaYGcB9BXAG-o2A7sk7Bzy0i8lmEot04W-sW1xim2Chz1PFOjGgPX7kmhqw"
+    <a href="whatasapp.html"
         class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
     </a>
-     <section id="top" class="hero">
+    <section id="top" class="hero">
 
-        <div class="hero-carousel" style=" width: 100%; height: 100vh;">
+        <div class="hero-carousel">
             <div class="hero-slide active" data-bg="images/fondos/home.jpg">
                 <div class="hero-content">
                     <h1>Tradición<br>de Hogar</h1>
@@ -145,25 +146,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div id="restaurante" class="hero-slide" data-bg="images/fondos/almuerzo.jpg">
-
                 <h1 style="color:#fff;">Pide a Nuestro Restaurante</h1>
                 <p>Disfruta de nuestra sazón con platillos únicos para el día</p>
                 <div id="pedidos-restaurante">
-
                     <button class="menu-button">
                         Centro
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
                     <button class="menu-button">
-
                         Cabecera <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
                 </div>
             </div>
-
             <div id="historia" class="hero-slide" data-bg="images/fondos/historia.jpg">
                 <div id="tituloHistoria">
                     <h1 style="color:#fff;">Conoce </h1>
@@ -174,25 +170,20 @@
                         Ver Mas
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
-
                     <p>Tradicion Santandereana desde 1966</p>
                 </div>
-
-
             </div>
             <div id="boletin" class="hero-slide" data-bg="images/fondos/boletin.jpg">
-<div id="tituloBoletin">
+                <div id="tituloBoletin">
                     <h1 style="color:#fff;">Boletín </h1>
                     <h1 style="color:#fff;">Informativo</h1>
                 </div>
                 <div id="informacionBoletin">
-                     <p>Entérate de las últimas noticias que trae el Maná</p>
+                    <p>Entérate de las últimas noticias que trae el Maná</p>
                     <button class="menu-button">
                         Ver Mas
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
-
-                   
                 </div>
             </div>
         </div>
@@ -208,8 +199,7 @@
             <span class="dot"></span>
         </div>
         <script>
-
-            // Hero slider con avance automático cada 5 segundos y transición suave
+            // Preload all slider images before showing the slider
             document.addEventListener('DOMContentLoaded', function () {
                 const slides = document.querySelectorAll('.hero-slide');
                 const dots = document.querySelectorAll('.slider-dots .dot');
@@ -219,113 +209,154 @@
                 let autoSlideInterval;
                 let isTransitioning = false;
 
-                // Establece el fondo inicial del section
-                const heroSection = document.getElementById('top');
-                if (slides.length > 0 && heroSection) {
-                    const bg = slides[0].getAttribute('data-bg');
-                    heroSection.style.backgroundImage = `url('${bg}')`;
-                    heroSection.style.backgroundSize = "cover";
-                    heroSection.style.backgroundPosition = "center";
-                    heroSection.style.backgroundRepeat = "no-repeat";
-                }
+                // Collect all unique background images from data-bg
+                const bgImages = Array.from(slides)
+                    .map(slide => slide.getAttribute('data-bg'))
+                    .filter((src, idx, arr) => src && arr.indexOf(src) === idx);
 
-                function showSlide(idx) {
-                    if (isTransitioning || idx === current) return;
-                    isTransitioning = true;
-                    const prev = current;
-                    current = idx;
-
-                    // Transición de opacidad
-                    slides[prev].style.transition = 'opacity 0.7s';
-                    slides[prev].style.opacity = '0';
-                    setTimeout(() => {
-                        slides[prev].style.display = 'none';
-                        slides[prev].style.transition = '';
-                        slides[current].style.display = '';
-                        slides[current].style.opacity = '0';
-                        slides[current].style.transition = 'opacity 0.7s';
-                        setTimeout(() => {
-                            slides[current].style.opacity = '1';
-                        }, 10);
-
-                        setTimeout(() => {
-                            slides[current].style.transition = '';
-                            isTransitioning = false;
-                        }, 700);
-                    }, 700);
-
-                    dots.forEach((dot, i) => {
-                        dot.classList.toggle('active', i === current);
+                // Preload images
+                function preloadImages(srcArray, callback) {
+                    let loaded = 0;
+                    if (srcArray.length === 0) {
+                        callback();
+                        return;
+                    }
+                    srcArray.forEach(src => {
+                        const img = new Image();
+                        img.onload = img.onerror = function () {
+                            loaded++;
+                            if (loaded === srcArray.length) callback();
+                        };
+                        img.src = src;
                     });
+                }
 
-                    // Cambia el fondo del section según el slide
+                function showSlider() {
+                    // Establece el fondo inicial del section
                     const heroSection = document.getElementById('top');
-                    const bg = slides[current].getAttribute('data-bg');
-                    heroSection.style.transition = 'background-image 0.7s';
-                    heroSection.style.backgroundImage = `url('${bg}')`;
-                    heroSection.style.backgroundSize = "cover";
-                    if (current == 2) {
-                                            console.log(current);
-
-                        heroSection.style.backgroundPosition = "left";
-                    } else if (current == 3) {
-                        heroSection.style.backgroundPosition = "right";
-                    } 
-                    else {
+                    if (slides.length > 0 && heroSection) {
+                        const bg = slides[0].getAttribute('data-bg');
+                        heroSection.style.backgroundImage = `url('${bg}')`;
+                        heroSection.style.backgroundSize = "cover";
                         heroSection.style.backgroundPosition = "center";
+                        heroSection.style.backgroundRepeat = "no-repeat";
                     }
-                    heroSection.style.backgroundRepeat = "no-repeat";
-                    const heroContainer = document.querySelector('.hero-container');
-                    if (current === 1 && heroContainer) {
-                        heroContainer.style.display = 'flex';
-                    } else if (heroContainer) {
-                        heroContainer.style.display = '';
+
+                    function showSlide(idx) {
+                        if (isTransitioning || idx === current) return;
+                        isTransitioning = true;
+                        const prev = current;
+                        current = idx;
+
+                        // Transición de opacidad
+                        slides[prev].style.transition = 'opacity 0.7s';
+                        slides[prev].style.opacity = '0';
+                        setTimeout(() => {
+                            slides[prev].style.display = 'none';
+                            slides[prev].style.transition = '';
+                            slides[current].style.display = '';
+                            slides[current].style.opacity = '0';
+                            slides[current].style.transition = 'opacity 0.7s';
+                            setTimeout(() => {
+                                slides[current].style.opacity = '1';
+                            }, 10);
+
+                            setTimeout(() => {
+                                slides[current].style.transition = '';
+                                isTransitioning = false;
+                            }, 700);
+                        }, 700);
+
+                        dots.forEach((dot, i) => {
+                            dot.classList.toggle('active', i === current);
+                        });
+
+                        // Cambia el fondo del section según el slide
+                        const heroSection = document.getElementById('top');
+                        const bg = slides[current].getAttribute('data-bg');
+                        heroSection.style.transition = 'background-image 0.7s';
+                        heroSection.style.backgroundImage = `url('${bg}')`;
+                        heroSection.style.backgroundSize = "cover";
+                        if (current == 2) {
+                            heroSection.style.backgroundPosition = "left";
+                        } else if (current == 3) {
+                            heroSection.style.backgroundPosition = "right";
+                        } 
+                        else {
+                            heroSection.style.backgroundPosition = "center";
+                        }
+                        heroSection.style.backgroundRepeat = "no-repeat";
+                        const heroContainer = document.querySelector('.hero-container');
+                        if (current === 1 && heroContainer) {
+                            heroContainer.style.display = 'flex';
+                        } else if (heroContainer) {
+                            heroContainer.style.display = '';
+                        }
                     }
-                }
 
-                function nextSlide() {
-                    let next = (current + 1) % slides.length;
-                    showSlide(next);
-                }
+                    function nextSlide() {
+                        let next = (current + 1) % slides.length;
+                        showSlide(next);
+                    }
 
-                function prevSlide() {
-                    let prev = (current - 1 + slides.length) % slides.length;
-                    showSlide(prev);
-                }
+                    function prevSlide() {
+                        let prev = (current - 1 + slides.length) % slides.length;
+                        showSlide(prev);
+                    }
 
-                function startAutoSlide() {
-                    autoSlideInterval = setInterval(nextSlide, 5000000);
-                }
+                    function startAutoSlide() {
+                        autoSlideInterval = setInterval(nextSlide, 5000);
+                    }
 
-                function stopAutoSlide() {
-                    clearInterval(autoSlideInterval);
-                }
+                    function stopAutoSlide() {
+                        clearInterval(autoSlideInterval);
+                    }
 
-                nextBtn.addEventListener('click', function() {
-                    nextSlide();
-                    stopAutoSlide();
-                    startAutoSlide();
-                });
-                prevBtn.addEventListener('click', function() {
-                    prevSlide();
-                    stopAutoSlide();
-                    startAutoSlide();
-                });
-                dots.forEach((dot, i) => {
-                    dot.addEventListener('click', () => {
-                        showSlide(i);
+                    // Cambia type="button" para evitar submit y scroll
+                    nextBtn.setAttribute('type', 'button');
+                    prevBtn.setAttribute('type', 'button');
+
+                    nextBtn.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        nextSlide();
                         stopAutoSlide();
                         startAutoSlide();
                     });
-                });
+                    prevBtn.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        prevSlide();
+                        stopAutoSlide();
+                        startAutoSlide();
+                    });
+                    dots.forEach((dot, i) => {
+                        dot.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            showSlide(i);
+                            stopAutoSlide();
+                            startAutoSlide();
+                        });
+                    });
 
-                // Inicializa
-                slides.forEach((slide, i) => {
-                    slide.style.opacity = i === 0 ? '1' : '0';
-                    slide.style.display = i === 0 ? '' : 'none';
+                    // Inicializa
+                    slides.forEach((slide, i) => {
+                        slide.style.opacity = i === 0 ? '1' : '0';
+                        slide.style.display = i === 0 ? '' : 'none';
+                    });
+                    showSlide(0);
+                    startAutoSlide();
+                }
+
+                // Oculta el slider hasta que las imágenes estén cargadas
+                const heroCarousel = document.querySelector('.hero-carousel');
+                if (heroCarousel) heroCarousel.style.visibility = 'hidden';
+
+                preloadImages(bgImages, function () {
+                    if (heroCarousel) heroCarousel.style.visibility = '';
+                    showSlider();
                 });
-                showSlide(3);
-                startAutoSlide();
             });
         </script>
     </section>
@@ -338,17 +369,18 @@
             <div class="icon-circle large" data-section="panaderia-section">
                 <img src="Iconos/Svg/Icono-05.svg" alt="Panadería">
             </div>
-            <div class="icon-circle large" data-section="restaurante-section">
-                <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
+            <div class="icon-circle large" data-section="bizcocheria-section">
+                <img src="Iconos/Svg/Icono-10.svg" alt="Cafetería">
             </div>
             <div class="icon-circle large" data-section="cafeteria-section">
                 <img src="Iconos/Svg/Icono-06.svg" alt="Cafetería">
             </div>
-            <div class="icon-circle large" data-section="bizcocheria-section">
-                <img src="Iconos/Svg/Icono-10.svg" alt="Cafetería">
-            </div>
+           
             <div class="icon-circle large" data-section="santandereano-section">
                 <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
+            </div>
+             <div class="icon-circle large" data-section="restaurante-section">
+                <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
             </div>
         </div>
 
@@ -358,7 +390,7 @@
             <div class="product-grid">
                 <div class="product-card catalog-card" data-category="tradicional" data-tipo="panaderia">
                     <div class="product-image">
-                        <img src="images/cascarita.jpg" alt="Tradicional">
+                        <img src="images/panaderia/cascarita.jpg" alt="Tradicional">
                     </div>
                      <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
                     <h3>Tradicional</h3>
@@ -369,7 +401,7 @@
 
                 <div class="product-card catalog-card" data-category="dulce" data-tipo="panaderia">
                     <div class="product-image">
-                        <img src="images/cascarita.jpg" alt="Tradicional">
+                        <img src="images/panaderia/suspiros.jpg" alt="dulce">
                     </div>
                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
                     <h3>Dulce</h3>
@@ -381,7 +413,7 @@
 
                 <div class="product-card catalog-card" data-category="rellenos" data-tipo="panaderia">
                     <div class="product-image">
-                        <img src="images/cascarita.jpg" alt="Tradicional">
+                        <img src="images/panaderia/panqueso.jpg" alt="rellenos">
                     </div>
                      <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
                     <h3>Rellenos</h3>
@@ -392,7 +424,7 @@
                 </div>
                         <div class="product-card catalog-card" data-category="integral" data-tipo="panaderia">
                     <div class="product-image">
-                        <img src="images/cascarita.jpg" alt="Tradicional">
+                        <img src="images/panaderia/integralavena.jpg" alt="integral">
                     </div>
                      <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
                     <h3>Integral</h3>
@@ -432,7 +464,7 @@
             <div class="product-grid">
                 <div class="product-card catalog-card" data-category="torta_artesanal" data-tipo="bizcocheria">
                     <div class="product-image">
-                        <img src="images/bizcocho-polvorosa.jpg" alt="Torta artesanal">
+                        <img src="images/panaderia/mantecada.jpg" alt="Torta artesanal">
                     </div>
                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                         <h3>Torta artesanal</h3>
@@ -441,7 +473,7 @@
                 </div>
                 <div class="product-card catalog-card" data-category="dulces" data-tipo="bizcocheria">
                     <div class="product-image">
-                        <img src="images/bizcocho-roscon.jpg" alt="Dulces">
+                        <img src="images/panaderia/brazodereina.jpg" alt="Dulces">
                     </div>
                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                         <h3>Dulces</h3>
@@ -450,7 +482,7 @@
                 </div>
                 <div class="product-card catalog-card" data-category="salados" data-tipo="bizcocheria">
                     <div class="product-image">
-                        <img src="images/bizcocho-galleta.jpg" alt="Salados">
+                        <img src="images/panaderia/tortadecuajada.jpg" alt="Salados">
                     </div>
                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                         <h3>Salados</h3>
@@ -466,16 +498,16 @@
                 <div class="product-grid">
                     <div class="product-card catalog-card" data-category="onces" data-tipo="cafeteria">
                         <div class="product-image">
-                            <img src="images/cafe-tinto.jpg" alt="Onces">
+                            <img src="images/panaderia/pastelpollo.jpg" alt="Onces">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Onces</h3>
-                            <p>Café colombiano recién preparado.</p>
+                            <p>Tus onces con el mejor sabor y tradición.</p>
                         </div>
                     </div>
                     <div class="product-card catalog-card" data-category="bebidas" data-tipo="cafeteria">
                         <div class="product-image">
-                            <img src="images/cafe-capuchino.jpg" alt="Bebidas">
+                            <img src="images/onces/avena.jpg" alt="Bebidas">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Bebidas</h3>
@@ -489,27 +521,28 @@
                 <h2>Rincón Santandereano</h2>
                 <div class="section-divider"></div>
                 <div class="product-grid">
-                    <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
+                        <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
                         <div class="product-image">
-                            <img src="images/hormiga-culona.jpg" alt="Tamal">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Tamal</h3>
-                            <p>Delicadeza típica de Santander.</p>
-                        </div>
-                    </div>
-                    <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
-                        <div class="product-image">
-                            <img src="images/arepa-santandereana.jpg" alt="Carnes frías">
+                            <img src="images/rincon/genova.jpg" alt="Carnes frías">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Carnes frías</h3>
                             <p>Arepa crocante y sabrosa, receta tradicional.</p>
                         </div>
                     </div>
+                    <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
+                        <div class="product-image">
+                            <img src="images/rincon/tamal.jpg" alt="Tamal">
+                        </div>
+                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                            <h3>Tamal</h3>
+                            <p>Delicadeza típica de Santander.</p>
+                        </div>
+                    </div>
+                
                     <div class="product-card catalog-card" data-category="ayacos" data-tipo="santandereano">
                         <div class="product-image">
-                            <img src="images/pepitoria.jpg" alt="Ayacos">
+                            <img src="images/rincon/ayaco.jpg" alt="Ayacos">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Ayacos</h3>
@@ -525,7 +558,7 @@
                 <div class="product-grid">
                     <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
                         <div class="product-image">
-                            <img src="images/bandeja-paisa.jpg" alt="Combos">
+                            <img src="images/restaurante/lasagna.jpg" alt="Combos">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Combos</h3>
@@ -534,7 +567,7 @@
                     </div>
                     <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
                         <div class="product-image">
-                            <img src="images/ajiaco.jpg" alt="Menú del día">
+                            <img src="images/restaurante/menu.jpg" alt="Menú del día">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Menú del día</h3>
@@ -543,7 +576,7 @@
                     </div>
                     <div class="product-card catalog-card" data-category="ensaladas" data-tipo="restaurante">
                         <div class="product-image">
-                            <img src="images/sancocho.jpg" alt="Ensaladas">
+                            <img src="images/restaurante/ensalada.jpg" alt="Ensaladas">
                         </div>
                         <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                             <h3>Ensaladas</h3>
@@ -933,10 +966,10 @@
                     <img src="images/logoOscuro.png" alt="el Maná">
                 </div>
                 <div class="social-icons">
-                    <a href="#" class="social-icon">
+                    <a href="https://www.facebook.com/industriaelmana" class="social-icon">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://www.instagram.com/elmanaoficial/" class="social-icon">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>

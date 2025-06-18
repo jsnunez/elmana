@@ -204,7 +204,7 @@
 }
 
 .nav-button:hover {
-    background: #f4c430;
+    background: #666;
     color: white;
     transform: translateY(-50%) scale(1.1);
 }
@@ -229,7 +229,7 @@
     /* Aumenta el z-index para estar por encima */
     background: #fff;
     /* Fondo blanco */
-    width: 30%;
+    width: 30vw;
     height: 5vh;
     align-items: center;
         margin-top: 5vh;
@@ -305,6 +305,9 @@
 
     .nav-button.next {
         right: 10px;
+    }
+    .indicators{
+        width: 70%;
     }
 
 }
