@@ -22,14 +22,14 @@
 
 
 body {
-  font-family: "Poppins", sans-serif;
-      line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
     color: #333;
     background-color: #fff;
 }
 
 a {
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     color: inherit;
 }
@@ -170,7 +170,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px; /* Botón ovalado */
+    border-radius: 25px;
+    /* Botón ovalado */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: background 0.3s, color 0.3s, transform 0.2s;
     padding: 5px 24px;
@@ -196,6 +197,7 @@ ul {
     font-family: 'Caneletter', serif;
     font-size: 2rem;
 }
+
 .swal2-confirm {
     background-color: var(--secondary-color) !important;
     color: #fff !important;
@@ -205,16 +207,18 @@ ul {
     font-weight: 600 !important;
     font-size: 1.1rem !important;
     padding: 10px 32px !important;
-    border: 4px solid  var(--primary-color)  !important;
+    border: 4px solid var(--primary-color) !important;
     transition: background 0.3s, color 0.3s, transform 0.2s !important;
 }
 
-.swal2-confirm:hover, .swal2-confirm:focus {
+.swal2-confirm:hover,
+.swal2-confirm:focus {
     background-color: var(--primary-color) !important;
     color: #fff !important;
     transform: translateY(-2px) scale(1.04) !important;
     outline: none !important;
 }
+
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -482,7 +486,8 @@ h3 {
     line-height: 1;
 
 }
-.product-card h3{
+
+.product-card h3 {
     padding: 0%;
 }
 
@@ -702,7 +707,7 @@ h3 {
 
 .opciones-producto {
     display: flex;
-justify-content: flex-start;
+    justify-content: flex-start;
     margin-top: 2vh;
 }
 
@@ -752,11 +757,11 @@ justify-content: flex-start;
     flex-direction: column;
 }
 
-.hero-slide{
+.hero-slide {
     margin-left: 15%;
 }
 
-#restaurante{
+#restaurante {
     text-align: center;
     display: flex;
     width: 35%;
@@ -768,47 +773,52 @@ justify-content: flex-start;
     justify-content: center;
     align-items: center;
 }
+
 #restaurante h1 {
 
     font-size: 8rem;
     line-height: 0.7;
 }
 
-#pedidos-restaurante{
-      display: flex;
+#pedidos-restaurante {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-#tituloHistoria{
-     font-family: 'Caneletter';
+#tituloHistoria {
+    font-family: 'Caneletter';
     src: url('fonts/Caneletter.otf') format('truetype');
     color: #fff;
     margin-top: 15vh;
 }
+
 #tituloHistoria h1 {
     margin: 0;
     line-height: 1;
 }
+
 #tituloHistoria h2 {
     font-size: 6rem;
     line-height: 0.5;
     margin-bottom: 5vh;
 }
+
 #informacionHistoria {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
 }
-#informacionHistoria p{
-    
-   margin: 0;
-   margin-left: 3vw;
-   
-align-content: center ;
+
+#informacionHistoria p {
+
+    margin: 0;
+    margin-left: 3vw;
+
+    align-content: center;
 }
 
 /* Responsive Styles */
@@ -834,22 +844,27 @@ align-content: center ;
     .mobile-menu-btn {
         display: block;
     }
-    .products{
+
+    .products {
         margin: 0;
         align-items: center;
         flex-wrap: wrap;
     }
-.description{
-    display: none;
-}
+
+    .description {
+        display: none;
+    }
+
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(40vw, 2fr));
         width: 100vw;
         margin: 0;
     }
-    .panapanaderia-section{
+
+    .panapanaderia-section {
         width: 100vw;
     }
+
     .footer-top {
         flex-direction: column;
         gap: 20px;
@@ -858,181 +873,198 @@ align-content: center ;
     .contact-info {
         text-align: center;
     }
-.hero-slide{
-    margin-left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;}
-#historia{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    .hero-slide {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #historia {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
 
-}
-#historia h1{
-    font-size: 7rem;
-    line-height: 1;
-    
-}#historia h2{
-    font-size: 5rem;
-    line-height: 0.8;
-    margin-left: 5vw;
-    
-}
-#informacionHistoria {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-@media (max-width: 600px) {
-    .header-icons .search-container {
-        display: none;
     }
-    .hero {
-display: flex;
-        align-content: center;
-        background-image: none;
+
+    #historia h1 {
+        font-size: 7rem;
+        line-height: 1;
+
+    }
+
+    #historia h2 {
+        font-size: 5rem;
+        line-height: 0.8;
+        margin-left: 5vw;
+
+    }
+
+    #informacionHistoria {
         flex-direction: column;
         align-items: center;
-   
-}
-#restaurante {
-    width: 100%;
-}
-#restaurante h1{
-    width: 70%;
-    font-size: 5rem;
-    line-height: 0.7;
-}
-#pedidos-restaurante {
-    flex-direction: column;
-    align-items: center;
-   height: 30vh;
-}
-.hero-content{
-    text-align: center;
-    width: 100%;
-}
-.delivery-info{
-align-items: center;
-}
-.hero-slide :active{
-    margin: 0;
-}
-.info-card{
-    width: 80%;
-
-}
-.info-card img {
-    width: 20vw;}
-
-    
-    .whatsapp-float {
-position: fixed;
-    bottom: 15vw;
-    right: 5vw;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider-dots {
-    
-        margin-top: 5vh;
-        height: 5vh;
-        margin-left: 0;
-        width: 60%;   
-     }
-
-    .hero h1 {
-        font-size: 6rem;
-    }
-
-    .icon-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px
-    }
-
-    .icon-circle.large img {
-        width: auto;
-        height: 7vh;
-        font-size: 18px;
-    }
-
-    .products h2 {
-        font-size: 3rem;
-
-
-    }
-
-    .main-nav.mobile-open {
-        display: flex !important;
-        position: absolute !important;
-        top: 12vh !important;
-        left: 0 !important;
-        width: 100vw !important;
-        flex-direction: column !important;
-        background: #fff !important;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
-        z-index: 1000 !important;
-    }
-
-    .main-nav.mobile-open ul {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0 !important;
-    }
-
-    .productos-lista {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .catalogo-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        align-items: center;
-    }
-
-    #linea-vertical {
-        display: none;
-    }
-
-    .foto-sede {
-        display: none;
-    }
-
-    #clase-producto {
-
-        margin-bottom: 0%;
-    }
-
-    .sidebar-filtros {
         width: 100%;
     }
-
-    .catalogo h1 {
-        font-size: 3rem;
-    }
-
-    #encabezado {
-        flex-direction: column
-    }
-
-    
-
-
-    .filtros-catalogo {
-        display: flex;
-        flex-direction: row;
-    }
 }
+    @media (max-width: 600px) {
+        .header-icons .search-container {
+            display: none;
+        }
 
+        .hero {
+            display: flex;
+            align-content: center;
+            background-image: none;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #restaurante {
+            width: 100%;
+        }
+
+        #restaurante h1 {
+            width: 70%;
+            font-size: 5rem;
+            line-height: 0.7;
+        }
+
+        #pedidos-restaurante {
+            flex-direction: column;
+            align-items: center;
+            height: 30vh;
+        }
+
+        .hero-content {
+            text-align: center;
+            width: 100%;
+        }
+
+        .delivery-info {
+            align-items: center;
+        }
+
+        .hero-slide :active {
+            margin: 0;
+        }
+
+        .info-card {
+            width: 80%;
+
+        }
+
+        .info-card img {
+            width: 20vw;
+        }
+
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 15vw;
+            right: 5vw;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-dots {
+
+            margin-top: 5vh;
+            height: 5vh;
+            margin-left: 0;
+            width: 60%;
+        }
+
+        .hero h1 {
+            font-size: 6rem;
+        }
+
+        .icon-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        .icon-circle.large img {
+            width: auto;
+            height: 7vh;
+            font-size: 18px;
+        }
+
+        .products h2 {
+            font-size: 3rem;
+
+
+        }
+
+        .main-nav.mobile-open {
+            display: flex !important;
+            position: absolute !important;
+            top: 12vh !important;
+            left: 0 !important;
+            width: 100vw !important;
+            flex-direction: column !important;
+            background: #fff !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+            z-index: 1000 !important;
+        }
+
+        .main-nav.mobile-open ul {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 0 !important;
+        }
+
+        .productos-lista {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .catalogo-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+
+        #linea-vertical {
+            display: none;
+        }
+
+        .foto-sede {
+            display: none;
+        }
+
+        #clase-producto {
+
+            margin-bottom: 0%;
+        }
+
+        .sidebar-filtros {
+            width: 100%;
+        }
+
+        .catalogo h1 {
+            font-size: 3rem;
+        }
+
+        #encabezado {
+            flex-direction: column
+        }
+
+
+
+
+        .filtros-catalogo {
+            display: flex;
+            flex-direction: row;
+        }
+    }
