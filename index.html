@@ -180,16 +180,19 @@
 
 
             </div>
-            <div class="hero-slide" data-bg="images/fondos/boletin.jpg">
-
-                <div style="position: absolute;
-    right: 18%;top: 67%;" class="hero-content">
-
+            <div id="boletin" class="hero-slide" data-bg="images/fondos/boletin.jpg">
+<div id="tituloBoletin">
+                    <h1 style="color:#fff;">Boletín </h1>
+                    <h1 style="color:#fff;">Informativo</h1>
+                </div>
+                <div id="informacionBoletin">
+                     <p>Entérate de las últimas noticias que trae el Maná</p>
                     <button class="menu-button">
                         Ver Mas
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
 
+                   
                 </div>
             </div>
         </div>
@@ -291,7 +294,7 @@
                 }
 
                 function startAutoSlide() {
-                    autoSlideInterval = setInterval(nextSlide, 5000);
+                    autoSlideInterval = setInterval(nextSlide, 5000000);
                 }
 
                 function stopAutoSlide() {
@@ -321,7 +324,7 @@
                     slide.style.opacity = i === 0 ? '1' : '0';
                     slide.style.display = i === 0 ? '' : 'none';
                 });
-                showSlide(0);
+                showSlide(3);
                 startAutoSlide();
             });
         </script>
