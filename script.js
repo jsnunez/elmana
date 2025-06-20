@@ -836,3 +836,7 @@ document.getElementById('ver-historia')?.addEventListener('click', function () {
     window.location.href = 'historia.html';
 });
 
+document.getElementById('ver-noticias')?.addEventListener('click', function () {
+    window.location.href = 'noticias.html';
+});
+
