@@ -565,14 +565,15 @@ document.addEventListener('DOMContentLoaded', function () {
     claseSelect.addEventListener('change', cargarProductos);
 
     // Inicializar
-    llenarSelectSedes();
-    pedirSede();
+   
     document.querySelectorAll('.catalog-card').forEach(function (card) {
-        card.addEventListener('click', function () {
+        card.addEventListener('click', async function () {
+    
             var category = this.getAttribute('data-category');
             tipoProducto = this.getAttribute('data-tipo');
 
-
+         llenarSelectSedes();
+    await pedirSede();
         if (tipoProducto && clasesPorTipo[tipoProducto]) {
             claseSelect.innerHTML = '';
             clasesPorTipo[tipoProducto].forEach(op => {
@@ -814,3 +815,24 @@ document.querySelectorAll('.opciones-producto button').forEach(btn => {
 document.querySelectorAll('.header-icons').forEach(icon => {
     icon.style.display = 'none';
 });
+
+
+
+// Enviar mensaje a WhatsApp al hacer clic en el botón "pedidos-restaurante-centro"
+document.getElementById('pedidos-restaurante-centro')?.addEventListener('click', function () {
+    const numero = '573155125588'; 
+    const mensaje = encodeURIComponent('Hola, quiero hacer un pedido al restaurante Centro.');
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    window.open(url, '_blank');
+});
+document.getElementById('pedidos-restaurante-cabecera')?.addEventListener('click', function () {
+    const numero = '573158070804'; 
+    const mensaje = encodeURIComponent('Hola, quiero hacer un pedido al restaurante Cabecera.');
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    window.open(url, '_blank');
+});
+
+document.getElementById('ver-historia')?.addEventListener('click', function () {
+    window.location.href = 'historia.html';
+});
+

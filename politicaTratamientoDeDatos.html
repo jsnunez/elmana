@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el Maná - Tradición de hogar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styleSedes.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<link rel="stylesheet" href="styles2.css">
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="el Maná">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li>
+                        <a href="index.html#productos" onclick="
+                            const productosSection = document.querySelector('.products');
+                            const catalogo1 = document.getElementById('catalogo');
+                            const sedesSection = document.querySelector('.sedes-section');
+                            const panaderiaSection = document.querySelector('.panaderia-section');
+                            if (panaderiaSection && panaderiaSection.style.display === 'none') {
+                                panaderiaSection.style.display = '';
+                            }
+                            if (catalogo1 && catalogo1.style.display !== 'none') {
+                                catalogo1.style.display = 'none';
+                            }
+                            if (productosSection && productosSection.style.display === 'none') {
+                                // Oculta sedes con transición suave
+                                if (sedesSection) {
+                                    sedesSection.style.transition = 'opacity 0.5s';
+                                    sedesSection.style.opacity = '0';
+                                    setTimeout(() => {
+                                        sedesSection.style.display = 'none';
+                                        sedesSection.style.opacity = '';
+                                        sedesSection.style.transition = '';
+                                    }, 500);
+                                }
+                                // Muestra productos con transición suave
+                                productosSection.style.opacity = '0';
+                                productosSection.style.display = '';
+                                setTimeout(() => {
+                                    productosSection.style.transition = 'opacity 0.5s';
+                                    productosSection.style.opacity = '1';
+                                    setTimeout(() => {
+                                        productosSection.style.transition = '';
+                                    }, 500);
+                                }, 10);
+                            }
+                            document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            return false;
+                        ">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sedes" onclick="
+                            const section = document.querySelector('.sedes-section');
+                            const catalogo = document.getElementById('catalogo');
+                            const productosSection1 = document.querySelector('.products');
+                            const topSection = document.getElementById('top');
+                            // Si top está oculto, mostrar solo sedes y ocultar las demás
+                            if (topSection && (topSection.style.display === 'none' || window.getComputedStyle(topSection).display === 'none')) {
+                                if (productosSection1) productosSection1.style.display = 'none';
+                                if (catalogo) catalogo.style.display = 'none';
+                                if (section) section.style.display = '';
+                            }
+                            // Manejo de clases 'active' en el menú
+                            document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            return false;">
+                            Nuestras Sedes
+                        </a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+
+<a href="whatasapp.html"
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
+    </a>
+<!-- Sección Historia con línea de tiempo -->
+<div class="top" style="background: #000; color: #fff; padding: 2rem; border-radius: 1rem; max-width: 900px; margin: 2rem auto; font-size: 1.05rem;">
+    <h1  style="color: #cba739;  font-family: 'Caneletter'; text-align: center; font-size: 3rem;">Política De Tratamiento  Y Proteccion De Datos Personales</h1>
+
+    <h2 style="color: #cba739;
+    font-family: 'Caneletter'; text-align: center; font-size: 2rem;">POLÍTICA DE TRATAMIENTO Y PROCEDIMIENTOS EN MATERIA DE PROTECCION DE DATOS PERSONALES
+  INDUSTRIA DE ALIMENTOS EL MANA S.A.S.</h2>
+
+    <p>
+    
+
+Presentación
+
+La elaboración del presente documento corresponde al deber de toda organización de dar cumplimiento a lo establecido en la Ley de Protección de Datos Personales (Ley 1581 de 2012), que regula los deberes que asisten a los Responsables del Tratamiento de datos personales, entre ellos adoptar una política de tratamiento de datos, para la atención de consultas y reclamos. El Decreto 886 de 2014 que reglamentó el Registro Nacional de bases de Datos (RNBD), exige efectuar el registro de dicha información ante la Superintendencia de Industria y Comercio, en este orden de ideas como elaboración de productos panificables, es nuestro deber desarrollar la presente política y velar porque los Encargados del Tratamiento den cabal cumplimiento a la misma.
+
+Cabe mencionar en este documento los literales d) y e) del artículo 3 de la Ley 1581 de 2012, donde se expresa mención al Encargado y al Responsable del tratamiento, respectivamente. Así el Responsable del tratamiento es la persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decide sobre la base de datos y/o el Tratamiento de los datos, mientras que el Encargado del tratamiento es la persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realiza el tratamiento de datos personales por cuenta del Responsable.
+
+La utilización de herramientas tecnológicas como la utilización de un software contable SIIGO que nos permite hacer el uso eficiente de la información de empleados y proveedores para dar cumplimiento en sus objetivos corporativos y operacionales a nivel de negocio. En este sentido el derecho a la protección de datos personales dota al Titular de facultades para mantener el control sobre su información personal; esto va desde el derecho de saber quién conserva, usa y tiene la posibilidad de consultar sus datos personales hasta el poder legal de oponerse a esa posesión y utilización.
+
+La ley 1581 de 2012 y el Decreto 886 de 2014; desarrollan instrumentos para garantizar la vigencia de este derecho fundamental, en este contexto el objeto de este documento consiste en cubrir dichas garantías teniendo en cuenta nuestra condición de Responsables del tratamiento de datos personales. Estas políticas cubren los procedimientos de recolección y tratamiento de datos personales en cumplimiento de las disposiciones aquí citadas.
+
+CONTENIDO
+
+CAPITULO I DISPOSICIONES GENERALES
+
+CAPITULO II AUTORIZACION
+
+CAPITULO III DERECHOS Y DEBERES
+
+CAPITULO IV PROCEDIMIENTOS DE ACCESO, CONSULTA Y RECLAMACION
+
+CAPITULO V SEGURIDAD DE LA INFORMACION
+
+APLICACIÓN DE LA POLÍTICA EN INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.
+
+
+
+CAPÍTULO I DISPOSICIONES GENERALES
+
+ARTICULO 1. LEGISLACION APLICABLE.
+
+Este documento fue elaborado teniendo en cuenta las disposiciones contenidas en los artículos 15 y 20 de la Constitución Política, la Ley 1581 de 2012   “Por la cual se dictan disposiciones generales para la protección de datos personales” y el Decreto 886 de 2014, “Por el cual se reglamenta el artículo 25 de la Ley 1581 de 2012, relativo al Registro Nacional de Bases de Datos”. A estas políticas le serán aplicables todas las demás normas que complementen o sustituyan las anteriores.
+
+ARTICULO 2. ÁMBITO DE APLICACIÓN.
+
+Este documento se aplica al tratamiento de los datos de carácter personal que recoja y maneje INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.; para el registro de los empleados y proveedores, en la carrera 16 37-42 del Barrio Centro de la ciudad de Bucaramanga Departamento de Santander, con el correo electrónico: contacto@elmana.co teléfono: 6425198 y celular: 3173487430.
+
+ARTICULO 3. BASES DE DATOS.
+
+Las políticas y procedimientos contenidos en este documento aplican a la base de datos que maneja INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. aquí señalado y que serán registradas de conformidad con lo dispuesto en el Decreto 886 de 2014 “Por el cual se reglamenta el artículo 25 de la Ley 1581 de 2012” cuyo periodo de vigencia se contará desde la fecha de la autorización y hasta el cese de las operaciones de INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.
+
+ARTICULO 4. OBJETO.
+
+A través de este documento se da cumplimiento a lo contemplado en el literal k) del artículo 17 de la Ley 1581 de 2012, que expresa los deberes que tienen los Responsables del tratamiento de datos personales, dentro de los cuales se encuentra el de adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la ley y en especial, para la atención de consultas y reclamos, así como lo estipulado por el artículo 13 del Decreto 1377 de 2013 que establece la obligatoriedad por parte de los responsables del tratamiento de desarrollar sus políticas para el tratamiento de los datos personales y velar porque los Encargados del Tratamiento den cabal cumplimiento a las mismas y el Decreto 886 de 2014, que regula lo relacionado al Registro Nacional de Bases de Datos.
+
+La finalidad de este documento es regular los procesos de recolección, manejo y tratamiento de datos de carácter personal que realiza INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., para el registro de los empleados y proveedores; con el fin de garantizar y proteger el derecho de habeas data en el marco de lo establecido en la Ley 1581 de 2012 y sus Decretos reglamentarios.
+
+ARTICULO 5. DEFINICIONES.
+
+En la aplicación de las reglas contenidas en el presente documento y de acuerdo con lo establecido en el artículo 3 de la Ley 1581 de 2012, se entiende y se define por:
+
+Autorización: Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales.
+Aviso de Privacidad: Comunicación verbal o escrita generada por el Responsable, dirigida al Titular para el Tratamiento de sus datos personales, mediante la cual se le informa acerca de la existencia de las políticas de tratamiento de información que se le serán aplicables, la forma de acceder a las mismas y las finalidades del tratamiento que se pretende dar a los datos personales.
+Base de Datos: Conjunto organizado de datos personales que sea objeto de Tratamiento.
+Dato Personal: Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas.
+Dato Público: Es el dato que no sea semiprivado, privado o sensible. Son considerados datos públicos, entre otros, los datos relativos al estado civil de las personas, a su profesión u oficio y a su calidad de comerciante o de servidor público. Por su naturaleza, los datos públicos pueden estar contenidos, entre otros, en registros públicos, documentos públicos, gacetas y boletines oficiales y sentencias judiciales debidamente ejecutoriadas que no estén sometidas a reserva.
+Dato Privado: Es el dato que por su naturaleza íntima o reservada es relevante para el Titular.
+Datos Sensibles: Se entiende por datos sensibles a aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promuevan intereses de cualquier partido político u oposición, así como los datos relativos a la salud, a la vida sexual y los datos biométricos.
+Encargado del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento.
+Responsable del Tratamiento: Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos.
+Titular: Persona natural cuyos datos personales sean objeto de Tratamiento.
+Transferencia: La transferencia de datos tiene lugar cuando el Responsable y/o Encargado del Tratamiento de datos personales, ubicado en Colombia, envía la información o los datos personales a un receptor, que a su vez es Responsable del Tratamiento y se encuentra dentro o fuera del país.
+Transmisión: Tratamiento de datos personales que implica la comunicación de los mismos dentro o fuera del territorio de la República del Colombia cuando tenga por objeto la realización de un Tratamiento por el Encargado por cuenta del Responsable.
+Tratamiento: Cualquier operación o conjunto de operaciones sobre datos personales, tales como recolección, almacenamiento, uso, circulación o supresión de los mismos.
+
+ARTICULO 6. PRINCIPIOS.
+
+Los principios que se establecen a continuación, constituyen los parámetros generales que serán respetados por INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. en los procesos de recolección, uso y tratamiento de datos personales.
+
+Principio de legalidad: en materia de tratamiento de datos: El tratamiento a que se refiere la presente ley es una actividad reglada que debe sujetarse a lo establecido en ella y en las demás disposiciones que la desarrollen.
+Principio de finalidad: el tratamiento de los datos personales recogidos por INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. debe obedecer a una finalidad legítima de la cual debe ser informada al Titular.
+Principio de libertad: El tratamiento sólo puede llevarse a cabo con el consentimiento previo, expreso e informado del Titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que revele el consentimiento.
+Principio de veracidad o calidad: La información sujeta a tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el tratamiento de datos parciales, incompletos, fraccionados o que induzcan a error.
+Principio de transparencia: En el tratamiento debe garantizarse el derecho del Titular a obtener de INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. en cualquier momento y sin restricciones, información acerca de la existencia de datos que le conciernan.
+Principio de acceso y circulación restringida: El tratamiento sólo podrá hacerse por las personas autorizadas por el Titular y/o por las personas previstas en la Ley. Los datos personales, salvo la información pública, no podrán estar disponibles en internet y otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares o terceros autorizados.
+Principio de seguridad: La información sujeta a Tratamiento por parte de INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., se deberá proteger mediante el uso de las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+Principio de confidencialidad: Todas las personas que intervengan en el Tratamiento de datos personales están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que comprende el Tratamiento.
+CAPITULO II AUTORIZACION
+
+ARTICULO 7. AUTORIZACION.
+
+La recolección, almacenamiento, uso, circulación y supresión de datos personales por parte de INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. requiere del consentimiento libre, previo, expreso e informado de los Titulares de los mismos. INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., en su condición de Responsable del Tratamiento de datos personales, ha dispuesto de los mecanismos necesarios para obtener la autorización de los Titulares de los datos, a más tardar en el momento de la recolección de sus datos, garantizando en todo caso que sea posible verificar el otorgamiento de dicha autorización. Se aplica en el momento que se hace la admisión del paciente, ya que se le piden datos básicos personales como nombre completo, identificación, dirección y teléfono, los cuales deben ser suministrados de una manera libre por el paciente o su representante en caso de ser menor de edad.
+
+ARTICULO 8. FORMA Y MECANISMOS PARA OTORGAR LA AUTORIZACION.
+
+La autorización puede constar en un documento físico, electrónico o en cualquier otro formato que permita garantizar su posterior consulta, o mediante un mecanismo técnico o tecnológico idóneo mediante el cual se pueda concluir de ‘manera inequívoca, que de no haberse surtido una conducta del Titular, los datos nunca hubieren sido recolectados y almacenados en la base de datos. El formato para Autorización será elaborado por INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. y será puesto a disposición del Titular previo al tratamiento de sus datos personales, de acuerdo con lo establecido en la Ley 1581 de 2012 y el Decreto 1377 de 2013. Se expresa verbalmente por la secretaria en el momento de la admisión dando a conocer que es para la generación del historial de empleados o proveedor.
+
+Con el procedimiento de autorización consentida se garantiza que ese ha puesto en conocimiento del Titular de los datos personales que su información personal será recogida y utilizada para fines determinados y conocidos, y el derecho que le asiste para solicitar el acceso, la actualización, rectificación y eliminación de sus datos personales en cualquier momento, a través de los mecanismos puestos a su disposición por INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. Lo anterior con el fin de que el Titular tome decisiones informadas con relación a sus datos personales y controle el uso de su información personal.
+
+La autorización es una declaración que informa al Titular de los datos personales:
+
+Quién recopila su información personal (responsable o encargado)
+Qué recopila? (datos que se recaban)
+Para qué recoge los datos? (las finalidades del tratamiento)
+Cómo ejercer derechos de acceso, corrección, actualización o supresión de los datos personales suministrados
+Informar al Titular que por tratarse de datos sensibles (si aplica) no está obligado a autorizar el tratamiento.
+
+ARTICULO 9. PRUEBA DE LA AUTORIZACION.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., adoptará las medidas necesarias para mantener registros o mecanismos técnicos o tecnológicos idóneos de cuándo y cómo obtuvo la información por parte de los Titulares de datos personales para el tratamiento de los mismos.
+
+ARTICULO 10. AVISO DE PRIVACIDAD.
+
+El aviso de privacidad es el documento físico, electrónico o en cualquier otro formato, que es puesto a disposición del Titular para el tratamiento de sus datos personales a más tardar al momento de recolección de los datos personales. A través de este documento se informa, al Titular la información relativa de la existencia de las políticas de tratamiento de información que le serán aplicables, la forma de acceder a las mismas y las características del tratamiento que se pretende dar a los datos personales.
+
+ARTICULO 11. CONTENIDO MINIMO DEL AVISO DE PRIVACIDAD.
+
+El aviso de privacidad deberá contener como mínimo la siguiente información:
+
+La identidad, domicilio y datos del contacto del Responsable del Tratamiento
+El tipo de tratamiento al cual serán sometidos los datos y la finalidad del mismo
+Los derechos que le asisten al Titular
+Los mecanismos generales dispuestos por el Responsable para que el Titular conozca la política de tratamiento de la información y los cambios sustanciales que se produzcan el ella o en el Aviso de privacidad correspondiente. En todos los casos, debe informar al Titular cómo acceder o consultar la política de tratamiento de la información.
+No obstante y lo anterior cuando se recolecten datos personales sensibles, el aviso de privacidad señalará expresamente el carácter facultativo de la respuesta a las preguntas que versen sobre este tipo de datos.
+
+ARTICULO 12. AVISO DE PRIVACIDAD Y LAS POLITICAS DE TRATAMIENTO DE LA INFORMACION.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. en su consultorio médico especializado, conservará el modelo del aviso de privacidad que se transmitió a los Titulares mientras se lleve a cabo el tratamiento de los datos personales y perduren las obligaciones que de éste se deriven. Para el almacenamiento del modelo, INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., podrá emplear medios informáticos, electrónicos o cualquier otra tecnología.
+
+CAPITULO III DERECHOS Y DEBERES
+
+ARTICULO 13. DERECHOS DE LOS TITULARES DE LA INFORMACION.
+
+De conformidad con lo establecido en el artículo 8 de la Ley 1581 de 2012 y los artículos 21 y 22 del Decreto 1377 de 2013 el Titular de los datos personales tiene los siguientes derechos:
+
+Conocer, actualizar y rectificar sus datos personales frente a INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., en su condición de responsable del tratamiento.
+Solicitar prueba de la autorización otorgada a INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., en su condición de Responsable del Tratamiento.
+Ser informado por INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., previa solicitud, respecto del uso que le ha dado a sus datos personales.
+Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la Ley 1581 de 2012 y las demás normas, que la modifiquen, adicionen o complementen, una vez haya agotado el trámite de consulta o reclamo ante el Responsable del Tratamiento.
+Revocar la Autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales.
+Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. mantendrá habilitados medios de contacto para que los Titulares de datos puedan ejercer sus derechos y dar aplicación a los procedimientos previstos en el Capítulo IV de estas políticas, los cuales serán informados y puestos a disposición en el Aviso de Privacidad.
+
+ARTÍCULO 14. DEBERES DE INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.EN RELACION CON EL TRATAMIENTO DE LOS DATOS PERSONALES.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. tendrá presente, en todo momento, que los datos personales son propiedad de las personas a las que se refieren y que sólo ellas pueden decidir sobre los mismos. En este sentido, hará uso de ellos sólo para aquellas finalidades para las que se encuentra facultado debidamente, y respetando en todo caso la Ley 1581 de 2012, el Decreto 1377 de
+
+2013 y el Decreto 886 de 2014 y las demás normas aplicables sobre protección de datos personales, teniendo en cuenta lo anterior se compromete a:
+
+Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas Data
+Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+Informar debidamente al Titular sobre la finalidad de la recolección y los derechos que le asiste por virtud de la autorización otorgada.
+Garantizar que la información que se suministre al Encargado del Tratamiento sea veraz, completa, exacta, actualizada, comprobable y comprensible.
+Realizar oportunamente, la actualización, rectificación o supresión de los datos.
+Exigir al Encargado el respeto a las condiciones de seguridad y privacidad de la información del Titular.
+Tramitar las consultas y los reclamos formulados por el Titular.
+Abstenerse de circular información que esté siendo controvertida por el Titular y cuyo bloqueo haya sido autorizado por la Superintendencia de Industria y Comercio.
+Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella.
+Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.
+CAPÍTULO IV PROCEDIMIENTOS DE ACCESO, CONSULTA Y RECLAMACION
+
+ARTÍCULO 15. DERECHOS DE ACCESO.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. garantiza al Titular su derecho de acceso en tres vías:
+
+El Titular puede conocer la efectiva existencia del Tratamiento de sus datos.
+El Titular puede tener acceso a sus datos personales que están en posesión del Responsable.
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. dará a conocer al Titular sobre el tipo de datos personales tratados en su la empresa y su finalidad.
+
+ARTÍCULO 16. CONSULTAS, RECLAMOS, RECTIFICACION Y ACTUALIZACION DE DATOS.
+
+En consecuencia a la Ley  1581 de 2012 INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. garantizará el derecho a la consulta, reclamo, rectificación y actualización de datos; suministrando toda información contenida en el registro individual donde esté la identificación del Titular.
+
+Para esta consulta INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. dispondrá de los siguientes medios:
+
+Medios de comunicación electrónicos para el INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., esta información está descrita en el Capítulo I Artículo 2 Ámbito de aplicación de este documento.
+Establecer formularios, sistemas y otros métodos simplificados con aviso de privacidad, para INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. usamos formato de solicitud pertinente para tal fin.
+Utilizar los servicios de atención al cliente o de reclamaciones para INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. se cuenta con el número de teléfono fijo y celular, atendido por la secretaria quien se encarga de transmitir y darle viabilidad a la solicitud del Titular, adicional se cuenta para las reclamaciones de cualquier índole con el buzón de sugerencias, esta información está descrita en el Capítulo I Artículo 2 Ámbito de aplicación de este documento.
+
+En cualquier caso, independientemente del mecanismo implementado para la atención de solicitudes de consulta, reclamos, rectificación y actualización de datos, las mismas serán atendidas en un término máximo de diez (10) días hábiles contados a partir de la fecha de su recibo. Cuando no fuere posible atender cualquiera de los procesos solicitados dentro de dicho término, se informará al interesado antes del vencimiento de los diez (10) días, expresando los motivos de la demora y señalando la fecha en que se atenderá su solicitud, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer plazo.
+
+ARTÍCULO 17. SUPRESION DE DATOS, EJERCICIO DE DERECHO A LA SUPRESION.
+
+El Titular tiene derecho, en todo momento a solicitar a INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. la supresión o eliminación de sus datos personales cuando
+
+Considere que los mismos no están siendo tratados conforme a la Ley aquí citada de protección de datos.
+Hayan dejado de ser necesarios para la finalidad que fueron recolectados.
+
+Es importante tener en cuenta que el derecho a la supresión se puede negar cuando:
+
+El Titular tenga un deber legal de permanecer en la base de datos
+Los datos obstaculicen actuaciones judiciales o administrativas
+Los datos sean necesarios para proteger los intereses jurídicamente del Titular para cumplir una obligación legal adquirida.
+
+En caso de resultar procedente la cancelación de los datos personales INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. debe realizar operativamente la supresión de tal manera que la eliminación no permita la recuperación de la información.
+
+ARTICULO 18. REVOCATORIA DE LA AUTORIZACION.
+
+Los Titulares de los datos personales pueden revocar el consentimiento al tratamiento de sus datos personales en cualquier momento, siempre y cuando no lo impida una acción legal.
+
+Para ello INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. a través de los mecanismos que implante en la empresa.
+
+  
+
+CAPÍTULO V SEGURIDAD DE LA INFORMACION
+
+ARTÍCULO 19. MEDIDAS DE SEGURIDAD.
+
+INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. adoptará medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+
+La implementación de las medidas de seguridad para INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. considera los siguientes aspectos:
+
+Capacitación del personal que ingresa al consultorio acerca de las políticas de tratamiento de datos personales.
+Ámbito de la aplicación del procedimiento.
+Medidas, normas, estándares, reglas de seguridad exigidas según la ley de protección de datos.
+Funciones y obligaciones del personal
+Estructura de la base de datos y descripción de los sistemas de información
+Procedimiento de notificación, gestión y respuesta ante las incidencias.
+Procedimiento de copias de respaldo y recuperación de los datos.
+APLICACIÓN DE LA POLÍTICA EN INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.
+
+En INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S., se maneja una base de datos a nivel del suministro voluntario del empleados o proveedor que trabaja o provee, facilitando los datos son básicos como es el nombre completo, tipo y número de identificación, dirección y teléfono, y nit. si así corresponde como en el caso de proveedores.
+
+Adicional a esto INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S. cuenta con medios tecnológicos como están descritos en el AMBITO de la presente política para que los usuarios accedan, consulten, reclamen y actualicen su información en el momento que él crea necesario.
+
+La Responsable del tratamiento de la base de datos es INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S.
+
+El Encargado del tratamiento de la base de datos es la secretaria o la auxiliar contable que se encuentre alimentando el software SIIGO con los datos personales del empleado o proveedor.
+
+Finalmente, los principios aquí descritos son los que rigen el tratamiento de los datos personales de todos nuestros usuarios.
+    </p>
+</div>
+</div>
+</style>
+</script>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo y descripción -->
+      <div class="footer-section">
+        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+        <p class="footer-description">
+          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+        </p>
+    
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="footer-section" style="text-align: start;">
+        <h4>Contáctanos</h4>
+        <ul class="contact-info" style="text-align: start;">
+          <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+          <li>Teléfono: 607 6425198</li>
+          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+        </ul>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-section">
+        <h4>Enlaces de interés</h4>
+        <ul class="footer-links">
+         <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+            <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+            <li><a href="trabajaConNosotros.html">Trabaja en El Maná</a></li>
+        </ul>
+     
+          <div class="social-icons">
+          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+         </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* General */
+.footer {
+  background-color: #000;
+  color: #ffffff;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+.footer-section h4 {
+  color: var(--primary-color, #cba739);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.footer-links,
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.contact-info li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.footer-links a,
+.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.contact-info a:hover {
+  color: var(--primary-color, #cba739);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  background: var(--primary-color, #cba739);
+  color: #1f1f1f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+</style>
+
+    </footer>
+</body>

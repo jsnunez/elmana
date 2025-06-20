@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el Maná - Tradición de hogar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styleSedes.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<link rel="stylesheet" href="styles2.css">
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="el Maná">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li>
+                        <a href="index.html#productos" onclick="
+                            const productosSection = document.querySelector('.products');
+                            const catalogo1 = document.getElementById('catalogo');
+                            const sedesSection = document.querySelector('.sedes-section');
+                            const panaderiaSection = document.querySelector('.panaderia-section');
+                            if (panaderiaSection && panaderiaSection.style.display === 'none') {
+                                panaderiaSection.style.display = '';
+                            }
+                            if (catalogo1 && catalogo1.style.display !== 'none') {
+                                catalogo1.style.display = 'none';
+                            }
+                            if (productosSection && productosSection.style.display === 'none') {
+                                // Oculta sedes con transición suave
+                                if (sedesSection) {
+                                    sedesSection.style.transition = 'opacity 0.5s';
+                                    sedesSection.style.opacity = '0';
+                                    setTimeout(() => {
+                                        sedesSection.style.display = 'none';
+                                        sedesSection.style.opacity = '';
+                                        sedesSection.style.transition = '';
+                                    }, 500);
+                                }
+                                // Muestra productos con transición suave
+                                productosSection.style.opacity = '0';
+                                productosSection.style.display = '';
+                                setTimeout(() => {
+                                    productosSection.style.transition = 'opacity 0.5s';
+                                    productosSection.style.opacity = '1';
+                                    setTimeout(() => {
+                                        productosSection.style.transition = '';
+                                    }, 500);
+                                }, 10);
+                            }
+                            document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            return false;
+                        ">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sedes" onclick="
+                            const section = document.querySelector('.sedes-section');
+                            const catalogo = document.getElementById('catalogo');
+                            const productosSection1 = document.querySelector('.products');
+                            const topSection = document.getElementById('top');
+                            // Si top está oculto, mostrar solo sedes y ocultar las demás
+                            if (topSection && (topSection.style.display === 'none' || window.getComputedStyle(topSection).display === 'none')) {
+                                if (productosSection1) productosSection1.style.display = 'none';
+                                if (catalogo) catalogo.style.display = 'none';
+                                if (section) section.style.display = '';
+                            }
+                            // Manejo de clases 'active' en el menú
+                            document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            return false;">
+                            Nuestras Sedes
+                        </a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+
+<a href="whatasapp.html"
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
+    </a>
+<section class="trabaja-con-nosotros" style="max-width: 900px; margin: 2rem auto; display: flex; gap: 2rem; align-items: flex-start; background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px #0001; padding: 2rem;">
+    <div style="flex: 1;">
+        <img src="images/trabaja-con-nosotros.jpg" alt="Trabaja con nosotros" style="width: 100%; max-width: 320px; border-radius: 1rem; object-fit: cover; box-shadow: 0 2px 8px #0002;">
+    </div>
+    <div style="flex: 2;">
+        <h1 style="color: #cba739; font-family: 'Caneletter'; font-size: 2.2rem; margin-bottom: 0.5rem;">¡Trabaja con nosotros!</h1>
+        <p>
+            Estamos buscando personas talentosas y apasionadas para unirse a nuestro equipo. Si estás interesado en formar parte de nuestra empresa, llena el siguiente formulario con tus datos.
+        </p>
+        <p>
+            Valoramos la diversidad y la inclusión, por lo que animamos a todas las personas cualificadas a postularse, sin importar su raza, género, orientación sexual, o religión.
+        </p>
+        <p>
+            Una vez que hayas completado el formulario, revisaremos cuidadosamente tu solicitud y nos pondremos en contacto contigo si tu perfil coincide con alguna de nuestras vacantes.
+        </p>
+        <p>
+            Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de nuestro correo electrónico <a href="mailto:contacto@elmana.co">contacto@elmana.co</a>.
+        </p>
+        <form action="mailto:contacto@elmana.co" method="POST" enctype="multipart/form-data" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <label>
+                Nombre completo:<br>
+                <input type="text" name="nombre" required style="width: 100%; padding: 0.5rem; border-radius: 0.4rem; border: 1px solid #ccc;">
+            </label>
+            <label>
+                Correo electrónico:<br>
+                <input type="email" name="email" required style="width: 100%; padding: 0.5rem; border-radius: 0.4rem; border: 1px solid #ccc;">
+            </label>
+            <label>
+                Teléfono:<br>
+                <input type="tel" name="telefono" required style="width: 100%; padding: 0.5rem; border-radius: 0.4rem; border: 1px solid #ccc;">
+            </label>
+            <label>
+                Hoja de vida (PDF, máx 5MB):<br>
+                <input type="file" name="cv" accept=".pdf" required style="width: 100%;">
+            </label>
+            <label>
+                Mensaje adicional:<br>
+                <textarea name="mensaje" rows="3" style="width: 100%; padding: 0.5rem; border-radius: 0.4rem; border: 1px solid #ccc;"></textarea>
+            </label>
+            <button type="submit" style="background: #cba739; color: #fff; border: none; border-radius: 0.4rem; padding: 0.7rem 1.5rem; font-size: 1rem; cursor: pointer;">
+                Enviar solicitud
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo y descripción -->
+      <div class="footer-section">
+        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+        <p class="footer-description">
+          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+        </p>
+    
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="footer-section" style="text-align: start;">
+        <h4>Contáctanos</h4>
+        <ul class="contact-info" style="text-align: start;">
+          <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+          <li>Teléfono: 607 6425198</li>
+          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+        </ul>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-section">
+        <h4>Enlaces de interés</h4>
+        <ul class="footer-links">
+          <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+          <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+            <li><a href="trabajaConNosotros.html">Trabaja en El Maná</a></li>
+        </ul>
+     
+          <div class="social-icons">
+          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+         </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>

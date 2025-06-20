@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el Maná - Tradición de hogar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styleSedes.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<link rel="stylesheet" href="styles2.css">
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="el Maná">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li>
+                        <a href="index.html#productos" onclick="
+                            const productosSection = document.querySelector('.products');
+                            const catalogo1 = document.getElementById('catalogo');
+                            const sedesSection = document.querySelector('.sedes-section');
+                            const panaderiaSection = document.querySelector('.panaderia-section');
+                            if (panaderiaSection && panaderiaSection.style.display === 'none') {
+                                panaderiaSection.style.display = '';
+                            }
+                            if (catalogo1 && catalogo1.style.display !== 'none') {
+                                catalogo1.style.display = 'none';
+                            }
+                            if (productosSection && productosSection.style.display === 'none') {
+                                // Oculta sedes con transición suave
+                                if (sedesSection) {
+                                    sedesSection.style.transition = 'opacity 0.5s';
+                                    sedesSection.style.opacity = '0';
+                                    setTimeout(() => {
+                                        sedesSection.style.display = 'none';
+                                        sedesSection.style.opacity = '';
+                                        sedesSection.style.transition = '';
+                                    }, 500);
+                                }
+                                // Muestra productos con transición suave
+                                productosSection.style.opacity = '0';
+                                productosSection.style.display = '';
+                                setTimeout(() => {
+                                    productosSection.style.transition = 'opacity 0.5s';
+                                    productosSection.style.opacity = '1';
+                                    setTimeout(() => {
+                                        productosSection.style.transition = '';
+                                    }, 500);
+                                }, 10);
+                            }
+                            document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            return false;
+                        ">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sedes" onclick="
+                            const section = document.querySelector('.sedes-section');
+                            const catalogo = document.getElementById('catalogo');
+                            const productosSection1 = document.querySelector('.products');
+                            const topSection = document.getElementById('top');
+                            // Si top está oculto, mostrar solo sedes y ocultar las demás
+                            if (topSection && (topSection.style.display === 'none' || window.getComputedStyle(topSection).display === 'none')) {
+                                if (productosSection1) productosSection1.style.display = 'none';
+                                if (catalogo) catalogo.style.display = 'none';
+                                if (section) section.style.display = '';
+                            }
+                            // Manejo de clases 'active' en el menú
+                            document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            return false;">
+                            Nuestras Sedes
+                        </a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+
+<a href="whatasapp.html"
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
+    </a>
+<!-- Sección Historia con línea de tiempo -->
+<div class="top" style="background: #000; color: #fff; padding: 2rem; border-radius: 1rem; max-width: 900px; margin: 2rem auto; font-size: 1.05rem;">
+    <h1  style="color: #cba739;  font-family: 'Caneletter'; text-align: center; font-size: 3rem;">POLÍTICA DE DEVOLUCIONES</h1>
+
+    <h2 style="color: #cba739;
+    font-family: 'Caneletter'; text-align: center; font-size: 2rem;"></h2>
+
+    <p>
+    
+En cumplimiento de los establecido en el Estatuto del Consumidor (ley 1480 de 2011) y teniendo como objetivo primordial brindar al consumidor una experiencia satisfactoria al momento de adquirir los productos ofertados, las empresas que conforman EL MANÁ responde como productor y/o proveedor por la calidad, idoneidad, seguridad y el buen estado y funcionamiento de los productos.
+
+En todo caso, el Usuario deberá tener presente que tratándose de productos perecederos, el término de la garantía legal será en el caso del pan la vida útil recomendada es de 5 días bajo condiciones, temperatura y manipulación que no alteren el producto; en el caso de productos de bizcochería artesanal es de 9 días; en el caso de tortas es de 2 días; para productos de cafetería y restaurante son de consumo inmediato o un día.
+
+Para hacer efectiva la Garantía Legal, el Usuario o Cliente debe dar cumplimiento a la totalidad de las condiciones indicadas en la “Política de Devolución y Modificaciones” de la empresa.</p>
+<h2 style="color: #cba739;
+    font-family: 'Caneletter'; text-align: center; font-size: 2rem;">POLÍTICA DE DEVOLUCIÓN Y MODIFICACIONES DE PRODUCTOS
+</h2>
+<p>
+Con el objetivo de garantizar el servicio adecuado y tener claras las políticas de cara a nuestros clientes, todas las disposiciones a partir de las cuales las empresas que conforman EL MANÁ se compromete a aceptar devoluciones y/o cambios de productos, se hacen explícitas las siguientes políticas: 
+
+Los productos elaborados y comercializados son perecederos y se recomienda que estos sean consumidos en el menor tiempo posible, por favor asesórese con el vendedor de los cuidados, manipulación y conservación que el producto adquirido requiere. Valide además que en el momento de la entrega del producto se le garantice que este se encuentra en buen estado y con las características propias del producto.
+DEVOLUCIÓN DE PRODUCTO – CONDICIONES:
+a. Se recibe devolución de productos por problemas asociados a la calidad del mismo, es decir, productos con hongos, defectuosos, y similares situaciones que sean imputables a la calidad del producto de responsabilidad de nuestra empresa. Esta situación se avala siempre que la devolución y/o notificación se realice antes del vencimiento de la garantía legal en los términos expuestos anteriormente.
+b. Como medida de protección a la integridad de los consumidores y/o del producto mismo como tal, no se aceptarán devoluciones relacionadas con defectos o situaciones que pudiesen ser comprobadas por el cliente en el punto de venta o al momento de recibido el domicilio siempre que el cliente, una vez haya recibido el producto, se retire con este del punto de venta o permita que el domiciliario abandone el punto de entrega, pues la empresa no se hace responsable de la conservación, manipulación, alteración, o transporte que el cliente le dé al producto una vez la empresa no lo tenga más en su poder.
+c. La devolución o cambio por calidad de un producto puede hacerse antes de la fecha de vencimiento siguiendo las siguientes indicaciones: productos que requieren refrigeración (1) un día después de su compra, en productos que no tienen esta característica (3) tres días después de su compra. El consumidor o cliente debe acercarse al punto de venta donde se realizó la compra, llevando consigo: factura de compra y un 60% del producto físico a devolver o cambiar. Teniendo en cuenta que al momento de acercarse al punto de venta.
+NO SE ACEPTAN DEVOLUCIONES DEL PRODUCTO EN LOS SIGUIENTES CASOS:
+a. Que los productos no cumplan las condiciones anteriores.
+b. Que no exista una muestra física del producto, o evidencia de lo sucedido, toda vez que sin ella no se podrá realizar análisis de la situación.
+c. En caso de averías provocadas por el cliente después de haber recibido su pedido, la empresa no asume tal daño, el cliente deberá cancelar los costos adicionales de reparación o pérdida, en los casos de que la avería sea causada por el distribuidor será este el responsable de asumir dichos costos. 
+CAMBIOS Y/O MODIFICACIONES EN LOS PEDIDOS: a. Por políticas del área de calidad una vez el producto haya sido retirado del punto de venta, no está permitido por ningún motivo el cambio de sabor, tamaño o devolución del dinero.
+
+CANALES OFICIALES PARA LA NOTIFICACIÓN DE DEVOLUCIONES Y NOVEDADES: ∙ Línea telefónica: 607 6425198, 3041481751 ∙ Correo electrónico: contacto@elmana.co Para registrar sus solicitudes, quejas, reclamos, sugerencias, felicitaciones y demás motivos de contacto, por favor hágalo al correo contacto@elmana.co,
+    </p>
+</div>
+</div>
+</style>
+</script>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Logo y descripción -->
+      <div class="footer-section">
+        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+        <p class="footer-description">
+          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+        </p>
+    
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="footer-section" style="text-align: start;">
+        <h4>Contáctanos</h4>
+        <ul class="contact-info" style="text-align: start;">
+          <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+          <li>Teléfono: 607 6425198</li>
+          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+        </ul>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-section">
+        <h4>Enlaces de interés</h4>
+        <ul class="footer-links">
+          <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+            <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+            <li><a href="trabajaConNosotros.html">Trabaja en El Maná</a></li>
+        </ul>
+     
+          <div class="social-icons">
+          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+         </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>

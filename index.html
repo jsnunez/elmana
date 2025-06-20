@@ -86,7 +86,7 @@
                             Nuestras Sedes
                         </a>
                     </li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
@@ -151,11 +151,11 @@
                 <h1 style="color:#fff;">Pide a Nuestro Restaurante</h1>
                 <p>Disfruta de nuestra sazón con platillos únicos para el día</p>
                 <div id="pedidos-restaurante">
-                    <button class="menu-button">
+                    <button class="menu-button" id="pedidos-restaurante-centro">
                         Centro
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
-                    <button class="menu-button">
+                    <button class="menu-button" id="pedidos-restaurante-cabecera">
                         Cabecera <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
                 </div>
@@ -166,7 +166,7 @@
                     <h2>Nuestra Historia</h2>
                 </div>
                 <div id="informacionHistoria">
-                    <button class="menu-button">
+                    <button class="menu-button" id="ver-historia">
                         Ver Mas
                         <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
                     </button>
@@ -959,41 +959,54 @@
             <span class="indicator" data-slide="8"></span>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <img src="images/logoOscuro.png" alt="el Maná">
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/industriaelmana" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/elmanaoficial/" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
 
-            <div class="contact-info">
-                <p>Cra. 18 #37-42, Bucaramanga - Colombia</p>
-                <p>Teléfono: 6076425198</p>
-                <p>Email: contacto@elmana.co</p>
-            </div>
+      <!-- Logo y descripción -->
+      <div class="footer-section">
+        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+        <p class="footer-description">
+          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+        </p>
+    
+      </div>
 
-            <div class="footer-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-                    delenit augue duis dolore te feugiat nulla facilisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit</p>
-            </div>
+      <!-- Información de contacto -->
+      <div class="footer-section" style="text-align: start;">
+        <h4>Contáctanos</h4>
+        <ul class="contact-info" style="text-align: start;">
+          <li>Cra. 18 #37-42, Bucaramanga - Colombia</li>
+          <li>Teléfono: 607 6425198</li>
+          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+        </ul>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-section">
+        <h4>Enlaces de interés</h4>
+        <ul class="footer-links">
+          <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+          <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+          <li><a href="#">Trabaja en El Maná</a></li>
+        </ul>
+     
+          <div class="social-icons">
+          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </footer>
+         </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
 
 
     <script src="script.js"></script>
