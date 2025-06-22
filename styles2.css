@@ -920,6 +920,15 @@ select {
     overflow: hidden;
 }
 
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0 auto;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .hero-container {
@@ -950,6 +959,10 @@ select {
     line-height: 0.5;
     margin-bottom: 5vh;
 }
+.sidebar-productos {
+    width: 100%;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -965,6 +978,7 @@ select {
         margin: 0;
         align-items: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .description {
@@ -973,8 +987,9 @@ select {
 
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(40vw, 2fr));
-        width: 100vw;
-        margin: 0;
+        width: 90vw;
+        margin: 0 auto;
+        justify-items: center;
     }
 
     .panapanaderia-section {
@@ -1185,6 +1200,8 @@ display: flex;
             flex-wrap: wrap;
             gap: 10px;
                     justify-content: center;
+                    width: 65%;
+                    margin-bottom: 2vh;
         }
 
         .icon-circle.large img {
@@ -1198,7 +1215,10 @@ display: flex;
 
 
         }
+.product-card p{
+    width: 90%;
 
+}
         .main-nav.mobile-open {
             display: flex !important;
             position: absolute !important;
@@ -1229,6 +1249,8 @@ display: flex;
             padding: 20px;
             align-items: center;
             margin-top: 0;
+                        width: 100%;
+
         }
 
         #linea-vertical {
@@ -1253,7 +1275,8 @@ display: flex;
         }
 
         #encabezado {
-            flex-direction: column
+            flex-direction: column;
+            width: 100%;
         }
 
 
@@ -1263,4 +1286,6 @@ display: flex;
             display: flex;
             flex-direction: row;
         }
+
+ 
     }

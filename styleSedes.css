@@ -27,7 +27,7 @@
     display: block;
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, #f4c430, #e6b800);
+    background: var(--primary-color);
     margin: 0 auto;
 }
 
@@ -288,7 +288,7 @@
     }
 
     .section-title h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .sede-info h3 {
