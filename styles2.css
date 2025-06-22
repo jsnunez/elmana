@@ -164,6 +164,10 @@ ul {
 
 .hero-next{
     right: 6vw;
+    top: 50%;
+}
+.hero-prev{
+    top: 50%;
 }
 
 .menu-button {
@@ -1001,6 +1005,7 @@ select {
         width: 15vw;
         height: auto;
         margin-bottom: 20px;
+        top: 10%;
     }
 
     .hero h1 {
@@ -1034,6 +1039,10 @@ select {
 @media (max-width: 768px) {
 .hero-next{
     right: 16vw;
+    top: 60%;
+}
+.hero-prev{
+    top: 60%;
 }
     .main-nav {
         display: none;
