@@ -1267,7 +1267,7 @@ select {
 
     .whatsapp-float {
         position: fixed;
-        bottom: 15vw;
+        bottom: 10vw;
         right: 5vw;
         z-index: 9999;
         display: flex;
