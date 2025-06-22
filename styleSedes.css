@@ -131,11 +131,13 @@
 
 .sede-info h3 {
     font-size: 3rem;
-    color: #f4c430;
+    color: #000;
     font-family: 'Caneletter';
     padding: 0;
 }
-
+.sede-info p{
+    font-weight: 600;
+}
 .sede-info .address {
     font-size: 1.5rem;
     color: #666;
@@ -229,7 +231,7 @@
     /* Aumenta el z-index para estar por encima */
     background: #fff;
     /* Fondo blanco */
-    width: 30vw;
+    width: 20vw;
     height: 5vh;
     align-items: center;
         margin-top: 5vh;
@@ -250,7 +252,7 @@
 
 .indicator.active {
     background-color: transparent;
-    border: 2px solid #f59e0b;
+    border: 2px solid var(--primary-color);
     transform: scale(2.5);
     /* Agranda desde el centro */
 }

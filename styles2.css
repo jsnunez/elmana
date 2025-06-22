@@ -22,14 +22,14 @@
 
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Archivo", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
 }
 
 a {
-    font-family: "Poppins", sans-serif;
+    font-family: "archivo", sans-serif;
     text-decoration: none;
     color: inherit;
 }
@@ -46,7 +46,7 @@ ul {
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+margin: 0 10vw;
     padding: 0 20px;
 }
 
@@ -61,7 +61,7 @@ ul {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-top: 2vh;
 }
@@ -69,7 +69,7 @@ ul {
 
 .logo img {
 
-    height: 10vh;
+    height: 16vh;
 }
 
 .main-nav ul {
@@ -114,7 +114,7 @@ ul {
 }
 
 .cart-icon:hover {
-    color: #f59e0b;
+    color: var(--primary-color);
 }
 
 .search-container {
@@ -147,6 +147,7 @@ ul {
 
 /* Hero Section */
 .hero {
+    margin-top: -4vh;
     padding: 5vh 0 30px;
     position: relative;
     background-color: #fff;
@@ -190,24 +191,35 @@ ul {
     transform: translateY(-2px) scale(1.04);
     outline: none;
 }
-
+.swal2-container .swal2-center .swal2-backdrop-show{
+    border-radius: 20px;
+}
 /* SweetAlert2 custom styles */
 .swal2-title {
     color: #000 !important;
     font-family: 'Caneletter', serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
-
+.swal2-select{
+    border-radius: 25px;
+    border: 2px solid #8c8c8c;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s;
+}
 .swal2-confirm {
-    background-color: var(--secondary-color) !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #000 !important;
     border: none !important;
-    border-radius: 25px !important;
+    border-radius: 50px !important;
     font-family: "Poppins", sans-serif !important;
     font-weight: 600 !important;
     font-size: 1.1rem !important;
     padding: 10px 32px !important;
-    border: 4px solid var(--primary-color) !important;
+    border: 5px solid var(--primary-color) !important;
     transition: background 0.3s, color 0.3s, transform 0.2s !important;
 }
 
@@ -304,10 +316,11 @@ ul {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;    
     font-family: 'Caneletter', serif;
     color: black;
     padding-left: 10%;
+    margin-bottom: 2vh;
     line-height: 0.7;
 
 }
@@ -320,7 +333,7 @@ h3 {
 }
 
 .info-text span {
-    color: #f59e0b;
+    color: var(--primary-color);
 }
 
 .info-text p {
@@ -352,7 +365,7 @@ h3 {
 
 .dot.active {
     background-color: transparent;
-    border: 2px solid #f59e0b;
+    border: 2px solid var(--primary-color);
     transform: scale(2.5);
     /* Agranda desde el centro */
 }
@@ -405,7 +418,7 @@ h3 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
     z-index: 100;
     background: #fff;
-    width: 30%;
+width: 14%;
     height: 5vh;
     align-items: center;
 }
@@ -442,7 +455,7 @@ h3 {
 .section-divider {
     width: 5vw;
     height: 3px;
-    background-color: #f59e0b;
+    background-color: var(--primary-color);
     margin: -4vh auto 40px;
     position: relative;
     z-index: 1;
@@ -542,11 +555,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
-}
+    align-items: center;}
 
 /* Sections */
 .footer-section h4 {
+      margin-top: 1rem;
+
   color: var(--primary-color, #cba739);
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -572,7 +586,6 @@ h3 {
 
 .footer-links li,
 .contact-info li {
-  margin-bottom: 0.6rem;
   font-size: 0.95rem;
 }
 
@@ -723,6 +736,14 @@ h3 {
     width: 70%;
 }
 
+select {
+    border-radius: 25px;
+    border: 1px solid #8c8c8c;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
 .productos-lista {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -819,7 +840,15 @@ h3 {
     justify-content: space-around;
     width: 100%;
 }
-
+#historia{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
 #tituloHistoria {
     font-family: 'Caneletter';
     src: url('fonts/Caneletter.otf') format('truetype');
@@ -1030,7 +1059,35 @@ font-size: 5rem;
 #informacionBoletin button{
   margin-left: 4%;
 }
-
+#descubreCatalogo{
+   font-size: 1.6rem;
+   margin-left: 2vw;
+   line-height: 1.2;
+   margin-bottom: 2vh;
+}
+.info-text{
+    text-align: left;
+}
+.hero-carousel{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+#tradicion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 5vh;
+}
 
 }
     @media (max-width: 600px) {
@@ -1101,7 +1158,7 @@ font-size: 5rem;
             margin-top: 5vh;
             height: 5vh;
             margin-left: 0;
-            width: 60%;
+            width: 50%;
         }
 
         .hero h1 {

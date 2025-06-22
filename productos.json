@@ -3,7 +3,7 @@
         "centro": {
             "tradicional": [
                 {
-                    "nombre": "ROLLO",
+                    "nombre": "Rollo",
                     "imagen": "images/panaderia/rollo.jpg",
                     "descripcion": "Pan enrollado tradicional, ideal para acompañar comidas.",
                     "variantes": [
@@ -14,7 +14,7 @@
                     ]
                 },
                 {
-                    "nombre": "CASCARITA",
+                    "nombre": "Cascarita",
                     "imagen": "images/panaderia/cascarita.jpg",
                     "descripcion": "Pan crocante y ligero, perfecto para acompañar sopas o ensaladas.",
                     "variantes": [
@@ -22,7 +22,7 @@
                     ]
                 },
                 {
-                    "nombre": "FRANCES",
+                    "nombre": "Frances",
                     "imagen": "images/panaderia/frances.jpg",
                     "descripcion": "Pan francés clásico, ideal para desayunos y meriendas.",
                     "variantes": [
@@ -31,7 +31,7 @@
                     ]
                 },
                 {
-                    "nombre": "MOGOLLA",
+                    "nombre": "Mogolla",
                     "imagen": "images/panaderia/mogolla.jpg",
                     "descripcion": "Pan tradicional de textura suave y sabor ligeramente dulce.",
                     "variantes": [
@@ -39,7 +39,7 @@
                     ]
                 },
                 {
-                    "nombre": "MESTIZA",
+                    "nombre": "Mestiza",
                     "imagen": "images/panaderia/mestiza.jpg",
                     "descripcion": "Pan de mezcla especial, suave y esponjoso.",
                     "variantes": [
@@ -48,7 +48,7 @@
                     ]
                 },
                 {
-                    "nombre": "MESTIZA PLANA",
+                    "nombre": "Mestiza Plana",
                     "imagen": "images/panaderia/mestizaplana.jpg",
                     "descripcion": "Versión plana de la mestiza, ideal para acompañar comidas.",
                     "variantes": [
@@ -56,7 +56,7 @@
                     ]
                 },
                 {
-                    "nombre": "MAIZ SAL",
+                    "nombre": "Maiz Sal",
                     "imagen": "images/panaderia/maizsal.jpg",
                     "descripcion": "Pan de maíz con un toque de sal.",
                     "variantes": [
@@ -65,7 +65,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN FINAS HIERBAS",
+                    "nombre": "Pan Finas Hierbas",
                     "imagen": "images/panaderia/panfinashierbas.jpg",
                     "descripcion": "Pan aromatizado con finas hierbas.",
                     "variantes": [
@@ -73,7 +73,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN QUESO/MIEL",
+                    "nombre": "Pan Queso/Miel",
                     "imagen": "images/panaderia/panquesomiel.jpg",
                     "descripcion": "Pan relleno de queso y miel.",
                     "variantes": [
@@ -81,7 +81,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN SUEÑO",
+                    "nombre": "Pan Sueño",
                     "imagen": "images/panaderia/pansueno.jpg",
                     "descripcion": "Pan suave y esponjoso, perfecto para meriendas.",
                     "variantes": [
@@ -89,7 +89,7 @@
                     ]
                 },
                 {
-                    "nombre": "TAJADO BLANCO",
+                    "nombre": "Tajado Blanco",
                     "imagen": "images/panaderia/tajadoblanco.jpg",
                     "descripcion": "Pan tajado blanco, ideal para sándwiches.",
                     "variantes": [
@@ -97,7 +97,7 @@
                     ]
                 },
                 {
-                    "nombre": "FOCACCIA",
+                    "nombre": "Focaccia",
                     "imagen": "images/panaderia/focaccia.jpg",
                     "descripcion": "Pan italiano con aceite de oliva y hierbas.",
                     "variantes": [
@@ -105,7 +105,7 @@
                     ]
                 },
                 {
-                    "nombre": "HAMBURGUESA BLANCO",
+                    "nombre": "Hamburguesa Blanco",
                     "imagen": "images/panaderia/hamburguesablanco.jpg",
                     "descripcion": "Pan blanco para hamburguesa.",
                     "variantes": [
@@ -113,7 +113,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN PERRO",
+                    "nombre": "Pan Perro",
                     "imagen": "images/panaderia/panperro.jpg",
                     "descripcion": "Pan especial para perros calientes.",
                     "variantes": [
@@ -121,7 +121,7 @@
                     ]
                 },
                 {
-                    "nombre": "TOSTADO",
+                    "nombre": "Tostado",
                     "imagen": "images/panaderia/tostado.jpg",
                     "descripcion": "Pan tostado crujiente.",
                     "variantes": [
@@ -129,7 +129,7 @@
                     ]
                 },
                 {
-                    "nombre": "TOSTADA DE AJO",
+                    "nombre": "Tostada De Ajo",
                     "imagen": "images/panaderia/tostadaajo.jpg",
                     "descripcion": "Tostada con sabor a ajo.",
                     "variantes": [
@@ -137,7 +137,7 @@
                     ]
                 },
                 {
-                    "nombre": "TOSTADAS ALIÑADAS",
+                    "nombre": "Tostadas Aliñadas",
                     "imagen": "images/panaderia/tostadasalinadas.jpg",
                     "descripcion": "Tostadas con aliños especiales.",
                     "variantes": [
@@ -145,7 +145,7 @@
                     ]
                 },
                 {
-                    "nombre": "PALITROQUES",
+                    "nombre": "Palitroques",
                     "imagen": "images/panaderia/palitroques.jpg",
                     "descripcion": "Palitos de pan crujientes.",
                     "variantes": [
@@ -153,7 +153,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN DE YUCA",
+                    "nombre": "Pan De Yuca",
                     "imagen": "images/panaderia/pandeyuca.jpg",
                     "descripcion": "Panecillos de yuca tradicionales.",
                     "variantes": [
@@ -161,7 +161,7 @@
                     ]
                 },
                 {
-                    "nombre": "CALENTANO",
+                    "nombre": "Calentano",
                     "imagen": "images/panaderia/calentanox10.jpg",
                     "descripcion": "Paquete de 10 panes calentanos.",
                     "variantes": [
@@ -169,7 +169,7 @@
                     ]
                 },
                 {
-                    "nombre": "BOLA",
+                    "nombre": "Bola",
                     "imagen": "images/panaderia/paqbolax6.jpg",
                     "descripcion": "Paquete de 6 panes bola.",
                     "variantes": [
@@ -177,7 +177,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN AJO",
+                    "nombre": "Pan Ajo",
                     "imagen": "images/panaderia/panajo.jpg",
                     "descripcion": "Pan con sabor a ajo.",
                     "variantes": [
@@ -187,7 +187,7 @@
             ],
             "dulce": [
                 {
-                    "nombre": "MOJICON",
+                    "nombre": "Mojicon",
                     "imagen": "images/panaderia/mojicon.jpg",
                     "descripcion": "Pan dulce tradicional, esponjoso y suave.",
                     "variantes": [
@@ -195,7 +195,7 @@
                     ]
                 },
                 {
-                    "nombre": "MOJICON UVA",
+                    "nombre": "Mojicon Uva",
                     "imagen": "images/panaderia/mojiconuva.jpg",
                     "descripcion": "Mojicón con uvas pasas, ideal para acompañar bebidas calientes.",
                     "variantes": [
@@ -203,7 +203,7 @@
                     ]
                 },
                 {
-                    "nombre": "FRUTA",
+                    "nombre": "Fruta",
                     "imagen": "images/panaderia/fruta.jpg",
                     "descripcion": "Pan dulce con trozos de fruta confitada.",
                     "variantes": [
@@ -212,7 +212,7 @@
                     ]
                 },
                 {
-                    "nombre": "ROSCON BOCADILLO",
+                    "nombre": "Roscon Bocadillo",
                     "imagen": "images/panaderia/rosconbocadillo.jpg",
                     "descripcion": "Roscon relleno de bocadillo, suave y delicioso.",
                     "variantes": [
@@ -220,7 +220,7 @@
                     ]
                 },
                 {
-                    "nombre": "ROSCON AREQUIPE",
+                    "nombre": "Roscon Arequipe",
                     "imagen": "images/panaderia/rosconarequipe.jpg",
                     "descripcion": "Roscon relleno de arequipe, perfecto para los amantes del dulce.",
                     "variantes": [
@@ -228,7 +228,7 @@
                     ]
                 },
                 {
-                    "nombre": "SUSPIROS",
+                    "nombre": "Suspiros",
                     "imagen": "images/panaderia/suspiros.jpg",
                     "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
                     "variantes": [
@@ -236,7 +236,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN DE MUERTO",
+                    "nombre": "Pan De Muerto",
                     "imagen": "images/panaderia/pandemuerto.jpg",
                     "descripcion": "Pan tradicional de temporada, suave y aromático.",
                     "variantes": [
@@ -244,7 +244,7 @@
                     ]
                 },
                 {
-                    "nombre": "NEVADOS X6",
+                    "nombre": "Nevados X6",
                     "imagen": "images/panaderia/nevadosx6.jpg",
                     "descripcion": "Paquete de 6 nevados dulces y esponjosos.",
                     "variantes": [
@@ -254,7 +254,7 @@
             ],
             "rellenos": [
                 {
-                    "nombre": "PAN QUESO",
+                    "nombre": "Pan Queso",
                     "imagen": "images/panaderia/panqueso.jpg",
                     "descripcion": "Pan relleno de queso fundido.",
                     "variantes": [
@@ -262,7 +262,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN SUEÑO MAIZ",
+                    "nombre": "Pan Sueño Maiz",
                     "imagen": "images/panaderia/maizsal.jpg",
                     "descripcion": "Pan suave de maíz con relleno especial.",
                     "variantes": [
@@ -270,7 +270,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN BREVAS",
+                    "nombre": "Pan Brevas",
                     "imagen": "images/panaderia/panbrevas.jpg",
                     "descripcion": "Pan relleno de brevas dulces.",
                     "variantes": [
@@ -278,7 +278,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN ACEITUNA",
+                    "nombre": "Pan Aceituna",
                     "imagen": "images/panaderia/panaceituna.jpg",
                     "descripcion": "Pan artesanal con aceitunas.",
                     "variantes": [
@@ -286,7 +286,7 @@
                     ]
                 },
                 {
-                    "nombre": "PAN BREVA Y AREQUIPE",
+                    "nombre": "Pan Breva Y Arequipe",
                     "imagen": "images/panaderia/panbrevaarequipe.jpg",
                     "descripcion": "Pan relleno de breva y arequipe.",
                     "variantes": [
@@ -294,7 +294,7 @@
                     ]
                 },
                 {
-                    "nombre": "JAMON Y QUESO",
+                    "nombre": "Jamon Y Queso",
                     "imagen": "images/panaderia/jamonqueso.jpg",
                     "descripcion": "Pan relleno de jamón y queso.",
                     "variantes": [
@@ -302,7 +302,7 @@
                     ]
                 },
                 {
-                    "nombre": "HAWAIANO O",
+                    "nombre": "Hawaiano O",
                     "imagen": "images/panaderia/hawaiano.jpg",
                     "descripcion": "Pan relleno de jamón, queso y piña.",
                     "variantes": [
@@ -312,7 +312,7 @@
             ],
             "integral": [
                 {
-                    "nombre": "INTEGRAL",
+                    "nombre": "Integral",
                     "imagen": "images/panaderia/integral.jpg",
                     "descripcion": "Pan integral saludable.",
                     "variantes": [
@@ -322,7 +322,7 @@
                     ]
                 },
                 {
-                    "nombre": "INTEGRAL AVENA",
+                    "nombre": "Integral Avena",
                     "imagen": "images/panaderia/integralavena.jpg",
                     "descripcion": "Pan integral con avena.",
                     "variantes": [
@@ -330,7 +330,7 @@
                     ]
                 },
                 {
-                    "nombre": "MULTIGRANO",
+                    "nombre": "Multigrano",
                     "imagen": "images/panaderia/multigrano.jpg",
                     "descripcion": "Pan multigrano con semillas.",
                     "variantes": [
@@ -338,7 +338,7 @@
                     ]
                 },
                 {
-                    "nombre": "TOSTADA INTEGRAL",
+                    "nombre": "Tostada Integral",
                     "imagen": "images/panaderia/tostadaintegral.jpg",
                     "descripcion": "Tostada integral saludable.",
                     "variantes": [
@@ -346,7 +346,7 @@
                     ]
                 },
                 {
-                    "nombre": "SOYA",
+                    "nombre": "Soya",
                     "imagen": "images/panaderia/soya.jpg",
                     "descripcion": "Pan integral con soya.",
                     "variantes": [
@@ -354,7 +354,7 @@
                     ]
                 },
                 {
-                    "nombre": "INTEGRAL UVA",
+                    "nombre": "Integral Uva",
                     "imagen": "images/panaderia/integraluva.jpg",
                     "descripcion": "Pan integral con uvas pasas.",
                     "variantes": [
@@ -364,7 +364,7 @@
             ],
             "funcional": [
                 {
-                    "nombre": "PAN SIN GLUTEN",
+                    "nombre": "Pan Sin Gluten",
                     "imagen": "images/panaderia/pansingluten.jpg",
                     "descripcion": "Pan especial sin gluten.",
                     "variantes": [
@@ -378,7 +378,7 @@
         "centro": {
             "dulces": [
                 {
-                    "nombre": "BRAZO DE REINA",
+                    "nombre": "Brazo De Reina",
                     "imagen": "images/panaderia/brazodereina.jpg",
                     "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
                     "variantes": [
@@ -386,7 +386,7 @@
                     ]
                 },
                 {
-                    "nombre": "HOJALDRAS",
+                    "nombre": "Hojaldras",
                     "imagen": "images/panaderia/hojaldras.jpg",
                     "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
                     "variantes": [
@@ -394,7 +394,7 @@
                     ]
                 },
                 {
-                    "nombre": "SAN VALENTIN",
+                    "nombre": "San Valentin",
                     "imagen": "images/panaderia/sanvalentin.jpg",
                     "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
                     "variantes": [
@@ -402,7 +402,7 @@
                     ]
                 },
                 {
-                    "nombre": "MUFFINS",
+                    "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
                     "descripcion": "Muffins esponjosos de diferentes sabores.",
                     "variantes": [
@@ -410,7 +410,7 @@
                     ]
                 },
                 {
-                    "nombre": "BRAZO DE MANI",
+                    "nombre": "Brazo De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
@@ -418,7 +418,7 @@
                     ]
                 },
                 {
-                    "nombre": "CONCHITA MEXICANA",
+                    "nombre": "Conchita Mexicana",
                     "imagen": "images/panaderia/conchitamexicana.jpg",
                     "descripcion": "Pan dulce mexicano con cobertura crujiente.",
                     "variantes": [
@@ -426,7 +426,7 @@
                     ]
                 },
                 {
-                    "nombre": "SANCOCHADOS",
+                    "nombre": "Sancochados",
                     "imagen": "images/panaderia/sancochados.jpg",
                     "descripcion": "Bizcochos dulces tradicionales.",
                     "variantes": [
@@ -434,7 +434,7 @@
                     ]
                 },
                 {
-                    "nombre": "ROLLO DE CANELA",
+                    "nombre": "Rollo De Canela",
                     "imagen": "images/panaderia/rollocanela.jpg",
                     "descripcion": "Rollo dulce con canela y azúcar.",
                     "variantes": [
@@ -443,7 +443,7 @@
                     ]
                 },
                 {
-                    "nombre": "CUCAS",
+                    "nombre": "Cucas",
                     "imagen": "images/panaderia/cucas.jpg",
                     "descripcion": "Galletas tradicionales de panela.",
                     "variantes": [
@@ -451,7 +451,7 @@
                     ]
                 },
                 {
-                    "nombre": "CAJA PANDEROS",
+                    "nombre": "Caja Panderos",
                     "imagen": "images/panaderia/cajapanderos.jpg",
                     "descripcion": "Caja surtida de panderos dulces.",
                     "variantes": [
@@ -459,7 +459,7 @@
                     ]
                 },
                 {
-                    "nombre": "MILHOJAS",
+                    "nombre": "Milhojas",
                     "imagen": "images/panaderia/milhojas.jpg",
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
@@ -467,7 +467,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA ZANAHORIA Y AMAPOLA",
+                    "nombre": "Torta Zanahoria Y Amapola",
                     "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
                     "descripcion": "Torta de zanahoria con semillas de amapola.",
                     "variantes": [
@@ -475,7 +475,7 @@
                     ]
                 },
                 {
-                    "nombre": "GALLETAS",
+                    "nombre": "Galletas",
                     "imagen": "images/panaderia/galletas.jpg",
                     "descripcion": "Galletas surtidas dulces.",
                     "variantes": [
@@ -483,7 +483,7 @@
                     ]
                 },
                 {
-                    "nombre": "MUFFINS SAN VALENTIN",
+                    "nombre": "Muffins San Valentin",
                     "imagen": "images/panaderia/muffinssanvalentin.jpg",
                     "descripcion": "Muffins decorados para San Valentín.",
                     "variantes": [
@@ -491,7 +491,7 @@
                     ]
                 },
                 {
-                    "nombre": "BOMBAS",
+                    "nombre": "Bombas",
                     "imagen": "images/panaderia/bombas.jpg",
                     "descripcion": "Bollos dulces rellenos.",
                     "variantes": [
@@ -499,7 +499,7 @@
                     ]
                 },
                 {
-                    "nombre": "CROISSANT CHOCOLATE",
+                    "nombre": "Croissant Chocolate",
                     "imagen": "images/panaderia/croissantchocolate.jpg",
                     "descripcion": "Croissant relleno de chocolate.",
                     "variantes": [
@@ -507,7 +507,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA DE PAN",
+                    "nombre": "Torta De Pan",
                     "imagen": "images/panaderia/tortadepan.jpg",
                     "descripcion": "Torta hecha a base de pan.",
                     "variantes": [
@@ -517,7 +517,7 @@
             ],
             "torta_artesanal": [
                 {
-                    "nombre": "MESTIZA BATIDA",
+                    "nombre": "Mestiza Batida",
                     "imagen": "images/panaderia/mestizabatida.jpg",
                     "descripcion": "Pan artesanal mestiza batida.",
                     "variantes": [
@@ -525,7 +525,7 @@
                     ]
                 },
                 {
-                    "nombre": "MANTECADA",
+                    "nombre": "Mantecada",
                     "imagen": "images/panaderia/mantecada.jpg",
                     "descripcion": "Bizcocho mantecado tradicional.",
                     "variantes": [
@@ -533,7 +533,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA DE CUAJADA",
+                    "nombre": "Torta De Cuajada",
                     "imagen": "images/panaderia/tortadecuajada.jpg",
                     "descripcion": "Torta artesanal de cuajada.",
                     "variantes": [
@@ -541,7 +541,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA NEGRA",
+                    "nombre": "Torta Negra",
                     "imagen": "images/panaderia/tortanegra.jpg",
                     "descripcion": "Torta negra tradicional con frutas y licor.",
                     "variantes": [
@@ -549,7 +549,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA ENVINADA",
+                    "nombre": "Torta Envinada",
                     "imagen": "images/panaderia/tortaenvinada.jpg",
                     "descripcion": "Torta envinada con frutas confitadas.",
                     "variantes": [
@@ -557,7 +557,7 @@
                     ]
                 },
                 {
-                    "nombre": "TORTA NARANJA",
+                    "nombre": "Torta Naranja",
                     "imagen": "images/panaderia/tortanaranja.jpg",
                     "descripcion": "Torta de naranja esponjosa.",
                     "variantes": [
@@ -567,7 +567,7 @@
             ],
             "salados": [
                 {
-                    "nombre": "PORCION TORTA DE CUAJADA",
+                    "nombre": "Porcion Torta De Cuajada",
                     "imagen": "images/panaderia/porciontortadecuajada.jpg",
                     "descripcion": "Porción individual de torta de cuajada.",
                     "variantes": [
@@ -575,7 +575,7 @@
                     ]
                 },
                 {
-                    "nombre": "BIZCOCHUELO DE QUESO",
+                    "nombre": "Bizcochuelo De Queso",
                     "imagen": "images/panaderia/bizcochuelodequeso.jpg",
                     "descripcion": "Bizcochuelo salado con queso.",
                     "variantes": [
@@ -589,7 +589,7 @@
         "centro": {
             "onces": [
                 {
-                    "nombre": "SANDWICH DE POLLO",
+                    "nombre": "Sandwich De Pollo",
                     "imagen": "images/panaderia/sandwichdepollo.jpg",
                     "descripcion": "Sándwich de pollo con vegetales frescos.",
                     "variantes": [
@@ -597,7 +597,7 @@
                     ]
                 },
                 {
-                    "nombre": "CROISSANT DE JAMON QUESO",
+                    "nombre": "Croissant De Jamon Queso",
                     "imagen": "images/panaderia/croissantjamonqueso.jpg",
                     "descripcion": "Croissant relleno de jamón y queso.",
                     "variantes": [
@@ -605,7 +605,7 @@
                     ]
                 },
                 {
-                    "nombre": "COCHINITOS",
+                    "nombre": "Cochinitos",
                     "imagen": "images/panaderia/cochinitos.jpg",
                     "descripcion": "Panecillos salados en forma de cerdito.",
                     "variantes": [
@@ -613,7 +613,7 @@
                     ]
                 },
                 {
-                    "nombre": "DEDOS DE QUESO",
+                    "nombre": "Dedos De Queso",
                     "imagen": "images/panaderia/dedosdequeso.jpg",
                     "descripcion": "Palitos de pan rellenos de queso.",
                     "variantes": [
@@ -621,7 +621,7 @@
                     ]
                 },
                 {
-                    "nombre": "PASTEL DE POLLO APANADO",
+                    "nombre": "Pastel De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
                     "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
@@ -629,7 +629,7 @@
                     ]
                 },
                 {
-                    "nombre": "PASTEL POLLO",
+                    "nombre": "Pastel Pollo",
                     "imagen": "images/panaderia/pastelpollo.jpg",
                     "descripcion": "Pastel de pollo tradicional.",
                     "variantes": [
@@ -637,7 +637,7 @@
                     ]
                 },
                 {
-                    "nombre": "PASTEL DE CARNE",
+                    "nombre": "Pastel De Carne",
                     "imagen": "images/panaderia/pasteldecarne.jpg",
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
@@ -647,7 +647,7 @@
             ],
             "bebidas": [
                 {
-                    "nombre": "KUMIS PERSONAL",
+                    "nombre": "Kumis Personal",
                     "imagen": "images/panaderia/kumispersonal.jpg",
                     "descripcion": "Kumis en presentación personal.",
                     "variantes": [
@@ -655,7 +655,7 @@
                     ]
                 },
                 {
-                    "nombre": "AVENA PERSONAL",
+                    "nombre": "Avena Personal",
                     "imagen": "images/panaderia/avenapersonal.jpg",
                     "descripcion": "Avena en presentación personal.",
                     "variantes": [
@@ -663,7 +663,7 @@
                     ]
                 },
                 {
-                    "nombre": "MASATO PERSONAL",
+                    "nombre": "Masato Personal",
                     "imagen": "images/panaderia/masatopersonal.jpg",
                     "descripcion": "Masato en presentación personal.",
                     "variantes": [
@@ -671,7 +671,7 @@
                     ]
                 },
                 {
-                    "nombre": "ALMOJABANAS PAQ X8",
+                    "nombre": "Almojabanas Paq X8",
                     "imagen": "images/panaderia/almojabanaspaqx8.jpg",
                     "descripcion": "Paquete de 8 almojábanas.",
                     "variantes": [
@@ -679,7 +679,7 @@
                     ]
                 },
                 {
-                    "nombre": "AVENA VASO",
+                    "nombre": "Avena Vaso",
                     "imagen": "images/panaderia/avenavaso.jpg",
                     "descripcion": "Vaso de avena.",
                     "variantes": [
@@ -687,7 +687,7 @@
                     ]
                 },
                 {
-                    "nombre": "MASATO VASO",
+                    "nombre": "Masato Vaso",
                     "imagen": "images/panaderia/masatovaso.jpg",
                     "descripcion": "Vaso de masato.",
                     "variantes": [
@@ -695,7 +695,7 @@
                     ]
                 },
                 {
-                    "nombre": "KUMIS VASO",
+                    "nombre": "Kumis Vaso",
                     "imagen": "images/panaderia/kumisvaso.jpg",
                     "descripcion": "Vaso de kumis.",
                     "variantes": [
@@ -703,7 +703,7 @@
                     ]
                 },
                 {
-                    "nombre": "MILO GRANIZADO",
+                    "nombre": "Milo Granizado",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -711,7 +711,7 @@
                     ]
                 },
                 {
-                    "nombre": "JUGOS AGUA",
+                    "nombre": "Jugos Agua",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -719,7 +719,7 @@
                     ]
                 },
                 {
-                    "nombre": "JUGOS LECHE",
+                    "nombre": "Jugos Leche",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -727,7 +727,7 @@
                     ]
                 },
                 {
-                    "nombre": "POSTRE DE LECHE ASADA",
+                    "nombre": "Postre De Leche Asada",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -735,7 +735,7 @@
                     ]
                 },
                 {
-                    "nombre": "SODA ITALIANA",
+                    "nombre": "Soda Italiana",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -743,7 +743,7 @@
                     ]
                 },
                 {
-                    "nombre": "JUGOS NATURALES",
+                    "nombre": "Jugos Naturales",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -751,7 +751,7 @@
                     ]
                 },
                 {
-                    "nombre": "AROMATICA",
+                    "nombre": "Aromatica",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -759,7 +759,7 @@
                     ]
                 },
                 {
-                    "nombre": "CAPUCHINO",
+                    "nombre": "Capuchino",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -767,7 +767,7 @@
                     ]
                 },
                 {
-                    "nombre": "LATTE",
+                    "nombre": "Latte",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -775,7 +775,7 @@
                     ]
                 },
                 {
-                    "nombre": "MILO",
+                    "nombre": "Milo",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -783,7 +783,7 @@
                     ]
                 },
                 {
-                    "nombre": "AMERICANO",
+                    "nombre": "Americano",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -791,7 +791,7 @@
                     ]
                 },
                 {
-                    "nombre": "CHAI",
+                    "nombre": "Chai",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -799,7 +799,7 @@
                     ]
                 },
                 {
-                    "nombre": "CHAI CON LECHE",
+                    "nombre": "Chai Con Leche",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -807,7 +807,7 @@
                     ]
                 },
                 {
-                    "nombre": "MOCACCINO",
+                    "nombre": "Mocaccino",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -815,7 +815,7 @@
                     ]
                 },
                 {
-                    "nombre": "AROMATICA INFUSION",
+                    "nombre": "Aromatica Infusion",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -823,7 +823,7 @@
                     ]
                 },
                 {
-                    "nombre": "ESPRESSO",
+                    "nombre": "Espresso",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -831,7 +831,7 @@
                     ]
                 },
                 {
-                    "nombre": "CHOCOLATE",
+                    "nombre": "Chocolate",
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
@@ -845,145 +845,145 @@
         "centro": {
             "todos": [
                 {
-                    "nombre": "TAMAL BUFFET",
+                    "nombre": "Tamal Buffet",
                     "variantes": [
                         "$5.000"
                     ]
                 },
                 {
-                    "nombre": "TAMAL MIXTO",
+                    "nombre": "Tamal Mixto",
                     "variantes": [
                         "$5.500"
                     ]
                 },
                 {
-                    "nombre": "AYACO CARNE",
+                    "nombre": "Ayaco Carne",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
-                    "nombre": "AYACO POLLO",
+                    "nombre": "Ayaco Pollo",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
-                    "nombre": "AYACO DULCE",
+                    "nombre": "Ayaco Dulce",
                     "variantes": [
                         "$5.000"
                     ]
                 },
                 {
-                    "nombre": "AREPAS LA ESPECIAL",
+                    "nombre": "Arepas La Especial",
                     "variantes": [
                         "$7.000"
                     ]
                 },
                 {
-                    "nombre": "SALCHICHON PORCIONADO",
+                    "nombre": "Salchichon Porcionado",
                     "variantes": [
                         "$52"
                     ]
                 },
                 {
-                    "nombre": "CAPON",
+                    "nombre": "Capon",
                     "variantes": [
                         "$100"
                     ]
                 },
                 {
-                    "nombre": "GENOVAS",
+                    "nombre": "Genovas",
                     "variantes": [
                         "$2.500"
                     ]
                 },
                 {
-                    "nombre": "CAFÉ 1/2 LIBRA CERROSANTO",
+                    "nombre": "Café 1/2 Libra Cerrosanto",
                     "variantes": [
                         "$20.000"
                     ]
                 },
                 {
-                    "nombre": "CAFÉ CERROSANTO 1 L",
+                    "nombre": "Café Cerrosanto 1 L",
                     "variantes": [
                         "$35.000"
                     ]
                 },
                 {
-                    "nombre": "TAMARINDO",
+                    "nombre": "Tamarindo",
                     "variantes": [
                         "$15.000"
                     ]
                 },
                 {
-                    "nombre": "COCADAS",
+                    "nombre": "Cocadas",
                     "variantes": [
                         "$12.000"
                     ]
                 },
                 {
-                    "nombre": "ROLLOS Y REPOLLAS LA NONA",
+                    "nombre": "Rollos Y Repollas La Nona",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
-                    "nombre": "CHOCOLATE ORGANICO",
+                    "nombre": "Chocolate Organico",
                     "variantes": [
                         "$11.000"
                     ]
                 },
                 {
-                    "nombre": "CAJA PANELITAS",
+                    "nombre": "Caja Panelitas",
                     "variantes": [
                         "$12.000"
                     ]
                 },
                 {
-                    "nombre": "DULCES DE PASTILLA",
+                    "nombre": "Dulces De Pastilla",
                     "variantes": [
                         "$4.000"
                     ]
                 },
                 {
-                    "nombre": "BREVAS",
+                    "nombre": "Brevas",
                     "variantes": [
                         "$5.000"
                     ]
                 },
                 {
-                    "nombre": "QUESO DE HOJA",
+                    "nombre": "Queso De Hoja",
                     "variantes": [
                         "$8.000"
                     ]
                 },
                 {
-                    "nombre": "MIEL DE ABEJAS",
+                    "nombre": "Miel De Abejas",
                     "variantes": [
                         "$22.000"
                     ]
                 },
                 {
-                    "nombre": "QUESO PORCION",
+                    "nombre": "Queso Porcion",
                     "variantes": [
                         "$2.000"
                     ]
                 },
                 {
-                    "nombre": "QUESO CHITAGA",
+                    "nombre": "Queso Chitaga",
                     "variantes": [
                         "$19.000"
                     ]
                 },
                 {
-                    "nombre": "MIEL DE ABEJAS PEQ",
+                    "nombre": "Miel De Abejas Peq",
                     "variantes": [
                         "$10.000"
                     ]
                 },
                 {
-                    "nombre": "QUESO",
+                    "nombre": "Queso",
                     "variantes": [
                         "$15.000"
                     ]
