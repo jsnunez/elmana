@@ -877,8 +877,9 @@ select {
 
 #informacionHistoria p {
 
-    margin: 0;
+    margin-top: 3vh;
     margin-left: 3vw;
+    color: #8c8c8c    ;
 
     align-content: center;
 }
@@ -1014,7 +1015,7 @@ select {
     }
 
     #historia h2 {
-        font-size: 5rem;
+        font-size:4rem;
         line-height: 0.8;
         margin-left: 5vw;
 
@@ -1054,14 +1055,16 @@ font-size: 5rem;
 }
 #informacionBoletin p{
    text-align: center;
-    width: 50%;
+    width: 65%;
+    line-height: 1;
 }
 #informacionBoletin button{
   margin-left: 4%;
 }
 #descubreCatalogo{
-   font-size: 1.6rem;
-   margin-left: 2vw;
+    width: 80%;
+   font-size: 1.4rem;
+   margin-left: 8vw;
    line-height: 1.2;
    margin-bottom: 2vh;
 }
