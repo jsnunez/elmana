@@ -113,8 +113,7 @@
         </div>
     </header>
     <!-- WhatsApp Floating Button -->
-    <a href="whatasapp.html"
-        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="whatasapp.html" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
     </a>
     <section id="top" class="hero">
@@ -174,28 +173,30 @@
                 </div>
             </div>
             <div id="boletin" class="hero-slide" data-bg="images/fondos/boletin.jpg">
-                <div id="tituloBoletin">
-                    <h1 style="color:#fff;">Boletín </h1>
-                    <h1 style="color:#fff;">Informativo</h1>
+                <div class="boletin"></div>
+                <div class="boletin">
+                    <div id="tituloBoletin">
+                        <h1 style="color:#fff;">Boletín </h1>
+                        <h1 style="color:#fff;">Informativo</h1>
+                    </div>
+                    <div id="informacionBoletin">
+                        <p>Entérate de las últimas noticias que trae el Maná</p>
+                        <button class="menu-button" id="ver-noticias">
+                            Ver Mas
+                            <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
+                        </button>
+                    </div>
                 </div>
-                <div id="informacionBoletin">
-                    <p>Entérate de las últimas noticias que trae el Maná</p>
-                    <button class="menu-button" id="ver-noticias">
-                        Ver Mas
-                        <span style="margin-left: 8px; font-size: 1.2em;">&#8594;</span>
-                    </button>
-                </div>
+
             </div>
         </div>
-        <button class="hero-prev" aria-label="Anterior"
-            style="background:none;border:none;position:absolute;left:3vw;;transform:translateY(-50%);font-size:2rem;z-index:2;    cursor: pointer;
+        <button class="hero-prev" aria-label="Anterior" style="background:none;border:none;position:absolute;left:3vw;;transform:translateY(-50%);font-size:2rem;z-index:2;    cursor: pointer;
 ">
-            <img class="mover" src="Iconos/Png/Icono-07.png" alt="Anterior" >
+            <img class="mover" src="Iconos/Png/Icono-07.png" alt="Anterior">
         </button>
-        <button class="hero-next" aria-label="Siguiente"
-            style="background:none;border:none;position:absolute;;transform:translateY(-50%);font-size:2rem;z-index:2;     cursor: pointer;
+        <button class="hero-next" aria-label="Siguiente" style="background:none;border:none;position:absolute;;transform:translateY(-50%);font-size:2rem;z-index:2;     cursor: pointer;
 ">
-            <img class="mover" src="Iconos/Png/Icono-08.png" alt="Siguiente" >
+            <img class="mover" src="Iconos/Png/Icono-08.png" alt="Siguiente">
         </button>
         </div>
         <div class="slider-dots" style="text-align:center;margin-top:1rem;">
@@ -205,6 +206,92 @@
             <span class="dot"></span>
         </div>
         <script>
+            /* Spinner HTML */
+            const spinner = document.createElement('div');
+            spinner.id = 'spinner-loading';
+            spinner.innerHTML = `
+                <div class="spinner-overlay">
+                    <div class="spinner"></div>
+                </div>
+            `;
+            document.body.appendChild(spinner);
+
+            /* Spinner CSS */
+            const spinnerStyle = document.createElement('style');
+            spinnerStyle.innerHTML = `
+                #spinner-loading .spinner-overlay {
+                    position: fixed;
+                    z-index: 9999;
+                    inset: 0;
+                    background: rgba(0,0,0,0.95);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                #spinner-loading .spinner {
+                    border: 6px solid #eee;
+                    border-top: 6px solid #d4af37;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                    animation: spin 1s linear infinite;
+                }
+                @keyframes spin {
+                    to { transform: rotate(360deg); }
+                }
+            `;
+            document.head.appendChild(spinnerStyle);
+
+            /* Hide spinner when page is fully loaded */
+            window.addEventListener('load', function () {
+                const s = document.getElementById('spinner-loading');
+                if (s) s.remove();
+            });
+            /* Spinner para carga de productos */
+            function showProductSpinner() {
+                if (document.getElementById('spinner-productos')) return;
+                const spinner = document.createElement('div');
+                spinner.id = 'spinner-productos';
+                spinner.innerHTML = `
+                    <div class="spinner-overlay">
+                        <div class="spinner"></div>
+                    </div>
+                `;
+                document.body.appendChild(spinner);
+            }
+            function hideProductSpinner() {
+                const s = document.getElementById('spinner-productos');
+                if (s) s.remove();
+            }
+            /* CSS para el spinner de productos (reutiliza el del principal) */
+            (function () {
+                if (document.getElementById('spinner-productos-style')) return;
+                const style = document.createElement('style');
+                style.id = 'spinner-productos-style';
+                style.innerHTML = `
+                    #spinner-productos .spinner-overlay {
+                        position: fixed;
+                        z-index: 9999;
+                        inset: 0;
+                        background: rgba(0,0,0,0.95);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    #spinner-productos .spinner {
+                        border: 6px solid #eee;
+                        border-top: 6px solid #d4af37;
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        animation: spin 1s linear infinite;
+                    }
+                    @keyframes spin {
+                        to { transform: rotate(360deg); }
+                    }
+                `;
+                document.head.appendChild(style);
+            })();
             // Preload all slider images before showing the slider
             document.addEventListener('DOMContentLoaded', function () {
                 const slides = document.querySelectorAll('.hero-slide');
@@ -287,7 +374,7 @@
                             heroSection.style.backgroundPosition = "left";
                         } else if (current == 3) {
                             heroSection.style.backgroundPosition = "55% center";
-                        } 
+                        }
                         else {
                             heroSection.style.backgroundPosition = "center";
                         }
@@ -322,14 +409,14 @@
                     nextBtn.setAttribute('type', 'button');
                     prevBtn.setAttribute('type', 'button');
 
-                    nextBtn.addEventListener('click', function(event) {
+                    nextBtn.addEventListener('click', function (event) {
                         event.preventDefault();
                         event.stopPropagation();
                         nextSlide();
                         stopAutoSlide();
                         startAutoSlide();
                     });
-                    prevBtn.addEventListener('click', function(event) {
+                    prevBtn.addEventListener('click', function (event) {
                         event.preventDefault();
                         event.stopPropagation();
                         prevSlide();
@@ -381,72 +468,72 @@
             <div class="icon-circle large" data-section="cafeteria-section">
                 <img src="Iconos/Svg/Icono-06.svg" alt="Cafetería">
             </div>
-           
+
             <div class="icon-circle large" data-section="santandereano-section">
                 <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
             </div>
-             <div class="icon-circle large" data-section="restaurante-section">
+            <div class="icon-circle large" data-section="restaurante-section">
                 <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
             </div>
         </div>
 
-        <div class="panaderia-section" >
+        <div class="panaderia-section">
             <h2 class="section-title">Panadería</h2>
             <div class="product-grid">
                 <div class="product-card catalog-card" data-category="tradicional" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/panaderia/cascarita.jpg" alt="Tradicional">
                     </div>
-                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
-                    <h3>Tradicional</h3>
-                    <p >Panes clásicos
-                        de la casa, perfectos para cualquier ocasión.</p>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Tradicional</h3>
+                        <p>Panes clásicos
+                            de la casa, perfectos para cualquier ocasión.</p>
+                    </div>
                 </div>
-                                </div>
 
                 <div class="product-card catalog-card" data-category="dulce" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/panaderia/suspiros.jpg" alt="dulce">
                     </div>
-                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
-                    <h3>Dulce</h3>
-                    <p >
-                        Variedad de panes y pasteles dulces para disfrutar.
-                    </p>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Dulce</h3>
+                        <p>
+                            Variedad de panes y pasteles dulces para disfrutar.
+                        </p>
+                    </div>
                 </div>
-                                </div>
 
                 <div class="product-card catalog-card" data-category="rellenos" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/panaderia/panqueso.jpg" alt="rellenos">
                     </div>
-                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
-                    <h3>Rellenos</h3>
-                    <p >Panes con
-                        deliciosos rellenos, ideales para sorprender.</p>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Rellenos</h3>
+                        <p>Panes con
+                            deliciosos rellenos, ideales para sorprender.</p>
 
+                    </div>
                 </div>
-                </div>
-                        <div class="product-card catalog-card" data-category="integral" data-tipo="panaderia">
+                <div class="product-card catalog-card" data-category="integral" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/panaderia/integralavena.jpg" alt="integral">
                     </div>
-                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">  
-                    <h3>Integral</h3>
-                    <p >Opciones
-                        saludables y nutritivas, hechas con harinas integrales.</p>
-                                        </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Integral</h3>
+                        <p>Opciones
+                            saludables y nutritivas, hechas con harinas integrales.</p>
+                    </div>
 
                 </div>
                 <div class="product-card catalog-card" data-category="funcional" data-tipo="panaderia">
                     <div class="product-image">
                         <img src="images/cascarita.jpg" alt="Tradicional">
                     </div>
-                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">          
-                                  <h3>Funcional</h3>
-                    <p >Panes
-                        especiales con ingredientes funcionales para tu bienestar.</p>
-</div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Funcional</h3>
+                        <p>Panes
+                            especiales con ingredientes funcionales para tu bienestar.</p>
+                    </div>
                 </div>
                 <div class="product-card catalog-card" data-category="temporada" data-tipo="panaderia"
                     style="display: none;">
@@ -494,99 +581,99 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <div class="cafeteria-section" style="display: none;">
-                <h2 class="section-title">Cafetería</h2>
-                <div class="product-grid">
-                    <div class="product-card catalog-card" data-category="onces" data-tipo="cafeteria">
-                        <div class="product-image">
-                            <img src="images/panaderia/pastelpollo.jpg" alt="Onces">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Onces</h3>
-                            <p>Tus onces con el mejor sabor y tradición.</p>
-                        </div>
+        <div class="cafeteria-section" style="display: none;">
+            <h2 class="section-title">Cafetería</h2>
+            <div class="product-grid">
+                <div class="product-card catalog-card" data-category="onces" data-tipo="cafeteria">
+                    <div class="product-image">
+                        <img src="images/panaderia/pastelpollo.jpg" alt="Onces">
                     </div>
-                    <div class="product-card catalog-card" data-category="bebidas" data-tipo="cafeteria">
-                        <div class="product-image">
-                            <img src="images/onces/avena.jpg" alt="Bebidas">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Bebidas</h3>
-                            <p>Espuma de leche y café, una combinación perfecta.</p>
-                        </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Onces</h3>
+                        <p>Tus onces con el mejor sabor y tradición.</p>
+                    </div>
+                </div>
+                <div class="product-card catalog-card" data-category="bebidas" data-tipo="cafeteria">
+                    <div class="product-image">
+                        <img src="images/onces/avena.jpg" alt="Bebidas">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Bebidas</h3>
+                        <p>Espuma de leche y café, una combinación perfecta.</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="santandereano-section" style="display: none;">
-                <h2 class="section-title">Rincón Santandereano</h2>
-                <div class="product-grid">
-                        <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
-                        <div class="product-image">
-                            <img src="images/rincon/genova.jpg" alt="Carnes frías">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Carnes frías</h3>
-                            <p>Arepa crocante y sabrosa, receta tradicional.</p>
-                        </div>
+        <div class="santandereano-section" style="display: none;">
+            <h2 class="section-title">Rincón Santandereano</h2>
+            <div class="product-grid">
+                <div class="product-card catalog-card" data-category="carnes_frias" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/rincon/genova.jpg" alt="Carnes frías">
                     </div>
-                    <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
-                        <div class="product-image">
-                            <img src="images/rincon/tamal.jpg" alt="Tamal">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Tamal</h3>
-                            <p>Delicadeza típica de Santander.</p>
-                        </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Carnes frías</h3>
+                        <p>Arepa crocante y sabrosa, receta tradicional.</p>
                     </div>
-                
-                    <div class="product-card catalog-card" data-category="ayacos" data-tipo="santandereano">
-                        <div class="product-image">
-                            <img src="images/rincon/ayaco.jpg" alt="Ayacos">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Ayacos</h3>
-                            <p>Plato típico santandereano, lleno de sabor.</p>
-                        </div>
+                </div>
+                <div class="product-card catalog-card" data-category="tamal" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/rincon/tamal.jpg" alt="Tamal">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Tamal</h3>
+                        <p>Delicadeza típica de Santander.</p>
+                    </div>
+                </div>
+
+                <div class="product-card catalog-card" data-category="ayacos" data-tipo="santandereano">
+                    <div class="product-image">
+                        <img src="images/rincon/ayaco.jpg" alt="Ayacos">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Ayacos</h3>
+                        <p>Plato típico santandereano, lleno de sabor.</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="restaurante-section" style="display: none;">
-                <h2 class="section-title">Restaurante</h2>
-                <div class="product-grid">
-                    <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
-                        <div class="product-image">
-                            <img src="images/restaurante/lasagna.jpg" alt="Combos">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Combos</h3>
-                            <p>Plato tradicional colombiano con variedad de ingredientes.</p>
-                        </div>
+        <div class="restaurante-section" style="display: none;">
+            <h2 class="section-title">Restaurante</h2>
+            <div class="product-grid">
+                <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/restaurante/lasagna.jpg" alt="Combos">
                     </div>
-                    <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
-                        <div class="product-image">
-                            <img src="images/restaurante/menu.jpg" alt="Menú del día">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Menú del día</h3>
-                            <p>Sopa típica de Bogotá, con pollo y papa.</p>
-                        </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Combos</h3>
+                        <p>Plato tradicional colombiano con variedad de ingredientes.</p>
                     </div>
-                    <div class="product-card catalog-card" data-category="ensaladas" data-tipo="restaurante">
-                        <div class="product-image">
-                            <img src="images/restaurante/ensalada.jpg" alt="Ensaladas">
-                        </div>
-                        <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                            <h3>Ensaladas</h3>
-                            <p>Caldo tradicional con carnes y verduras.</p>
-                        </div>
+                </div>
+                <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/restaurante/menu.jpg" alt="Menú del día">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Menú del día</h3>
+                        <p>Sopa típica de Bogotá, con pollo y papa.</p>
+                    </div>
+                </div>
+                <div class="product-card catalog-card" data-category="ensaladas" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/restaurante/ensalada.jpg" alt="Ensaladas">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Ensaladas</h3>
+                        <p>Caldo tradicional con carnes y verduras.</p>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+        </div>
         </div>
 
 
@@ -598,17 +685,17 @@
                 <div class="icon-circle large" data-section="panaderia-section">
                     <img src="Iconos/Svg/Icono-05.svg" alt="Panadería">
                 </div>
-                  <div class="icon-circle large" data-section="bizcocheria-section">
+                <div class="icon-circle large" data-section="bizcocheria-section">
                     <img src="Iconos/Svg/Icono-10.svg" alt="Cafetería">
                 </div>
                 <div class="icon-circle large" data-section="cafeteria-section">
                     <img src="Iconos/Svg/Icono-06.svg" alt="Cafetería">
                 </div>
-             
+
                 <div class="icon-circle large" data-section="santandereano-section">
                     <img src="Iconos/Svg/Icono-09.svg" alt="Cafetería">
                 </div>
-                 <div class="icon-circle large" data-section="restaurante-section">
+                <div class="icon-circle large" data-section="restaurante-section">
                     <img src="Iconos/Svg/Icono-04.svg" alt="Restaurante">
                 </div>
             </div>
@@ -961,54 +1048,61 @@
             <span class="indicator" data-slide="8"></span>
         </div>
     </section>
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
+    <footer class="footer">
+        <div class="container" style="width:90%;">
+            <div class="footer-grid">
 
-      <!-- Logo y descripción -->
-      <div class="footer-section">
-        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
-        <p class="footer-description">
-          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
-        </p>
-    
-      </div>
+                <!-- Logo y descripción -->
+                <div class="footer-section">
+                    <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+                    <p class="footer-description">
+                        Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo
+                        sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+                    </p>
 
-      <!-- Información de contacto -->
-      <div class="footer-section" style="text-align: start;">
-        <h4>Contáctanos</h4>
-        <ul class="contact-info" style="text-align: start;">
-          <li>Cra. 18 #37-42, Bucaramanga - Colombia</li>
-          <li>Teléfono: 607 6425198</li>
-          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
-        </ul>
-      </div>
+                </div>
 
-      <!-- Enlaces -->
-      <div class="footer-section">
-        <h4>Enlaces de interés</h4>
-        <ul class="footer-links">
-          <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
-          <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
-          <li><a href="#">Trabaja en El Maná</a></li>
-        </ul>
-     
-          <!-- <div class="social-icons">
-          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div> -->
-         </div>
-    </div>
+                <!-- Información de contacto -->
+                <div class="footer-section" style="text-align: start;">
+                    <h4>Contáctanos</h4>
+                    <ul class="contact-info" style="text-align: start;">
+                        <li>Cra. 18 #37-42, Bucaramanga - Colombia</li>
+                        <li>Teléfono: 607 6425198</li>
+                        <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+                    </ul>
+                </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
+                <!-- Enlaces -->
+                <div class="footer-section">
+
+                    <h4>Enlaces de interés</h4>
+                    <ul class="footer-links">
+                        <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+                        <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+                        <li><a href="trabajaConNosotros.html">Trabaja en El Maná</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-section">
+                    <h4 style="margin-top: 0;">Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>

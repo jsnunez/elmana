@@ -1,3 +1,4 @@
+
 let carrito = [];
 let sede = "";
 let tipoProducto = "";
@@ -369,7 +370,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     async function cargarProductos() {
-        const sede = sedeSelect.value;
+        showProductSpinner();
+        let sede = sedeSelect.value;
         const img = document.getElementById('foto-sede-img');
         let src = 'images/sedes/default.jpg';
         if (sede == 'centro') src = 'images/sedes/sede1.jpg';
@@ -381,20 +383,26 @@ document.addEventListener('DOMContentLoaded', function () {
         else if (sede === 'cie') src = 'images/sedes/sede7.jpg';
         img.src = src;
         const claseSelect1 = document.getElementById('clase-producto'); // categoría fija en HTML
-        const categoria = claseSelect1.value;
+        let categoria = claseSelect1.value;
+  sede="centro";
+
+        // Si la categoría es carnes_frias, tamal o ayacos, forzar a "todo"
+        if (['carnes_frias', 'tamal', 'ayacos'].includes(categoria)) {
+            categoria = 'todo';
+        }
+        console.log('Sede seleccionada:', sede);
 
         if (!sede || !categoria) {
             productosLista.innerHTML = '<p>Seleccione sede y clase para ver productos.</p>';
             return;
         }
         // Cambiar las opciones del select de clase-producto según el tipoProducto
-  
+
         const response = await fetch('productos.json');
         const todo = await response.json();
         const data = todo[tipoProducto];
         console.log(todo);
         console.log(tipoProducto);
-
         let productos = [];
         if (categoria == 'todo') {
 
@@ -468,6 +476,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
             productosLista.appendChild(card);
         });
+        let imagesLoaded = 0;
+        const totalImages = productos.length;
+        if (totalImages === 0) {
+            hideProductSpinner();
+        } else {
+            productosLista.querySelectorAll('img').forEach(img => {
+                if (img.complete) {
+                    imagesLoaded++;
+                    if (imagesLoaded === totalImages) hideProductSpinner();
+                } else {
+                    img.onload = img.onerror = () => {
+                        imagesLoaded++;
+                        if (imagesLoaded === totalImages) hideProductSpinner();
+                    };
+                }
+            });
+        }
     }
 
     // Pedir sede al cargar con Swal, y preguntar si desea cambiar si ya hay una guardada
@@ -572,6 +597,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var category = this.getAttribute('data-category');
             tipoProducto = this.getAttribute('data-tipo');
 
+            
          llenarSelectSedes();
     await pedirSede();
         if (tipoProducto && clasesPorTipo[tipoProducto]) {

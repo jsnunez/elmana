@@ -1,0 +1,373 @@
+  "cabecera": {
+            "tradicional": [
+                {
+                    "nombre": "Rollo",
+                    "imagen": "images/panaderia/rollo.jpg",
+                    "descripcion": "Pan enrollado tradicional, ideal para acompañar comidas.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000",
+                        "$3.000",
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Cascarita",
+                    "imagen": "images/panaderia/cascarita.jpg",
+                    "descripcion": "Pan crocante y ligero, perfecto para acompañar sopas o ensaladas.",
+                    "variantes": [
+                        "$1.200"
+                    ]
+                },
+                {
+                    "nombre": "Frances",
+                    "imagen": "images/panaderia/frances.jpg",
+                    "descripcion": "Pan francés clásico, ideal para desayunos y meriendas.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Mogolla",
+                    "imagen": "images/panaderia/mogolla.jpg",
+                    "descripcion": "Pan tradicional de textura suave y sabor ligeramente dulce.",
+                    "variantes": [
+                        "$1.500"
+                    ]
+                },
+                {
+                    "nombre": "Mestiza",
+                    "imagen": "images/panaderia/mestiza.jpg",
+                    "descripcion": "Pan de mezcla especial, suave y esponjoso.",
+                    "variantes": [
+                        "$2.500",
+                        "$3.500"
+                    ]
+                },
+                {
+                    "nombre": "Mestiza Plana",
+                    "imagen": "images/panaderia/mestizaplana.jpg",
+                    "descripcion": "Versión plana de la mestiza, ideal para acompañar comidas.",
+                    "variantes": [
+                        "$1.500"
+                    ]
+                },
+                {
+                    "nombre": "Maiz Sal",
+                    "imagen": "images/panaderia/maizsal.jpg",
+                    "descripcion": "Pan de maíz con un toque de sal.",
+                    "variantes": [
+                        "$2.000",
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Finas Hierbas",
+                    "imagen": "images/panaderia/panfinashierbas.jpg",
+                    "descripcion": "Pan aromatizado con finas hierbas.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Queso/Miel",
+                    "imagen": "images/panaderia/panquesomiel.jpg",
+                    "descripcion": "Pan relleno de queso y miel.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Sueño",
+                    "imagen": "images/panaderia/pansueno.jpg",
+                    "descripcion": "Pan suave y esponjoso, perfecto para meriendas.",
+                    "variantes": [
+                        "$2.500"
+                    ]
+                },
+                {
+                    "nombre": "Tajado Blanco",
+                    "imagen": "images/panaderia/tajadoblanco.jpg",
+                    "descripcion": "Pan tajado blanco, ideal para sándwiches.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Focaccia",
+                    "imagen": "images/panaderia/focaccia.jpg",
+                    "descripcion": "Pan italiano con aceite de oliva y hierbas.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Hamburguesa Blanco",
+                    "imagen": "images/panaderia/hamburguesablanco.jpg",
+                    "descripcion": "Pan blanco para hamburguesa.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Perro",
+                    "imagen": "images/panaderia/panperro.jpg",
+                    "descripcion": "Pan especial para perros calientes.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Tostado",
+                    "imagen": "images/panaderia/tostado.jpg",
+                    "descripcion": "Pan tostado crujiente.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Tostada De Ajo",
+                    "imagen": "images/panaderia/tostadaajo.jpg",
+                    "descripcion": "Tostada con sabor a ajo.",
+                    "variantes": [
+                        "$6.500"
+                    ]
+                },
+                {
+                    "nombre": "Tostadas Aliñadas",
+                    "imagen": "images/panaderia/tostadasalinadas.jpg",
+                    "descripcion": "Tostadas con aliños especiales.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                {
+                    "nombre": "Pan De Yuca",
+                    "imagen": "images/panaderia/pandeyuca.jpg",
+                    "descripcion": "Panecillos de yuca tradicionales.",
+                    "variantes": [
+                        "$3.500"
+                    ]
+                },
+                {
+                    "nombre": "Calentano",
+                    "imagen": "images/panaderia/calentanox10.jpg",
+                    "descripcion": "Paquete de 10 panes calentanos.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Bola",
+                    "imagen": "images/panaderia/paqbolax6.jpg",
+                    "descripcion": "Paquete de 6 panes bola.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Ajo",
+                    "imagen": "images/panaderia/panajo.jpg",
+                    "descripcion": "Pan con sabor a ajo.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                }
+            ],
+            "dulce": [
+                {
+                    "nombre": "Mojicon",
+                    "imagen": "images/panaderia/mojicon.jpg",
+                    "descripcion": "Pan dulce tradicional, esponjoso y suave.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Mojicon Uva",
+                    "imagen": "images/panaderia/mojiconuva.jpg",
+                    "descripcion": "Mojicón con uvas pasas, ideal para acompañar bebidas calientes.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Fruta",
+                    "imagen": "images/panaderia/fruta.jpg",
+                    "descripcion": "Pan dulce con trozos de fruta confitada.",
+                    "variantes": [
+                        "$2.000",
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Roscon Bocadillo",
+                    "imagen": "images/panaderia/rosconbocadillo.jpg",
+                    "descripcion": "Roscon relleno de bocadillo, suave y delicioso.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Roscon Arequipe",
+                    "imagen": "images/panaderia/rosconarequipe.jpg",
+                    "descripcion": "Roscon relleno de arequipe, perfecto para los amantes del dulce.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan De Muerto",
+                    "imagen": "images/panaderia/pandemuerto.jpg",
+                    "descripcion": "Pan tradicional de temporada, suave y aromático.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Nevados ",
+                    "imagen": "images/panaderia/nevadosx6.jpg",
+                    "descripcion": "Paquete de 6 nevados dulces y esponjosos.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                }
+            ],
+            "rellenos": [
+                {
+                    "nombre": "Pan Queso",
+                    "imagen": "images/panaderia/panqueso.jpg",
+                    "descripcion": "Pan relleno de queso fundido.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Sueño Maiz",
+                    "imagen": "images/panaderia/maizsal.jpg",
+                    "descripcion": "Pan suave de maíz con relleno especial.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Brevas",
+                    "imagen": "images/panaderia/panbrevas.jpg",
+                    "descripcion": "Pan relleno de brevas dulces.",
+                    "variantes": [
+                        "$13.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Aceituna",
+                    "imagen": "images/panaderia/panaceituna.jpg",
+                    "descripcion": "Pan artesanal con aceitunas.",
+                    "variantes": [
+                        "$14.000"
+                    ]
+                },
+                {
+                    "nombre": "Pan Breva Y Arequipe",
+                    "imagen": "images/panaderia/panbrevaarequipe.jpg",
+                    "descripcion": "Pan relleno de breva y arequipe.",
+                    "variantes": [
+                        "$10.000"
+                    ]
+                },
+                {
+                    "nombre": "Jamon Y Queso",
+                    "imagen": "images/panaderia/jamonqueso.jpg",
+                    "descripcion": "Pan relleno de jamón y queso.",
+                    "variantes": [
+                        "$10.000"
+                    ]
+                },
+                {
+                    "nombre": "Hawaiano O",
+                    "imagen": "images/panaderia/hawaiano.jpg",
+                    "descripcion": "Pan relleno de jamón, queso y piña.",
+                    "variantes": [
+                        "$12.000"
+                    ]
+                }
+            ],
+            "integral": [
+                {
+                    "nombre": "Integral",
+                    "imagen": "images/panaderia/integral.jpg",
+                    "descripcion": "Pan integral saludable.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000",
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Integral Avena",
+                    "imagen": "images/panaderia/integralavena.jpg",
+                    "descripcion": "Pan integral con avena.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                },
+                {
+                    "nombre": "Multigrano",
+                    "imagen": "images/panaderia/multigrano.jpg",
+                    "descripcion": "Pan multigrano con semillas.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Tostada Integral",
+                    "imagen": "images/panaderia/tostadaintegral.jpg",
+                    "descripcion": "Tostada integral saludable.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Soya",
+                    "imagen": "images/panaderia/soya.jpg",
+                    "descripcion": "Pan integral con soya.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Integral Uva",
+                    "imagen": "images/panaderia/integraluva.jpg",
+                    "descripcion": "Pan integral con uvas pasas.",
+                    "variantes": [
+                        "$3.000"
+                    ]
+                }
+            ],
+            "funcional": [
+                {
+                    "nombre": "Pan Sin Gluten",
+                    "imagen": "images/panaderia/pansingluten.jpg",
+                    "descripcion": "Pan especial sin gluten.",
+                    "variantes": [
+                        "$11.000"
+                    ]
+                }
+            ]
+        }

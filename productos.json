@@ -244,7 +244,7 @@
                     ]
                 },
                 {
-                    "nombre": "Nevados X6",
+                    "nombre": "Nevados ",
                     "imagen": "images/panaderia/nevadosx6.jpg",
                     "descripcion": "Paquete de 6 nevados dulces y esponjosos.",
                     "variantes": [
@@ -513,6 +513,14 @@
                     "variantes": [
                         "$5.000"
                     ]
+                },
+                {
+                    "nombre": "Postre De Leche Asada",
+                    "imagen": "",
+                    "descripcion": "",
+                    "variantes": [
+                        "$8.000"
+                    ]
                 }
             ],
             "torta_artesanal": [
@@ -567,14 +575,6 @@
             ],
             "salados": [
                 {
-                    "nombre": "Porcion Torta De Cuajada",
-                    "imagen": "images/panaderia/porciontortadecuajada.jpg",
-                    "descripcion": "Porción individual de torta de cuajada.",
-                    "variantes": [
-                        "$6.500"
-                    ]
-                },
-                {
                     "nombre": "Bizcochuelo De Queso",
                     "imagen": "images/panaderia/bizcochuelodequeso.jpg",
                     "descripcion": "Bizcochuelo salado con queso.",
@@ -621,6 +621,14 @@
                     ]
                 },
                 {
+                    "nombre": "Almojabanas ",
+                    "imagen": "images/panaderia/almojabanas.jpg",
+                    "descripcion": "Paquete de 8 almojábanas.",
+                    "variantes": [
+                        "$12.000"
+                    ]
+                },
+                {
                     "nombre": "Pastel De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
                     "descripcion": "Pastel de pollo empanizado y frito.",
@@ -647,59 +655,30 @@
             ],
             "bebidas": [
                 {
-                    "nombre": "Kumis Personal",
-                    "imagen": "images/panaderia/kumispersonal.jpg",
+                    "nombre": "Kumis",
+                    "imagen": "images/panaderia/kumis.jpg",
                     "descripcion": "Kumis en presentación personal.",
                     "variantes": [
+                        "$4.500",
                         "$9.000"
                     ]
                 },
                 {
-                    "nombre": "Avena Personal",
-                    "imagen": "images/panaderia/avenapersonal.jpg",
+                    "nombre": "Avena",
+                    "imagen": "images/panaderia/avena.jpg",
                     "descripcion": "Avena en presentación personal.",
                     "variantes": [
+                        "$4.500",
                         "$9.000"
                     ]
                 },
                 {
-                    "nombre": "Masato Personal",
-                    "imagen": "images/panaderia/masatopersonal.jpg",
+                    "nombre": "Masato",
+                    "imagen": "images/panaderia/masato.jpg",
                     "descripcion": "Masato en presentación personal.",
                     "variantes": [
+                        "$4.500",
                         "$9.000"
-                    ]
-                },
-                {
-                    "nombre": "Almojabanas Paq X8",
-                    "imagen": "images/panaderia/almojabanaspaqx8.jpg",
-                    "descripcion": "Paquete de 8 almojábanas.",
-                    "variantes": [
-                        "$12.000"
-                    ]
-                },
-                {
-                    "nombre": "Avena Vaso",
-                    "imagen": "images/panaderia/avenavaso.jpg",
-                    "descripcion": "Vaso de avena.",
-                    "variantes": [
-                        "$4.500"
-                    ]
-                },
-                {
-                    "nombre": "Masato Vaso",
-                    "imagen": "images/panaderia/masatovaso.jpg",
-                    "descripcion": "Vaso de masato.",
-                    "variantes": [
-                        "$4.500"
-                    ]
-                },
-                {
-                    "nombre": "Kumis Vaso",
-                    "imagen": "images/panaderia/kumisvaso.jpg",
-                    "descripcion": "Vaso de kumis.",
-                    "variantes": [
-                        "$4.500"
                     ]
                 },
                 {
@@ -707,6 +686,7 @@
                     "imagen": "",
                     "descripcion": "",
                     "variantes": [
+                        "$4.000",
                         "$9.000"
                     ]
                 },
@@ -724,14 +704,6 @@
                     "descripcion": "",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Postre De Leche Asada",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$8.000"
                     ]
                 },
                 {
@@ -772,14 +744,6 @@
                     "descripcion": "",
                     "variantes": [
                         "$5.000"
-                    ]
-                },
-                {
-                    "nombre": "Milo",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$4.000"
                     ]
                 },
                 {
@@ -846,146 +810,165 @@
             "todos": [
                 {
                     "nombre": "Tamal Buffet",
+                    "imagen": "images/panaderia/tamal.jpg",
                     "variantes": [
                         "$5.000"
                     ]
                 },
                 {
                     "nombre": "Tamal Mixto",
+                    "imagen": "images/panaderia/tamal.jpg",
                     "variantes": [
                         "$5.500"
                     ]
                 },
                 {
                     "nombre": "Ayaco Carne",
+                    "imagen": "images/panaderia/ayaco.jpg",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
                     "nombre": "Ayaco Pollo",
+                    "imagen": "images/panaderia/ayaco.jpg",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
                     "nombre": "Ayaco Dulce",
+                    "imagen": "images/panaderia/ayaco.jpg",
                     "variantes": [
                         "$5.000"
                     ]
                 },
                 {
                     "nombre": "Arepas La Especial",
+                    "imagen": "images/panaderia/arepaslaespecial.jpg",
                     "variantes": [
                         "$7.000"
                     ]
                 },
                 {
                     "nombre": "Salchichon Porcionado",
+                    "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
                         "$52"
                     ]
                 },
                 {
                     "nombre": "Capon",
+                    "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
                         "$100"
                     ]
                 },
                 {
                     "nombre": "Genovas",
+                    "imagen": "images/panaderia/genova.jpg",
                     "variantes": [
                         "$2.500"
                     ]
                 },
                 {
-                    "nombre": "Café 1/2 Libra Cerrosanto",
+                    "nombre": "Café  Cerrosanto",
+                    "imagen": "images/panaderia/cafe12libracerrosanto.jpg",
                     "variantes": [
-                        "$20.000"
-                    ]
-                },
-                {
-                    "nombre": "Café Cerrosanto 1 L",
-                    "variantes": [
+                        "$20.000",
                         "$35.000"
                     ]
                 },
                 {
-                    "nombre": "Tamarindo",
-                    "variantes": [
-                        "$15.000"
-                    ]
-                },
-                {
-                    "nombre": "Cocadas",
-                    "variantes": [
-                        "$12.000"
-                    ]
-                },
-                {
                     "nombre": "Rollos Y Repollas La Nona",
+                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
-                    "nombre": "Chocolate Organico",
-                    "variantes": [
-                        "$11.000"
-                    ]
-                },
-                {
-                    "nombre": "Caja Panelitas",
-                    "variantes": [
-                        "$12.000"
-                    ]
-                },
-                {
-                    "nombre": "Dulces De Pastilla",
-                    "variantes": [
-                        "$4.000"
-                    ]
-                },
-                {
-                    "nombre": "Brevas",
-                    "variantes": [
-                        "$5.000"
-                    ]
-                },
-                {
                     "nombre": "Queso De Hoja",
+                    "imagen": "images/panaderia/queso.jpg",
                     "variantes": [
+                        "$2.000",
                         "$8.000"
                     ]
                 },
                 {
                     "nombre": "Miel De Abejas",
+                    "imagen": "images/panaderia/miel.jpg",
                     "variantes": [
+                        "$10.000",
                         "$22.000"
                     ]
                 },
-                {
-                    "nombre": "Queso Porcion",
-                    "variantes": [
-                        "$2.000"
-                    ]
-                },
+                
                 {
                     "nombre": "Queso Chitaga",
+                    "imagen": "images/panaderia/quesochitaga.jpg",
                     "variantes": [
                         "$19.000"
                     ]
                 },
                 {
-                    "nombre": "Miel De Abejas Peq",
+                    "nombre": "Queso",
+                    "imagen": "images/panaderia/quesoentero.jpg",
                     "variantes": [
-                        "$10.000"
+                        "$15.000"
+                    ]
+                }
+            ]
+        }
+    },
+    "restaurante": {
+        "centro": {
+            "combos": [
+                {
+                    "nombre": "Lasagna",
+                                                            "imagen": "images/panaderia/lasagna.jpg",
+
+                    "descripcion": "Lasaña de carne con salsa bechamel y queso gratinado.",
+                    "variantes": [
+                        "$15.000"
+                    ]
+                }
+            ],
+            "menu-del-dia": [
+                {
+                    "nombre": "Almuerzo Corriente",
+                    "descripcion": "Sopa, seco, jugo y postre.",
+                    "variantes": [
+                        "$20.000"
+                    ]
+                }
+            ],
+            "ensaladas": [
+               
+                {
+                    "nombre": "Ensalada Vegetariana",
+                                        "imagen": "images/panaderia/vegetariana.jpg",
+
+                    "descripcion": "Mezcla de vegetales frescos, tomate, zanahoria, pepino y aderezo ligero.",
+                    "variantes": [
+                        "$16.000"
                     ]
                 },
                 {
-                    "nombre": "Queso",
+                    "nombre": "Ensalada Rusa",
+                                        "imagen": "images/panaderia/rusa.jpg",
+
+                    "descripcion": "Papas, zanahoria, arveja, huevo y mayonesa.",
                     "variantes": [
-                        "$15.000"
+                        "$16.000"
+                    ]
+                },
+                {
+                    "nombre": "Ensalada Mediterránea",
+                                        "imagen": "images/panaderia/mediterranea.jpg",
+
+                    "descripcion": "Tomate, pepino, aceitunas, queso feta y aceite de oliva.",
+                    "variantes": [
+                        "$16.000"
                     ]
                 }
             ]
