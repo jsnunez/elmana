@@ -47,7 +47,7 @@ ul {
 
 .container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 10vw;
     padding: 0 20px;
 }
@@ -107,10 +107,15 @@ ul {
     color: #333;
     transition: color 0.3s;
 }
-
+.icon-hero img{
+    width: auto;
+    height: 7vh;
+    margin-right: 8px;
+    margin-left: 8px;
+}
 .cart-icon img {
     width: auto;
-    height: 8vh;
+    height: 7vh;
     margin-right: 8px;
     margin-left: 8px;
 }
@@ -676,6 +681,30 @@ h3 {
     border-radius: 50%;
     transition: background 0.3s, color 0.3s;
     text-align: center;
+}
+
+.social-icon-nav {
+    color: #333;
+    font-size: 1.6rem; /* icono más grande */
+    background: rgba(255, 255, 255, 0.1);
+    width: 3rem; /* círculo más grande */
+    height: 3rem;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centra el icono */
+}
+.social-icon-nav:hover {
+    background: var(--primary-color, #cba739);
+    color: white;
+}
+@media (max-width: 600px) {
+    .social-icon-nav {
+       display: none;
+    }
 }
 
 .social-icon:hover {

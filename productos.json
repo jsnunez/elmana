@@ -680,127 +680,6 @@
                         "$4.500",
                         "$9.000"
                     ]
-                },
-                {
-                    "nombre": "Milo Granizado",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$4.000",
-                        "$9.000"
-                    ]
-                },
-                {
-                    "nombre": "Jugos Agua",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
-                {
-                    "nombre": "Jugos Leche",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Soda Italiana",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Jugos Naturales",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$3.000"
-                    ]
-                },
-                {
-                    "nombre": "Aromatica",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$3.000"
-                    ]
-                },
-                {
-                    "nombre": "Capuchino",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
-                {
-                    "nombre": "Latte",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$5.000"
-                    ]
-                },
-                {
-                    "nombre": "Americano",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$3.500"
-                    ]
-                },
-                {
-                    "nombre": "Chai",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$5.000"
-                    ]
-                },
-                {
-                    "nombre": "Chai Con Leche",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Mocaccino",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$8.200"
-                    ]
-                },
-                {
-                    "nombre": "Aromatica Infusion",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
-                {
-                    "nombre": "Espresso",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$4.000"
-                    ]
-                },
-                {
-                    "nombre": "Chocolate",
-                    "imagen": "",
-                    "descripcion": "",
-                    "variantes": [
-                        "$7.700"
-                    ]
                 }
             ]
         }
@@ -844,8 +723,8 @@
                     ]
                 },
                 {
-                    "nombre": "Arepas La Especial",
-                    "imagen": "images/panaderia/arepaslaespecial.jpg",
+                    "nombre": "Arepas",
+                    "imagen": "images/panaderia/arepaamarilla.jpg",
                     "variantes": [
                         "$7.000"
                     ]
@@ -870,28 +749,22 @@
                     "variantes": [
                         "$2.500"
                     ]
-                },
-                {
-                    "nombre": "Café  Cerrosanto",
-                    "imagen": "images/panaderia/cafe12libracerrosanto.jpg",
-                    "variantes": [
-                        "$20.000",
-                        "$35.000"
-                    ]
-                },
-                {
-                    "nombre": "Rollos Y Repollas La Nona",
+                },            
+                 {
+                    "nombre": "Rollos Y Repollas",
                     "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
                     "variantes": [
                         "$6.000"
                     ]
                 },
                 {
-                    "nombre": "Queso De Hoja",
+                    "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
                     "variantes": [
-                        "$2.000",
-                        "$8.000"
+                        "Doble crema $15.000",
+                        "De hoja $2.000",
+                        "De hoja $8.000",
+                        "Chitaga $19.000"
                     ]
                 },
                 {
@@ -901,21 +774,6 @@
                         "$10.000",
                         "$22.000"
                     ]
-                },
-                
-                {
-                    "nombre": "Queso Chitaga",
-                    "imagen": "images/panaderia/quesochitaga.jpg",
-                    "variantes": [
-                        "$19.000"
-                    ]
-                },
-                {
-                    "nombre": "Queso",
-                    "imagen": "images/panaderia/quesoentero.jpg",
-                    "variantes": [
-                        "$15.000"
-                    ]
                 }
             ]
         }
@@ -924,10 +782,17 @@
         "centro": {
             "combos": [
                 {
-                    "nombre": "Lasagna",
-                                                            "imagen": "images/panaderia/lasagna.jpg",
-
-                    "descripcion": "Lasaña de carne con salsa bechamel y queso gratinado.",
+                    "nombre": "Lasagna de carne",
+                    "imagen": "images/panaderia/lasagna.jpg",
+                    "descripcion": "Acompañado de sopa, jugo natural y postre.",
+                    "variantes": [
+                        "$18.000"
+                    ]
+                },
+                      {
+                    "nombre": "Tazón",
+                    "imagen": "images/panaderia/tazon.jpg",
+                    "descripcion": "Cama de fusilli acompañado de batavia en julianas, repollo morado, zanahoria rayada, pimentón rojo en cuadritos, arveja o garbanzo y aceitunas negras. .",
                     "variantes": [
                         "$15.000"
                     ]
@@ -943,30 +808,58 @@
                 }
             ],
             "ensaladas": [
-               
+                {
+                    "nombre": "Ensalada De La Casa",
+                    "imagen": "images/ensaladas/de-la-casa.jpg",
+                    "descripcion": "Jamón bajo en grasa, huevo y cuajada sobre una cama de lechuga, zanahoria, habichuela, maíz tierno, champiñones, pimentón, arveja, tomate, vinagreta de la casa y aceite de oliva.",
+                    "variantes": [
+                        "$15.000"
+                    ]
+                },
+                {
+                    "nombre": "Ensalada Mediterránea",
+                    "imagen": "images/ensaladas/mediterranea.jpg",
+                    "descripcion": "Pollo desmenuzado sobre una cama de lechuga, repollo morado, rábanos, pimentón, tomate, aceitunas negras, queso semi-salado, albahaca, vinagreta de naranja y aceite de oliva.",
+                    "variantes": [
+                        "$15.000"
+                    ]
+                },
                 {
                     "nombre": "Ensalada Vegetariana",
-                                        "imagen": "images/panaderia/vegetariana.jpg",
-
-                    "descripcion": "Mezcla de vegetales frescos, tomate, zanahoria, pepino y aderezo ligero.",
+                    "imagen": "images/ensaladas/vegetariana.jpg",
+                    "descripcion": "Cuajada y aguacate sobre una cama de lechuga, zanahoria, habichuela, maíz tierno, pimentón, champiñones, tomate, vinagreta de la casa y aceite de oliva.",
+                    "variantes": [
+                        "$15.000"
+                    ]
+                },
+                {
+                    "nombre": "Ensalada De Atún",
+                    "imagen": "images/ensaladas/atun.jpg",
+                    "descripcion": "Lomito de atún desmenuzado, sobre una cama de lechuga, tomate, aguacate, zanahoria, maíz tierno, champiñones, pimentón, queso doble crema, vinagreta de la casa y aceite de oliva.",
                     "variantes": [
                         "$16.000"
                     ]
                 },
                 {
                     "nombre": "Ensalada Rusa",
-                                        "imagen": "images/panaderia/rusa.jpg",
-
-                    "descripcion": "Papas, zanahoria, arveja, huevo y mayonesa.",
+                    "imagen": "images/ensaladas/rusa.jpg",
+                    "descripcion": "Pollo, papa, salchicha Viena, habichuela, arveja, zanahoria y salsa de la casa.",
                     "variantes": [
                         "$16.000"
                     ]
                 },
                 {
-                    "nombre": "Ensalada Mediterránea",
-                                        "imagen": "images/panaderia/mediterranea.jpg",
-
-                    "descripcion": "Tomate, pepino, aceitunas, queso feta y aceite de oliva.",
+                    "nombre": "Ensalada Atún y Piña",
+                    "imagen": "images/ensaladas/atun-pina.jpg",
+                    "descripcion": "Lomito de atún desmenuzado, sobre una cama de lechuga, piña, pimentón, cuajada, zanahoria, maíz tierno y vinagreta.",
+                    "variantes": [
+                        "$16.000"
+                    ]
+                },
+                {
+                    "nombre": "Ensalada Hawaiana",
+                    "imagen": "images/ensaladas/hawaiana.jpg",
+                    "descripcion": "Jamón bajo en grasa, sobre una cama de lechuga, piña, queso crema o cuajada, y crema de leche.",
                     "variantes": [
                         "$16.000"
                     ]

@@ -384,48 +384,56 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = src;
         const claseSelect1 = document.getElementById('clase-producto'); // categoría fija en HTML
         let categoria = claseSelect1.value;
+        let sedeseleccionada=sede;
   sede="centro";
+// Si la categoría es carnes_frias, tamal o ayacos, forzar a "todo"
+if (['carnes_frias', 'tamal', 'ayacos'].includes(categoria)) {
+    categoria = 'todo';
+}
+console.log('Sede seleccionada:', sede);
 
-        // Si la categoría es carnes_frias, tamal o ayacos, forzar a "todo"
-        if (['carnes_frias', 'tamal', 'ayacos'].includes(categoria)) {
-            categoria = 'todo';
-        }
-        console.log('Sede seleccionada:', sede);
+if (!sede || !categoria) {
+    productosLista.innerHTML = '<p>Seleccione sede y clase para ver productos.</p>';
+    return;
+}
+// Cambiar las opciones del select de clase-producto según el tipoProducto
 
-        if (!sede || !categoria) {
-            productosLista.innerHTML = '<p>Seleccione sede y clase para ver productos.</p>';
-            return;
-        }
-        // Cambiar las opciones del select de clase-producto según el tipoProducto
+const response = await fetch('productos.json');
+const todo = await response.json();
+const data = todo[tipoProducto];
+console.log(todo);
+console.log(tipoProducto);
+let productos = [];
 
-        const response = await fetch('productos.json');
-        const todo = await response.json();
-        const data = todo[tipoProducto];
-        console.log(todo);
-        console.log(tipoProducto);
-        let productos = [];
-        if (categoria == 'todo') {
+// Mostrar "ensaladas" solo si la sede seleccionada es paseoDelComercio
+if (categoria === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') {
+    productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
+                hideProductSpinner();
 
-            // Unir todos los productos de todas las categorías de la sede seleccionada
-            if (data && data[sede]) {
-                Object.values(data[sede]).forEach(arr => {
-                    if (Array.isArray(arr)) productos = productos.concat(arr);
-                    console.log(arr);
-                });
-                console.log(productos);
-            } else {
-                productos = [];
-                console.log('No hay productos para esta sede o tipo de producto.');
-            }
-        
-        } else {
-            productos = (data[sede] && data[sede][categoria]) || [];
-        }
+    return;
+}
 
-        if (productos.length === 0) {
-            productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
-            return;
-        }
+if (categoria == 'todo') {
+    // Unir todos los productos de todas las categorías de la sede seleccionada
+    if (data && data[sede]) {
+    Object.entries(data[sede]).forEach(([cat, arr]) => {
+        // Filtrar ensaladas si la sede no es paseoDelComercio
+        if (cat === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') return;
+        if (Array.isArray(arr)) productos = productos.concat(arr);
+    });
+    console.log(productos);
+    } else {
+    productos = [];
+    console.log('No hay productos para esta sede o tipo de producto.');
+    }
+} else {
+    productos = (data[sede] && data[sede][categoria]) || [];
+}
+
+if (productos.length === 0) {
+    productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
+    return;
+}
 
         productosLista.innerHTML = '';
 
