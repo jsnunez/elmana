@@ -2,34 +2,34 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>el Maná - Tradición de hogar</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="styleSedes.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>el Maná - Tradición de hogar</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styleSedes.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <link rel="stylesheet" href="styles2.css">
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="el Maná">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li>
-                        <a href="index.html#productos" onclick="
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="el Maná">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li>
+            <a href="index.html#productos" onclick="
                             const productosSection = document.querySelector('.products');
                             const catalogo1 = document.getElementById('catalogo');
                             const sedesSection = document.querySelector('.sedes-section');
@@ -65,9 +65,9 @@
                             document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
                             return false;
                         ">Catálogo</a>
-                    </li>
-                    <li>
-                        <a href="index.html#sedes" onclick="
+          </li>
+          <li>
+            <a href="index.html#sedes" onclick="
                             const section = document.querySelector('.sedes-section');
                             const catalogo = document.getElementById('catalogo');
                             const productosSection1 = document.querySelector('.products');
@@ -83,281 +83,362 @@
                             this.classList.add('active');
                             window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
                             return false;">
-                            Nuestras Sedes
-                        </a>
-                    </li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-         
-        </div>
-    </header>
+              Nuestras Sedes
+            </a>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
 
-<a href="whatasapp.html"
-        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
-    </a>
-<!-- Sección Historia con línea de tiempo -->
-<div id="historia" style="background: linear-gradient(rgba(33,25,21,0.7), rgba(203,167,57,0.3)), url('images/fondos/historia.jpg') center/cover no-repeat; border-radius: 30px; box-shadow: 0 8px 32px rgba(33,25,21,0.18); padding: 5vw 3vw; margin-bottom: 5vh;">
-    <h1 style="color:#fff; text-shadow: 2px 4px 12px #000a;">Nuestra Historia</h1>
-    
-    <div class="timeline">
-        <div class="timeline-item left">
-            <div class="content">
-                <h3>1966</h3>
-                <p>En el corazón de Bucaramanga nace <strong>el Maná</strong>, una pequeña panadería impulsada por el sueño y esfuerzo de una familia.</p>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="content">
-                <h3>Años 80</h3>
-                <p>Con trabajo y dedicación, el Maná se convierte en un punto de encuentro para la comunidad. Recetas tradicionales conquistan nuevos corazones.</p>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="content">
-                <h3>Años 2000</h3>
-                <p>La segunda generación toma las riendas, manteniendo el sabor auténtico mientras modernizan procesos sin perder la esencia artesanal.</p>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="content">
-                <h3>Hoy</h3>
-                <p>Más de 50 años después, seguimos horneando historias, compartiendo momentos y creciendo junto a quienes nos han acompañado generación tras generación.</p>
-            </div>
-        </div>
     </div>
-</div>
+  </header>
 
-<style>
-.timeline {
-    position: relative;
-    max-width: 900px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-}
+  <a href="whatasapp.html" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="icons/whatsapp.png" alt="WhatsApp" style="height:5rem;">
+  </a>
+  <!-- Sección Historia con línea de tiempo -->
+  <div class="historia-container">
+    <section class="historia">
+      <div class="titulo">
+        <h2>Nuestra</h2> <h1>Historia</h1> 
 
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background: var(--primary-color, #cba739);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-}
+        <div class="historia-content">
+          <div class="historia-texto">
+            <p>Un joven soñador, estudiante, en tiempos de confusión y protesta, en los tiempos en que Camilo Torres y
+              Jaime Arenas discutían y arengaban desde la plaza pública y desde el alma mater de la U.I.S. </p>
+            <p>Todo fueron paros, suspensión de clases corrían los turbulentos 60´s y este joven, ahora ex estudiante de
+              ingeniería mecánica, lanzado a la vida laboral por necesidad y harto de emplear su tiempo para otros, trae
+              de Cúcuta la idea de crear empresa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="historia-imagen imagen-placeholder"></div>
 
-.timeline-item {
-    padding: 1.5rem 2rem;
-    position: relative;
-    width: 50%;
-}
+    </section>
 
-.timeline-item::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: var(--primary-color, #cba739);
-    border: 4px solid #fff;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item.left {
-    left: 0;
-}
-
-.timeline-item.right {
-    left: 50%;
-}
-
-.timeline-item.right::after {
-    left: -10px;
-}
-
-.content {
-    background: rgba(255,255,255,0.9);
-    padding: 1.2rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    color: #333;
-    text-align: left;
-}
-
-.content h3 {
-    margin-top: 0;
-    color: var(--secondary-color, #5a3921);
-    font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-    .timeline::after {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 25px;
-        margin-bottom: 2rem;
-    }
-
-    .timeline-item.right {
-        left: 0%;
-    }
-
-    .timeline-item::after {
-        left: 0;
-    }
-}
-</style>
-</script>
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <!-- Logo y descripción -->
-      <div class="footer-section">
-        <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
-        <p class="footer-description">
-          Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+    <section class="historia">
+      <div class="historia-texto">
+        <p>La tradición de su arraigo Piedecuestano lo llevan a dirigir sus esfuerzos hacia una empresa de alimentos que
+          reuniera los principios del seno de la familia santandereana que lo trajo al mundo y lo forjó como un ser de
+          bien. Honestidad, tesón, compromiso, responsabilidad social. En cada pan, en cada producto, en su aroma, su
+          textura, su color, debían ir impresas estas características que hablasen del compromiso y del amor del
+          fundador hacia su empresa y sus clientes. Cada bocado, cada pan debían ser testigos y testimonio de la
+          honradez de su trabajo al ofrecer a sus coterráneos lo mejor de los insumos santandereanos, mezclados como el
+          buen alquimista para producir un pan único, no solo único, el mejor pan, el mejor alimento para nuestros
+          hijos, confiable, nutritivo, natural.
         </p>
-    
       </div>
+    </section>
 
-      <!-- Información de contacto -->
-      <div class="footer-section" style="text-align: start;">
-        <h4>Contáctanos</h4>
-        <ul class="contact-info" style="text-align: start;">
-          <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
-          <li>Teléfono: 607 6425198</li>
-          <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
-        </ul>
-      </div>
-
-      <!-- Enlaces -->
-      <div class="footer-section">
-        <h4>Enlaces de interés</h4>
-        <ul class="footer-links">
-          <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
-          <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
-          <li><a href="#">Trabaja en El Maná</a></li>
-        </ul>
-     
-          <div class="social-icons">
-          <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
+      <section class="biografia">
+        <div class="biografia-content">
+          <div class="imagen-vertical imagen-placeholder"></div>
+          <div class="texto-biografia">
+            <p>Y en esa constancia que caracteriza a Don Luis Enrique Ruiz García, acompañado y apalancado por su esposa Doña María Eugenia Alfonzo, han transcurrido ya 59 años, brindando los mejores productos, poniendo su vida y su empeño en ellos. Ahora una nueva generación hace presencia en EL MANÁ, no para reemplazarlo pues en nuestro corazón sabemos que es único y el dueño orgulloso de su empresa, más bien para acompañarlo en el camino que nos reste para llevar EL MANÁ a cumbres cada vez más altas, conservando la tradición y negándonos a hacer de nuestro producto algo distinto al pan casero que nuestras abuelas cocían para nuestros padres ya hace tantos años. Lo artificial no tiene cabida en EL MANÁ. Honraremos el principio fundamental de nuestros padres en la creación de esta empresa, honraremos lo natural, lo sano, lo nutritivo, lo fresco y lo deliciosamente responsable con nuestro Santander.  
+En el 2015, nos transformamos en INDUSTRIA DE ALIMENTOS EL MANÁ S.A.S con el fin de continuar ofreciendo nuevos y deliciosos productos alimenticios a nuestros fieles coterráneos! 
+</p>
+          </div>
         </div>
-         </div>
-    </div>
+      </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
-    </div>
+      <section class="familia">
+        <h2>Con sabor y calidad...<br><span>Familia El Maná</span></h2>
+                  <div class="texto-biografia">
+
+        <p>En 1966 Luis Enrique dirige sus esfuerzos hacia una empresa de alimentos que reuniera los principios del seno de la familia santandereana que lo trajo al mundo y lo forjó como un ser de bien. En cada pan, en cada producto, en su aroma, su textura, su color, debían ir impresas estas características que hablasen del compromiso y del amor del fundador hacia su empresa y sus clientes. Cada bocado, cada pan debían ser testigos y testimonio de la honradez de su trabajo al ofrecer a sus coterráneos lo mejor de los insumos santandereanos, mezclados como el buen alquimista para producir un pan único, no solo único, el mejor pan, el mejor alimento para nuestros hijos, confiable, nutritivo, natural.</p>
+        </div>
+        <div class="imagenes-grid">
+          <div class="imagen-cuadro imagen-placeholder"></div>
+          <div class="imagen-cuadro imagen-placeholder"></div>
+          <div class="imagen-cuadro imagen-placeholder"></div>
+        </div>
+      </section>
   </div>
-</footer>
+  <style>
+    .historia-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
 
-<style>
-/* General */
-.footer {
-  background-color: #000;
-  color: #ffffff;
-  padding: 4rem 2rem 2rem;
-}
+    .historia {
+      display: flex;
+      width: 60%;
+      justify-content: center;
+      margin-top: 40px;
+      align-content: center;
+          align-items: center;
 
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* Grid layout */
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+    }
 
-/* Sections */
-.footer-section h4 {
-  color: var(--primary-color, #cba739);
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
+    h2 {
+      font-family: 'Caneletter';
+      font-size: 4.5rem;
+      margin-bottom: 20px;
+      line-height: 0.9;
+      font-weight: normal;
+    }
+     h1 {
+      font-family: 'Caneletter';
+      font-size: 5.5rem;
+      line-height: 0.3;
+      font-weight: normal;
+      margin-bottom: 5vh;
 
-.footer-logo {
-  width: 160px;
-  margin-bottom: 1rem;
-}
+    }
 
-.footer-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-}
+    .historia-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-.footer-links,
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    .historia-texto {
+      text-align: justify;
+      flex: 1;
+      min-width: 280px;
+      margin-right: 20px;
+    }
 
-.footer-links li,
-.contact-info li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-}
+    .historia-imagen {
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+      flex-shrink: 0;
+      border-radius: 20px;
+    }
 
-.footer-links a,
-.contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .biografia {
+      width: 60%;
 
-.footer-links a:hover,
-.contact-info a:hover {
-  color: var(--primary-color, #cba739);
-}
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1rem;
-}
+    .biografia-content {
+      display: flex;
+      justify-content: center;
+align-items: center;
+      margin-top: 40px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.social-icon {
-  color: #ffffff;
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.6rem;
-  border-radius: 50%;
-  transition: background 0.3s, color 0.3s;
-}
+    .imagen-vertical {
+      width: 280px;
+      height: 400px;
+      background-color: #ccc;
+            border-radius: 20px;
 
-.social-icon:hover {
-  background: var(--primary-color, #cba739);
-  color: #1f1f1f;
-}
+    }
 
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1.5rem;
-}
-</style>
+    .texto-biografia {
+      flex: 1;
+      text-align: justify;
+    }
 
-    </footer>
+    .familia {
+            width: 60%;
+
+      margin-top: 60px;
+      text-align: center;
+      margin-bottom: 10vh;
+
+    }
+
+
+    .familia p {
+      margin: 0 auto 30px;
+    }
+
+    .imagenes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .imagen-cuadro {
+      height: 150px;
+      background-color: #ccc;
+      border-radius: 20px;
+    }
+
+    .imagen-grande {
+      grid-column: span 2;
+      height: 200px;
+      background-color: #ccc;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .historia-content,
+      .biografia-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .historia-imagen,
+      .imagen-vertical {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .imagen-grande {
+        grid-column: span 1;
+      }
+    }
+  </style>
+  </script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Logo y descripción -->
+        <div class="footer-section">
+          <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+          <p class="footer-description">
+            Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo sano, lo
+            nutritivo, lo fresco, donde lo artificial no tiene cabida.
+          </p>
+
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-section" style="text-align: start;">
+          <h4>Contáctanos</h4>
+          <ul class="contact-info" style="text-align: start;">
+            <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+            <li>Teléfono: 607 6425198</li>
+            <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+          </ul>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="footer-section">
+          <h4>Enlaces de interés</h4>
+          <ul class="footer-links">
+            <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+            <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+            <li><a href="#">Trabaja en El Maná</a></li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* General */
+    .footer {
+      background-color: #000;
+      color: #ffffff;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Grid layout */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Sections */
+    .footer-section h4 {
+      color: var(--primary-color, #cba739);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo {
+      width: 160px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links,
+    .contact-info {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li,
+    .contact-info li {
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a,
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover,
+    .contact-info a:hover {
+      color: var(--primary-color, #cba739);
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .social-icon {
+      color: #ffffff;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.6rem;
+      border-radius: 50%;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .social-icon:hover {
+      background: var(--primary-color, #cba739);
+      color: #1f1f1f;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+    }
+  </style>
+
+  </footer>
 </body>
