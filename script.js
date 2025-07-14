@@ -384,56 +384,57 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = src;
         const claseSelect1 = document.getElementById('clase-producto'); // categoría fija en HTML
         let categoria = claseSelect1.value;
-        let sedeseleccionada=sede;
-  sede="centro";
-// Si la categoría es carnes_frias, tamal o ayacos, forzar a "todo"
-if (['carnes_frias', 'tamal', 'ayacos'].includes(categoria)) {
-    categoria = 'todo';
-}
-console.log('Sede seleccionada:', sede);
+        let sedeseleccionada = sede;
 
-if (!sede || !categoria) {
-    productosLista.innerHTML = '<p>Seleccione sede y clase para ver productos.</p>';
-    return;
-}
-// Cambiar las opciones del select de clase-producto según el tipoProducto
+        // Si la categoría es carnes_frias, tamal o ayacos, forzar a "todo"
+        if (['carnes_frias', 'tamal', 'ayacos'].includes(categoria)) {
+            categoria = 'todo';
+        }
+        console.log('Sede seleccionada:', sede);
 
-const response = await fetch('productos.json');
-const todo = await response.json();
-const data = todo[tipoProducto];
-console.log(todo);
-console.log(tipoProducto);
-let productos = [];
+        if (!sede || !categoria) {
+            productosLista.innerHTML = '<p>Seleccione sede y clase para ver productos.</p>';
+            hideProductSpinner();
+            return;
+        }
+        // Cambiar las opciones del select de clase-producto según el tipoProducto
 
-// Mostrar "ensaladas" solo si la sede seleccionada es paseoDelComercio
-if (categoria === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') {
-    productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
-                hideProductSpinner();
+        const response = await fetch('productos.json');
+        const todo = await response.json();
+        const data = todo[tipoProducto];
+        console.log(todo);
+        console.log(tipoProducto);
+        let productos = [];
 
-    return;
-}
+        // Mostrar "ensaladas" solo si la sede seleccionada es paseoDelComercio
+        if (categoria === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') {
+            productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
+            hideProductSpinner();
+            return;
+        }
 
-if (categoria == 'todo') {
-    // Unir todos los productos de todas las categorías de la sede seleccionada
-    if (data && data[sede]) {
-    Object.entries(data[sede]).forEach(([cat, arr]) => {
-        // Filtrar ensaladas si la sede no es paseoDelComercio
-        if (cat === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') return;
-        if (Array.isArray(arr)) productos = productos.concat(arr);
-    });
-    console.log(productos);
-    } else {
-    productos = [];
-    console.log('No hay productos para esta sede o tipo de producto.');
-    }
-} else {
-    productos = (data[sede] && data[sede][categoria]) || [];
-}
+        if (categoria == 'todo') {
+            // Unir todos los productos de todas las categorías de la sede seleccionada
+            if (data && data[sede]) {
+                Object.entries(data[sede]).forEach(([cat, arr]) => {
+                    // Filtrar ensaladas si la sede no es paseoDelComercio
+                    if (cat === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') return;
+                    if (Array.isArray(arr)) productos = productos.concat(arr);
+                });
+                console.log(productos);
+            } else {
+                productos = [];
+                console.log('No hay productos para esta sede o tipo de producto.');
+            }
+        } else {
+            productos = (data[sede] && data[sede][categoria]) || [];
+        }
 
-if (productos.length === 0) {
-    productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
-    return;
-}
+        if (productos.length === 0) {
+            productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
+            hideProductSpinner();
+            return;
+        }
 
         productosLista.innerHTML = '';
 
@@ -443,22 +444,22 @@ if (productos.length === 0) {
             card.style.cursor = 'pointer';
 
             card.innerHTML = `
-        <div class="product-image">
-          <img src="${prod.imagen}" alt="${prod.nombre}">
-        </div>
-          <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-        <h3>${prod.nombre}</h3>
-        <div class="opciones-producto">
-          <select>
-            ${Object.entries(prod.variantes).map(([tam, precio]) =>
-                `<option> ${precio}</option>`
-            ).join('')}
-          </select>
-                  </div>
+            <div class="product-image">
+              <img src="${prod.imagen}" alt="${prod.nombre}">
+            </div>
+              <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+            <h3>${prod.nombre}</h3>
+            <div class="opciones-producto">
+              <select>
+                ${Object.entries(prod.variantes).map(([tam, precio]) =>
+                    `<option> ${precio}</option>`
+                ).join('')}
+              </select>
+                      </div>
 
-          <button style="background: #d4af37; border: none; border-radius: 50%; width: 28px; height: 28px; color: #fff; font-size: 20px; cursor: pointer; display: none; align-items: center; justify-content: center;">+</button>
-        </div>
-      `;
+              <button style="background: #d4af37; border: none; border-radius: 50%; width: 28px; height: 28px; color: #fff; font-size: 20px; cursor: pointer; display: none; align-items: center; justify-content: center;">+</button>
+            </div>
+          `;
 
             card.addEventListener('click', function (e) {
                 // Evitar que el click en el botón "+" abra el modal de info
