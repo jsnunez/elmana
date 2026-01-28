@@ -35,9 +35,10 @@ const clasesPorTipo = {
     ],
     restaurante: [
         { value: 'todo', label: 'Todos' },
-        { value: 'combos', label: 'Combos' },
         { value: 'menu-del-dia', label: 'Menú del día' },
-        { value: 'ensaladas', label: 'Ensaladas' }
+        { value: 'ensaladas', label: 'Ensaladas' },
+        { value: 'combos', label: 'Combos' }
+        
     ]
 };
 
@@ -406,19 +407,19 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(tipoProducto);
         let productos = [];
 
-        // Mostrar "ensaladas" solo si la sede seleccionada es paseoDelComercio
-        if (categoria === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') {
-            productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
-            hideProductSpinner();
-            return;
-        }
+        // // Mostrar "ensaladas" solo si la sede seleccionada es paseoDelComercio
+        // if (categoria === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') {
+        //     productosLista.innerHTML = '<p>No hay productos para esta combinación.</p>';
+        //     hideProductSpinner();
+        //     return;
+        // }
 
         if (categoria == 'todo') {
             // Unir todos los productos de todas las categorías de la sede seleccionada
             if (data && data[sede]) {
                 Object.entries(data[sede]).forEach(([cat, arr]) => {
                     // Filtrar ensaladas si la sede no es paseoDelComercio
-                    if (cat === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') return;
+                    // if (cat === 'ensaladas' && sedeseleccionada !== 'paseoDelComercio') return;
                     if (Array.isArray(arr)) productos = productos.concat(arr);
                 });
                 console.log(productos);

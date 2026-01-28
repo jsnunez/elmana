@@ -13,11 +13,318 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       
+        
 
 </head>
 <link rel="stylesheet" href="styles2.css">
+<style>
+/* Fondo navideño con bolitas de nieve animadas */
+body {
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
 
+.snowflake {
+    position: fixed;
+    top: -40px;
+    font-size: 1.2em;
+    pointer-events: none;
+    z-index: 99999;
+    opacity: 0.85;
+    user-select: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    text-shadow: 0 0 8px #fff, 0 0 4px #000000;
+}
+
+.snowflake.white {
+    color: #fff !important;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 6px #fff, 0 0 3px #b3d0ff;
+}
+
+.snowflake.black {
+    color: #222 !important;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.7);
+    text-shadow: 0 0 6px #222, 0 0 3px #fff;
+}
+
+header {
+  background: #ffffffaa;
+  backdrop-filter: blur(6px);
+  border-bottom: 3px solid #d72660;
+  position: sticky;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+
+.navidad-top {
+  background: linear-gradient(90deg, #ff0404, #094f23);
+  color: white;
+  padding: 6px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.glitter {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: glitter 2s infinite ease-in-out;
+}
+
+@keyframes glitter {
+  0%, 100% { transform: scale(0.3); opacity: 0.4; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+
+</style>
+
+<style>
+.luces-navidad {
+    width: 100%;
+    height: 45px;
+    background-image: url("images/navidad/luces.png");
+    background-repeat: repeat-x;
+    background-size: auto 45px;
+    animation: lucesParpadeo 1.5s infinite alternate ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+@keyframes lucesParpadeo {
+    0% { filter: brightness(0.8); }
+    100% { filter: brightness(1.3); }
+}
+</style>
+<script>
+// Bolitas de nieve navideñas animadas (blancas y negras)
+(function () {
+    const SNOWFLAKE_COUNT = 20;
+    const SNOWFLAKE_CHARS = ['❄', '•', '✻', '✼', '❅', '❆'];
+    function randomBetween(a, b) {
+        return a + Math.random() * (b - a);
+    }
+    function createSnowflake() {
+        const snow = document.createElement('span');
+        snow.className = 'snowflake';
+        snow.innerText = SNOWFLAKE_CHARS[Math.floor(Math.random() * SNOWFLAKE_CHARS.length)];
+        // Alterna entre blanco y negro
+        snow.classList.add(Math.random() < 0.5 ? 'white' : 'black');
+        snow.style.left = randomBetween(0, 98) + 'vw';
+        snow.style.fontSize = randomBetween(0.8, 2.2) + 'em';
+        snow.style.opacity = randomBetween(0.6, 1);
+        snow.style.animationDuration = randomBetween(7, 16) + 's';
+        snow.style.animationDelay = randomBetween(0, 6) + 's';
+        snow.style.filter = 'blur(' + randomBetween(0, 1.5) + 'px)';
+        document.body.appendChild(snow);
+        snow.addEventListener('animationend', () => snow.remove());
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+        for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+            setTimeout(createSnowflake, i * 120);
+        }
+        setInterval(createSnowflake, 1200);
+    });
+})();
+</script>
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+}
+
+.whatsapp-float img {
+    height: 5rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Gorro navideño */
+.whatsapp-float::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+    background-image: url("images/navidad/gorro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+}
+
+.decoracion-pinos {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+.decoracion-pinos::before,
+.decoracion-pinos::after {
+    z-index: 9999;
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 110vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* opacity: 0.75; */
+    filter: drop-shadow(0 0 4px #0003);
+}
+
+.decoracion-pinos::before {
+    top: 0;
+    left: 0;
+    background-image: url("images/navidad/izqpino.png");
+}
+@media (max-width: 600px) {
+ .decoracion-pinos{
+    display: none;
+ }
+}
+
+.decoracion-pinos::after {
+    top: 0;
+    right: 0;
+    background-image: url("images/navidad/pino-der.png");
+}
+
+</style>
 <body>
+    <div class="decoracion-pinos"></div>
+
+<!-- Modal Promoción Navidad -->
+<div id="modalNavidad" 
+     style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; 
+            align-items:center; justify-content:center; background:rgba(0,0,0,0.45);">
+
+    <div style="background:#ffffff; border-radius:24px; box-shadow:0 4px 24px #19875422; 
+                max-width:420px; width:95%; padding:2.5rem 1.5rem 2rem 1.5rem; 
+                margin:auto; text-align:center; font-family:'Poppins','Archivo',Arial,sans-serif; 
+                position:relative;">
+
+        <!-- Botón cerrar -->
+        <button onclick="document.getElementById('modalNavidad').style.display='none'"
+                style="position:absolute; top:12px; right:18px; background:none; border:none; 
+                       font-size:2rem; color:#198754; cursor:pointer;">
+            &times;
+        </button>
+
+        <!-- Título -->
+        <h2 style="color:#ff0101; font-size:2.1rem; font-family:'Archivo'; 
+                   margin-bottom:0.7rem; letter-spacing:1px;">
+            ESPECIALES DE NAVIDAD
+        </h2>
+
+        <!-- Carrusel -->
+        <div style="position:relative; width:100%; height:50vh; margin-bottom:1.2rem;">
+
+            <img id="carousel-img-1" src="images/navidad/1.jpg" alt="Roscón de Navidad"
+                 style="width:auto; height:50vh; object-fit:cover; border-radius:12px; 
+                        box-shadow:0 2px 8px #19875422; position:absolute; left:50%; top:0; 
+                        transform:translateX(-50%); display:block;">
+
+            <img id="carousel-img-2" src="images/navidad/2.jpg" alt="Panettone"
+                 style="width:auto; height:50vh; object-fit:cover; border-radius:12px; 
+                        box-shadow:0 2px 8px #19875422; position:absolute; left:50%; top:0; 
+                        transform:translateX(-50%); display:none;">
+            
+
+            <!-- Flechas -->
+            <button id="carousel-prev"
+                    style="position:absolute; left:0; top:50%; transform:translateY(-50%);
+                           background:none; border:none; font-size:2rem; color:#198754; cursor:pointer;">
+                &#8592;
+            </button>
+
+            <button id="carousel-next"
+                    style="position:absolute; right:0; top:50%; transform:translateY(-50%);
+                           background:none; border:none; font-size:2rem; color:#d72660; cursor:pointer;">
+                &#8594;
+            </button>
+        </div>
+
+       
+        <!-- Botón WhatsApp -->
+        <a href="whatasapp.html"
+           style="display:inline-block; margin-top:1.2rem; background:#198754; color:#fff; 
+                  font-family:'Archivo',sans-serif; font-size:1.1rem; font-weight:600; 
+                  padding:0.7rem 1.5rem; border-radius:24px; text-decoration:none; 
+                  box-shadow:0 2px 8px #19875422; transition:background 0.2s;">
+            ¡Haz tu pedido por WhatsApp!
+        </a>
+
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var img1 = document.getElementById('carousel-img-1');
+    var img2 = document.getElementById('carousel-img-2');
+    var prevBtn = document.getElementById('carousel-prev');
+    var nextBtn = document.getElementById('carousel-next');
+    var caption = document.getElementById('carousel-caption');
+    var price = document.getElementById('carousel-price');
+    var current = 0;
+    var items = [
+        {
+            img: img1,
+            caption: "ROSCÓN DE NAVIDAD",
+            price: "$15.000"
+        },
+        {
+            img: img2,
+            caption: "PANETTONE",
+            price: "$20.000"
+        }
+    ];
+    function showSlide(idx) {
+        items.forEach(function(item, i) {
+            item.img.style.display = (i === idx) ? 'block' : 'none';
+        });
+        caption.textContent = items[idx].caption;
+        price.textContent = items[idx].price;
+        current = idx;
+    }
+    prevBtn.addEventListener('click', function () {
+        showSlide(current === 0 ? 1 : 0);
+    });
+    nextBtn.addEventListener('click', function () {
+        showSlide(current === 0 ? 1 : 0);
+    });
+    showSlide(0);
+});
+</script>
+<script>
+// Mostrar el modal de Navidad al cargar la página
+window.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('modalNavidad');
+    if (modal) modal.style.display = 'flex';
+});
+</script>
+   <div class="navidad-top">
+  🎄 ¡Especiales navideños disponibles en nuestras sedes! 🎁
+</div>
+
     <header class="header">
         <div class="container header-container">
             <div class="logo">
@@ -38,7 +345,6 @@
                                 panaderiaSection.style.display = '';
                             }
                             if (catalogo1 && catalogo1.style.display !== 'none') {
-                                catalogo1.style.display = 'none';
                             }
                             if (productosSection && productosSection.style.display === 'none') {
                                 // Oculta sedes con transición suave
@@ -88,7 +394,7 @@
 
                     </li>
                     <li><a href="contacto.html">Contacto</a></li>
-
+<li><a href="horarios">Horarios</a></li>
                 </ul>
 
             </nav>
@@ -130,6 +436,10 @@
     <section id="top" class="hero">
 
         <div class="hero-carousel">
+            
+     <div class="hero-slide active" id="tradicion" data-bg="images/fondos/navidad.jpg">
+                
+            </div>
             <div class="hero-slide active" id="tradicion" data-bg="images/fondos/home.jpg">
                 <div class="hero-content">
                     <h1>Tradición<br>de Hogar</h1>
@@ -160,7 +470,7 @@
             </div>
             <div id="restaurante" class="hero-slide" data-bg="images/fondos/almuerzo.jpg">
                 <h1 style="color:#fff;">Pide a Nuestro Restaurante</h1>
-                <p>Disfruta de nuestra sazón con platillos únicos para el día</p>
+                <p style="font-size: 1.1rem;font-weight: 600;">Disfruta de nuestra sazón con platillos únicos para el día</p>
                 <div id="pedidos-restaurante">
                     <button class="menu-button" id="pedidos-restaurante-centro">
                         Paseo del Comercio
@@ -656,15 +966,7 @@
         <div class="restaurante-section" style="display: none;">
             <h2 class="section-title">Restaurante</h2>
             <div class="product-grid">
-                <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
-                    <div class="product-image">
-                        <img src="images/restaurante/lasagna.jpg" alt="Combos">
-                    </div>
-                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
-                        <h3>Combos</h3>
-                        <p>Combina diferentes opciones de proteína, acompañamientos y bebida para un almuerzo completo y delicioso.</p>
-                    </div>
-                </div>
+                
                 <div class="product-card catalog-card" data-category="menu-del-dia" data-tipo="restaurante">
                     <div class="product-image">
                         <img src="images/restaurante/menu.jpg" alt="Menú del día">
@@ -681,6 +983,15 @@
                     <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
                         <h3>Ensaladas</h3>
                         <p>Frescas y variadas, nuestras ensaladas combinan ingredientes naturales y saludables para complementar tu almuerzo o disfrutar como plato principal.</p>
+                    </div>
+                </div>
+                <div class="product-card catalog-card" data-category="combos" data-tipo="restaurante">
+                    <div class="product-image">
+                        <img src="images/restaurante/lasagna.jpg" alt="Combos">
+                    </div>
+                    <div style="border-left: 3px solid #d4af37; padding-left: 10px; margin-left: 10%;">
+                        <h3>Combos</h3>
+                        <p>Combina diferentes opciones de proteína, acompañamientos y bebida para un almuerzo completo y delicioso.</p>
                     </div>
                 </div>
             </div>
@@ -731,6 +1042,8 @@
                             <option value="mejorasPublicas">Mejoras Públicas</option>
                             <option value="cañaveral">Cañaveral</option>
                             <option value="cie">CIE</option>
+                            <option value="aurora">Aurora</option>
+
                         </select>
                     </div>
                     <div class="subfiltro">
@@ -755,6 +1068,7 @@
                     document.getElementById('sede-select').addEventListener('change', function () {
                         const sede = this.value;
                         const img = document.getElementById('foto-sede-img');
+
                         let src = 'images/sedes/default.jpg';
                         if (sede == 'centro') src = 'images/sedes/sede1.jpg';
                         else if (sede === 'antoniaSantos') src = 'images/sedes/sede2.jpg';
@@ -763,6 +1077,8 @@
                         else if (sede === 'mejorasPublicas') src = 'images/sedes/sede5.jpg';
                         else if (sede === 'cañaveral') src = 'images/sedes/sede6.jpg';
                         else if (sede === 'cie') src = 'images/sedes/sede7.jpg';
+                        else if (sede === 'aurora') src = 'images/sedes/sede8.jpg';
+
                         img.src = src;
                     });
                 </script>
@@ -913,6 +1229,7 @@
                         </div>
                     </div>
                 </div>
+                  
                 <!-- Sede 1 -->
                 <div class="sede-card center" style="height:100%;min-height:320px;max-height:420px;">
                     <div class="sede-image">
@@ -920,7 +1237,7 @@
                     </div>
                     <div class="sede-info">
                         <h3>Centro</h3>
-                        <p>CR 16 # 37 - 42 CENTRO</p>
+                        <p>CR 16 # 37 - 42 </p>
                         <p>Tel: 6076425198</p>
                         <p>Cel: 3173487430</p>
                         <div class="description">
@@ -936,7 +1253,7 @@
                     </div>
                     <div class="sede-info">
                         <h3>Antonia Santos</h3>
-                        <p>CR 21 # 32 - 46 ANTONIA SANTOS</p>
+                        <p>CR 21 # 32 - 46 </p>
                         <p>Cel: 3176192258</p>
                         <div class="description">
                             Ubicada en el tradicional barrio Antonia Santos, ideal para disfrutar en familia y con
@@ -951,7 +1268,7 @@
                     </div>
                     <div class="sede-info">
                         <h3>Paseo del Comercio</h3>
-                        <p>CL 35 # 13 -17 CENTRO</p>
+                        <p>CL 35 # 13 -17 </p>
                         <p>Cel: 3155125588</p>
                         <div class="description">
                             En el corazón comercial de la ciudad, perfecta para una pausa deliciosa durante tus compras
@@ -1005,6 +1322,20 @@
                         </div>
                     </div>
                 </div>
+                     <!-- Sede 8 - Aurora -->
+                <div class="sede-card side" style="display:none;height:100%;min-height:320px;max-height:420px;">
+                    <div class="sede-image">
+                        <img src="images/sedes/sede8.jpg" alt="Aurora" class="sede-img">
+                    </div>
+                    <div class="sede-info">
+                        <h3>Aurora</h3>
+                        <p>CR 29#31-14</p>
+                        <p>Cel: 3117753436</p>
+                        <div class="description">
+                            Nueva sede Aurora, con productos frescos y atención personalizada.
+                        </div>
+                    </div>
+                </div>
                 <!-- Sede 7 -->
                 <div class="sede-card side" style="display:none;height:100%;min-height:320px;max-height:420px;">
                     <div class="sede-image">
@@ -1020,6 +1351,7 @@
                         </div>
                     </div>
                 </div>
+            
                 <!-- Sede 1 -->
                 <div class="sede-card center" style="height:100%;min-height:320px;max-height:420px;">
                     <div class="sede-image">
@@ -1050,7 +1382,7 @@
         </div>
 
         <div class="indicators" id="indicators">
-            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" style="display: none;" data-slide="1"></span>
             <span class="indicator" data-slide="2"></span>
             <span class="indicator" data-slide="3"></span>
             <span class="indicator" data-slide="4"></span>
@@ -1058,6 +1390,7 @@
             <span class="indicator" data-slide="6"></span>
             <span class="indicator" data-slide="7"></span>
             <span class="indicator" data-slide="8"></span>
+            <span class="indicator" data-slide="9"></span>
         </div>
     </section>
     <footer class="footer">
@@ -1078,8 +1411,9 @@
                 <div class="footer-section" style="text-align: start;">
                     <h4>Contáctanos</h4>
                     <ul class="contact-info" style="text-align: start;">
-                        <li>Cra. 18 #37-42, Bucaramanga - Colombia</li>
-                        <li>Teléfono: 607 6425198</li>
+                        <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+                        <li>Teléfono: 6076425198</li>
+                          <li>Celular: 3173487430</li>
                         <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
                     </ul>
                 </div>
@@ -1110,14 +1444,49 @@
 
             </div>
 
+        
             <div class="footer-bottom">
                 <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+                <p style="font-size: 0.8em; margin-top: 5px; color: #666;">
+                    Desarrollado por <strong>Joan Sebastian Nuñez Serrano</strong> | 
+                    <a href="mailto:jsnunez94@gmail.com" style="color: #d4af37; text-decoration: none;">jsnunez94@gmail.com</a> | 
+                    <a href="https://linkedin.com/in/jsnunez94" target="_blank" style="color: #d4af37; text-decoration: none;">LinkedIn</a> | 
+                    <a href="https://wa.me/573044469689" target="_blank" style="color: #d4af37; text-decoration: none;">WhatsApp</a>
+                </p>
             </div>
         </div>
     </footer>
 
 
     <script src="script.js"></script>
+    <script>
+    // Carrusel San Valentín Modal
+    document.addEventListener('DOMContentLoaded', function () {
+        var img1 = document.getElementById('carousel-img-1');
+        var img2 = document.getElementById('carousel-img-2');
+        var prevBtn = document.getElementById('carousel-prev');
+        var nextBtn = document.getElementById('carousel-next');
+        var current = 0;
+        function showSlide(idx) {
+            if (idx === 0) {
+                img1.style.display = 'block';
+                img2.style.display = 'none';
+            } else {
+                img1.style.display = 'none';
+                img2.style.display = 'block';
+            }
+            current = idx;
+        }
+        prevBtn.addEventListener('click', function () {
+            showSlide(current === 0 ? 1 : 0);
+        });
+        nextBtn.addEventListener('click', function () {
+            showSlide(current === 0 ? 1 : 0);
+        });
+        showSlide(0);
+    });
+    </script>
+    
     <script>
         // Cambia la clase 'active' en el nav según la sección visible al hacer scroll
         document.addEventListener('DOMContentLoaded', function () {

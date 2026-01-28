@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios y Contacto | El Maná</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styleSedes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .horarios-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #d4af3722;
+            padding: 2.5rem 1.5rem;
+        }
+        .sedes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.2rem 2.5rem;
+        }
+        @media (max-width: 800px) {
+            .sedes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .sede {
+            margin-bottom: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.2rem;
+        }
+        h1 {
+            font-family: 'Caneletter', 'Archivo', Arial, sans-serif;
+            font-size: 2.6rem;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+        .sede {
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.2rem;
+        }
+        .sede-nombre {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #7a4a2f;
+            letter-spacing: 1px;
+            font-family: 'Archivo', Arial, sans-serif;
+        }
+        .sede-direccion, .sede-horario, .sede-telefono {
+            font-size: 1.05rem;
+            margin: 0.2rem 0;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="el Maná">
+                </a>
+            </div>
+             <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="index.html#productos" onclick="
+                            const productosSection = document.querySelector('.products');
+                            const catalogo1 = document.getElementById('catalogo');
+                            const sedesSection = document.querySelector('.sedes-section');
+                            const panaderiaSection = document.querySelector('.panaderia-section');
+                            if (panaderiaSection && panaderiaSection.style.display === 'none') {
+                                panaderiaSection.style.display = '';
+                            }
+                            if (catalogo1 && catalogo1.style.display !== 'none') {
+                                catalogo1.style.display = 'none';
+                            }
+                            if (productosSection && productosSection.style.display === 'none') {
+                                // Oculta sedes con transición suave
+                                if (sedesSection) {
+                                    sedesSection.style.transition = 'opacity 0.5s';
+                                    sedesSection.style.opacity = '0';
+                                    setTimeout(() => {
+                                        sedesSection.style.display = 'none';
+                                        sedesSection.style.opacity = '';
+                                        sedesSection.style.transition = '';
+                                    }, 500);
+                                }
+                                // Muestra productos con transición suave
+                                productosSection.style.opacity = '0';
+                                productosSection.style.display = '';
+                                setTimeout(() => {
+                                    productosSection.style.transition = 'opacity 0.5s';
+                                    productosSection.style.opacity = '1';
+                                    setTimeout(() => {
+                                        productosSection.style.transition = '';
+                                    }, 500);
+                                }, 10);
+                            }
+                            document.querySelector('.panaderia-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            return false;
+                        ">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sedes" onclick="
+                            const section = document.querySelector('.sedes-section');
+                            const catalogo = document.getElementById('catalogo');
+                            const productosSection1 = document.querySelector('.products');
+                            const topSection = document.getElementById('top');
+                            // Si top está oculto, mostrar solo sedes y ocultar las demás
+                            if (topSection && (topSection.style.display === 'none' || window.getComputedStyle(topSection).display === 'none')) {
+                                if (productosSection1) productosSection1.style.display = 'none';
+                                if (catalogo) catalogo.style.display = 'none';
+                                if (section) section.style.display = '';
+                            }
+                            // Manejo de clases 'active' en el menú
+                            document.querySelectorAll('.main-nav a').forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+                            window.scrollTo({ top: section.offsetTop - window.innerHeight * 0.10, behavior: 'smooth' });
+                            return false;">
+                            Nuestras Sedes
+                        </a>
+                    </li>
+                    <li><a href="contacto" >Contacto</a></li>
+                                        <li><a href="horarios" class="active">horarios</a></li>
+
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/industriaelmana" class="social-icon-nav" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/elmanaoficial/" class="social-icon-nav" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="horarios-container">
+        <h1>Horarios y Contacto</h1>
+        <div class="sedes-grid">
+            <div class="sede">
+                <div class="sede-nombre">CENTRO <span class="sede-telefono">317 3487430</span></div>
+                <div class="sede-direccion">CRA. 16 # 37-42 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 9:00AM - 5:00PM</div>
+                <div class="sede-horario">Sábado: 9:00AM - 2:00PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">PASEO DEL COMERCIO <span class="sede-telefono">315 5125588</span></div>
+                <div class="sede-direccion">CLL 35 # 13-17 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 9:00AM - 5:00PM</div>
+                <div class="sede-horario">Sábado: 9:00AM - 2:00PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">ANTONIA SANTOS <span class="sede-telefono">317 6192258</span></div>
+                <div class="sede-direccion">CRA 21 #32-46 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 9:00AM - 5:00PM</div>
+                <div class="sede-horario">Sábado: 9:00AM - 2:00PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">LA AURORA <span class="sede-telefono">311 7753436</span></div>
+                <div class="sede-direccion">CRA 29 #31-14 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 9:00AM - 6:00PM</div>
+                <div class="sede-horario">Sábado: 8:30AM - 1:30PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">CABECERA <span class="sede-telefono">315 3800804</span></div>
+                <div class="sede-direccion">CRA 35 # 52-32 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 8:00AM - 5:30PM</div>
+                <div class="sede-horario">Sábado: 8:00AM - 1:30PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">MEJORAS PÚBLICAS <span class="sede-telefono">315 3962533</span></div>
+                <div class="sede-direccion">CRA 28 # 35-90 BGA</div>
+                <div class="sede-horario">Lunes - Viernes: 9:30AM - 6:00PM</div>
+                <div class="sede-horario">Sábado: 8:00AM - 1:30PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">CAÑAVERAL <span class="sede-telefono">304 3161907</span></div>
+                <div class="sede-direccion">CLL 31 # 24-41 FCA</div>
+                <div class="sede-horario">Lunes: 10:00AM - 6:30PM</div>
+                <div class="sede-horario">Martes - Viernes: 8:00AM - 6:30PM</div>
+                <div class="sede-horario">Sábado: 8:00AM - 3:00PM</div>
+            </div>
+            <div class="sede">
+                <div class="sede-nombre">CAFÉ Y PAN CIE <span class="sede-telefono">316 5000009</span></div>
+                <div class="sede-direccion">KM 7 VÍA PIEDECUESTA MENSULÍ CIE. LOCAL 219 N.<br> CENTRO INTERNACIONAL DE ESPECIALISTAS.</div>
+                <div class="sede-horario">Lunes - Viernes: 7:00AM - 5:00PM</div>
+            </div>
+        </div>
+    </div>
+     <footer class="footer">
+        <div class="container" style="width:90%;">
+            <div class="footer-grid">
+
+                <!-- Logo y descripción -->
+                <div class="footer-section">
+                    <img src="images/logoOscuro.png" alt="El Maná" class="footer-logo" />
+                    <p class="footer-description">
+                        Una industria de alimentos hechos a mano por gente de nuestra tierra, honrando lo natural, lo
+                        sano, lo nutritivo, lo fresco, donde lo artificial no tiene cabida.
+                    </p>
+
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="footer-section" style="text-align: start;">
+                    <h4>Contáctanos</h4>
+                    <ul class="contact-info" style="text-align: start;">
+                        <li>Cra. 16 #37-42, Bucaramanga - Colombia</li>
+                        <li>Teléfono: 6076425198</li>
+                          <li>Celular: 3173487430</li>
+                        <li>Email: <a href="mailto:contacto@elmana.co">contacto@elmana.co</a></li>
+                    </ul>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="footer-section">
+
+                    <h4>Enlaces de interés</h4>
+                    <ul class="footer-links">
+                        <li><a href="politicaTratamientoDeDatos.html">Política de Tratamiento de Datos</a></li>
+                        <li><a href="politicadevoluciones.html">Política de Devoluciones</a></li>
+                        <li><a href="trabajaConNosotros.html">Trabaja en El Maná</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-section">
+                    <h4 style="margin-top: 0;">Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/industriaelmana" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/elmanaoficial/" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Maná. Todos los derechos reservados.</p>
+                <p style="font-size: 0.8em; margin-top: 5px; color: #666;">
+                    Desarrollado por <strong>Joan Sebastian Nuñez Serrano</strong> | 
+                    <a href="mailto:jsnunez94@gmail.com" style="color: #d4af37; text-decoration: none;">jsnunez94@gmail.com</a> | 
+                    <a href="https://linkedin.com/in/jsnunez94" target="_blank" style="color: #d4af37; text-decoration: none;">LinkedIn</a> | 
+                    <a href="https://wa.me/573044469689" target="_blank" style="color: #d4af37; text-decoration: none;">WhatsApp</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

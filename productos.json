@@ -64,14 +64,7 @@
                         "$3.000"
                     ]
                 },
-                {
-                    "nombre": "Pan Finas Hierbas",
-                    "imagen": "images/panaderia/panfinashierbas.jpg",
-                    "descripcion": "Pan aromatizado con finas hierbas.",
-                    "variantes": [
-                        "$2.000"
-                    ]
-                },
+            
                 {
                     "nombre": "Pan Queso/Miel",
                     "imagen": "images/panaderia/panquesomiel.jpg",
@@ -144,14 +137,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "Palitroques",
-                    "imagen": "images/panaderia/palitroques.jpg",
-                    "descripcion": "Palitos de pan crujientes.",
-                    "variantes": [
-                        "$5.500"
-                    ]
-                },
+            
                 {
                     "nombre": "Pan De Yuca",
                     "imagen": "images/panaderia/pandeyuca.jpg",
@@ -302,7 +288,7 @@
                     ]
                 },
                 {
-                    "nombre": "Hawaiano O",
+                    "nombre": "Hawaiano",
                     "imagen": "images/panaderia/hawaiano.jpg",
                     "descripcion": "Pan relleno de jamón, queso y piña.",
                     "variantes": [
@@ -515,14 +501,6 @@
                     "descripcion": "Tostadas con aliños especiales.",
                     "variantes": [
                         "$4.000"
-                    ]
-                },
-                {
-                    "nombre": "Palitroques",
-                    "imagen": "images/panaderia/palitroques.jpg",
-                    "descripcion": "Palitos de pan crujientes.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -2631,14 +2609,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -2648,11 +2619,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -2702,14 +2680,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -2840,14 +2810,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -2857,11 +2820,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -2911,14 +2881,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -3049,14 +3011,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -3066,11 +3021,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -3120,14 +3082,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -3258,14 +3212,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -3275,11 +3222,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -3329,14 +3283,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -3467,14 +3413,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -3484,11 +3423,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -3538,14 +3484,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -3676,14 +3614,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -3693,11 +3624,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -3747,14 +3685,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -3885,14 +3815,7 @@
                         "$4.000"
                     ]
                 },
-                {
-                    "nombre": "San Valentin",
-                    "imagen": "images/panaderia/sanvalentin.jpg",
-                    "descripcion": "Pastel especial para San Valentín, decorado con motivos románticos.",
-                    "variantes": [
-                        "$9.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Muffins",
                     "imagen": "images/panaderia/muffins.jpg",
@@ -3902,11 +3825,18 @@
                     ]
                 },
                 {
-                    "nombre": "Brazo De Mani",
+                    "nombre": "Brazo De Reina De Mani",
                     "imagen": "images/panaderia/brazodemani.jpg",
                     "descripcion": "Bizcocho enrollado relleno de crema de maní.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },    {
+                    "nombre": "Palitroques",
+                    "imagen": "images/panaderia/palitroques.jpg",
+                    "descripcion": "Palitos de pan crujientes.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 },
                 {
@@ -3956,14 +3886,6 @@
                     "descripcion": "Postre de capas de hojaldre y crema.",
                     "variantes": [
                         "$7.000"
-                    ]
-                },
-                {
-                    "nombre": "Torta Zanahoria Y Amapola",
-                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
-                    "descripcion": "Torta de zanahoria con semillas de amapola.",
-                    "variantes": [
-                        "$5.500"
                     ]
                 },
                 {
@@ -4121,9 +4043,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4142,6 +4063,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4218,9 +4210,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4239,6 +4230,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4315,9 +4377,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4336,6 +4397,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4412,9 +4544,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4433,6 +4564,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4509,9 +4711,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4530,6 +4731,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4606,9 +4878,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4627,6 +4898,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4703,9 +5045,8 @@
                     ]
                 },
                 {
-                    "nombre": "Pastel De Pollo Apanado",
+                    "nombre": "Sandwich De Pollo Apanado",
                     "imagen": "images/panaderia/pasteldepolloapanado.jpg",
-                    "descripcion": "Pastel de pollo empanizado y frito.",
                     "variantes": [
                         "$12.000"
                     ]
@@ -4724,6 +5065,77 @@
                     "descripcion": "Pastel relleno de carne.",
                     "variantes": [
                         "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Pie De Pollo",
+                    "imagen": "images/panaderia/piepollo.jpg",
+                    "descripcion": "Pie relleno de pollo.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },    {
+                    "nombre": "Suspiros",
+                    "imagen": "images/panaderia/suspiros.jpg",
+                    "descripcion": "Dulces ligeros y crujientes, ideales para compartir.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                }, {
+                    "nombre": "Brazo De Reina",
+                    "imagen": "images/panaderia/brazodereina.jpg",
+                    "descripcion": "Bizcocho suave relleno de crema y cubierto de azúcar.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+                {
+                    "nombre": "Hojaldras",
+                    "imagen": "images/panaderia/hojaldras.jpg",
+                    "descripcion": "Dulce hojaldrado tradicional, crujiente y ligero.",
+                    "variantes": [
+                        "$4.000"
+                    ]
+                },
+               
+                {
+                    "nombre": "Muffins",
+                    "imagen": "images/panaderia/muffins.jpg",
+                    "descripcion": "Muffins esponjosos de diferentes sabores.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                },
+                {
+                    "nombre": "Brazo De Reina De Mani",
+                    "imagen": "images/panaderia/brazodemani.jpg",
+                    "descripcion": "Bizcocho enrollado relleno de crema de maní.",
+                    "variantes": [
+                        "$5.000"
+                    ]
+                },
+                  {
+                    "nombre": "Milhojas",
+                    "imagen": "images/panaderia/milhojas.jpg",
+                    "descripcion": "Postre de capas de hojaldre y crema.",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                },
+                {
+                    "nombre": "Torta Amapola",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta  con semillas de amapola.",
+                    "variantes": [
+                        "$5.500"
+                    ]
+                },
+                  {
+                    "nombre": "Torta Zanahoria ",
+                    "imagen": "images/panaderia/tortazanahoriaamapola.jpg",
+                    "descripcion": "Torta de zanahoria.",
+                    "variantes": [
+                        "$5.500"
                     ]
                 }
             ],
@@ -4770,7 +5182,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -4807,14 +5219,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -4824,13 +5236,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -4852,7 +5258,7 @@
             ]
         },
         "cabecera": {
-            "todos": [
+                "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -4862,7 +5268,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -4899,14 +5305,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -4916,13 +5322,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -4944,7 +5344,7 @@
             ]
         },
          "paseoDelComercio": {
-            "todos": [
+              "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -4954,7 +5354,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -4991,14 +5391,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -5008,13 +5408,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -5036,7 +5430,7 @@
             ]
         },
         "antoniaSantos": {
-            "todos": [
+              "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -5046,7 +5440,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -5083,14 +5477,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -5100,13 +5494,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -5128,7 +5516,7 @@
             ]
         },
          "mejorasPublicas": {
-            "todos": [
+             "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -5138,7 +5526,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -5175,14 +5563,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -5192,13 +5580,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -5220,7 +5602,7 @@
             ]
         },
         "cañaveral": {
-            "todos": [
+    "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -5230,7 +5612,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -5267,14 +5649,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -5284,13 +5666,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -5309,10 +5685,9 @@
                         "$22.000"
                     ]
                 }
-            ]
-        },
+            ]        },
          "cie": {
-            "todos": [
+    "todos": [
                 {
                     "nombre": "Tamal Buffet",
                     "imagen": "images/panaderia/tamal.jpg",
@@ -5322,7 +5697,7 @@
                 },
                 {
                     "nombre": "Tamal Mixto",
-                    "imagen": "images/panaderia/tamal.jpg",
+                    "imagen": "images/panaderia/tamal1.jpg",
                     "variantes": [
                         "$5.500"
                     ]
@@ -5359,14 +5734,14 @@
                     "nombre": "Salchichon Porcionado",
                     "imagen": "images/panaderia/salchichon.jpg",
                     "variantes": [
-                        "$52"
+                        "$52 x Gramo"
                     ]
                 },
                 {
                     "nombre": "Capon",
                     "imagen": "images/panaderia/capon.jpg",
                     "variantes": [
-                        "$100"
+                        "$100 x Gramo"
                     ]
                 },
                 {
@@ -5376,13 +5751,7 @@
                         "$2.500"
                     ]
                 },
-                {
-                    "nombre": "Rollos Y Repollas",
-                    "imagen": "images/panaderia/rollosyrepollaslanona.jpg",
-                    "variantes": [
-                        "$6.000"
-                    ]
-                },
+               
                 {
                     "nombre": "Queso ",
                     "imagen": "images/panaderia/queso.jpg",
@@ -5401,33 +5770,30 @@
                         "$22.000"
                     ]
                 }
-            ]
-        }
+            ]        }
     },
     "restaurante": {
        
         "cabecera": {
-            "combos": [
+              "menu-del-dia": [
                 {
-                    "nombre": "Lasagna de carne",
-                    "imagen": "images/panaderia/lasagna.jpg",
-                    "descripcion": "Acompañado de sopa, jugo natural y postre.",
-                    "variantes": [
-                        "$18.000"
-                    ]
-                }
-            ],
-            "menu-del-dia": [
-                {
-                    "nombre": "Almuerzo Corriente",
+                    "nombre": "Menú del día",
+                        "imagen": "images/restaurante/menu.jpg",
                     "descripcion": "Sopa, seco, jugo y postre.",
                     "variantes": [
                         "$22.000"
                     ]
                 }
-            ]
-        },
-         "paseoDelComercio": {
+            ], "ensaladas": [
+                
+                {
+                    "nombre": "Ensalada Rusa",
+                    "imagen": "images/panaderia/rusa.jpg",
+                    "descripcion": "Pollo, papa, salchicha Viena, habichuela, arveja, zanahoria y salsa de la casa.",
+                    "variantes": [
+                        "$16.000"
+                    ]
+                }],
             "combos": [
                 {
                     "nombre": "Lasagna de carne",
@@ -5436,40 +5802,37 @@
                     "variantes": [
                         "$18.000"
                     ]
-                },
-                {
-                    "nombre": "Tazón",
-                    "imagen": "images/panaderia/tazon.jpg",
-                    "descripcion": "Cama de fusilli acompañado de batavia en julianas, repollo morado, zanahoria rayada, pimentón rojo en cuadritos, arveja o garbanzo y aceitunas negras. .",
-                    "variantes": [
-                        "$15.000"
-                    ]
                 }
-            ],
-            "menu-del-dia": [
+            ]
+           
+           
+            
+        },
+         "paseoDelComercio": {
+              "menu-del-dia": [
                 {
-                    "nombre": "Almuerzo Corriente",
+                    "nombre": "Menú del día",
+                        "imagen": "images/restaurante/menu.jpg",
                     "descripcion": "Sopa, seco, jugo y postre.",
                     "variantes": [
                         "$20.000"
                     ]
                 }
-            ],
-            "ensaladas": [
+            ], "ensaladas": [
                 {
                     "nombre": "Ensalada De La Casa",
-                    "imagen": "images/panaderia/de-la-casa.jpg",
+                    "imagen": "images/panaderia/delacasa.jpg",
                     "descripcion": "Jamón bajo en grasa, huevo y cuajada sobre una cama de lechuga, zanahoria, habichuela, maíz tierno, champiñones, pimentón, arveja, tomate, vinagreta de la casa y aceite de oliva.",
                     "variantes": [
-                        "$15.000"
+                        "$16.000"
                     ]
                 },
                 {
                     "nombre": "Ensalada Mediterránea",
-                    "imagen": "images/panaderia/mediterranea.jpg",
+                    "imagen": "images/panaderia/mediterranea1.jpg",
                     "descripcion": "Pollo desmenuzado sobre una cama de lechuga, repollo morado, rábanos, pimentón, tomate, aceitunas negras, queso semi-salado, albahaca, vinagreta de naranja y aceite de oliva.",
                     "variantes": [
-                        "$15.000"
+                        "$16.000"
                     ]
                 },
                 {
@@ -5477,7 +5840,7 @@
                     "imagen": "images/panaderia/vegetariana.jpg",
                     "descripcion": "Cuajada y aguacate sobre una cama de lechuga, zanahoria, habichuela, maíz tierno, pimentón, champiñones, tomate, vinagreta de la casa y aceite de oliva.",
                     "variantes": [
-                        "$15.000"
+                        "$16.000"
                     ]
                 },
                 {
@@ -5498,7 +5861,7 @@
                 },
                 {
                     "nombre": "Ensalada Atún y Piña",
-                    "imagen": "images/ensaladas/atun-pina.jpg",
+                    "imagen": "images/panaderia/atunpina.jpg",
                     "descripcion": "Lomito de atún desmenuzado, sobre una cama de lechuga, piña, pimentón, cuajada, zanahoria, maíz tierno y vinagreta.",
                     "variantes": [
                         "$16.000"
@@ -5506,10 +5869,112 @@
                 },
                 {
                     "nombre": "Ensalada Hawaiana",
-                    "imagen": "images/ensaladas/hawaiana.jpg",
+                    "imagen": "images/panaderia/hawaiana.jpg",
                     "descripcion": "Jamón bajo en grasa, sobre una cama de lechuga, piña, queso crema o cuajada, y crema de leche.",
                     "variantes": [
                         "$16.000"
+                    ]
+                },
+                {
+                    "nombre": "Tazón",
+                    "imagen": "images/panaderia/tazon.jpg",
+                    "descripcion": "Cama de fusilli acompañado de batavia en julianas, repollo morado, zanahoria rayada, pimentón rojo en cuadritos, arveja o garbanzo y aceitunas negras. Acompañado de jugo natural.",
+                    "variantes": [
+                        "$16.000"
+                    ]
+                }],
+            "combos": [
+                {
+                    "nombre": "Lasagna de carne",
+                    "imagen": "images/panaderia/lasagna.jpg",
+                    "descripcion": "Acompañado de sopa, jugo natural y postre.",
+                    "variantes": [
+                        "$18.000"
+                    ]
+                },
+                {
+                    "nombre": "Sopa del dia",
+                    "imagen": "images/panaderia/sopa.jpg",
+                    "descripcion": "Cama de fusilli acompañado de batavia en julianas, repollo morado, zanahoria rayada, pimentón rojo en cuadritos, arveja o garbanzo y aceitunas negras. .",
+                    "variantes": [
+                        "$7.000"
+                    ]
+                }
+            ]
+           
+           
+            
+        },
+        "aurora": {
+            "tradicional": [
+                {
+                    "nombre": "Rollo",
+                    "imagen": "images/panaderia/rollo.jpg",
+                    "descripcion": "Pan enrollado tradicional, ideal para acompañar comidas.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000",
+                        "$3.000",
+                        "$5.000"
+                    ]
+                },
+                {
+                    "nombre": "Cascarita",
+                    "imagen": "images/panaderia/cascarita.jpg",
+                    "descripcion": "Pan crocante y ligero, perfecto para acompañar sopas o ensaladas.",
+                    "variantes": [
+                        "$1.200"
+                    ]
+                },
+                {
+                    "nombre": "Frances",
+                    "imagen": "images/panaderia/frances.jpg",
+                    "descripcion": "Pan francés clásico, ideal para desayunos y meriendas.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000"
+                    ]
+                }
+            ],
+            "dulce": [
+                {
+                    "nombre": "Mojicon",
+                    "imagen": "images/panaderia/mojicon.jpg",
+                    "descripcion": "Pan dulce tradicional, esponjoso y suave.",
+                    "variantes": [
+                        "$2.000"
+                    ]
+                }
+            ],
+            "rellenos": [
+                {
+                    "nombre": "Pan Queso",
+                    "imagen": "images/panaderia/panqueso.jpg",
+                    "descripcion": "Pan relleno de queso fundido.",
+                    "variantes": [
+                        "$6.000"
+                    ]
+                }
+            ],
+            "integral": [
+                {
+                    "nombre": "Integral",
+                    "imagen": "images/panaderia/integral.jpg",
+                    "descripcion": "Pan integral saludable.",
+                    "variantes": [
+                        "$1.000",
+                        "$2.000",
+                        "$4.000"
+                    ]
+                }
+            ],
+            "funcional": [
+                {
+                    "nombre": "Pan Sin Gluten",
+                    "imagen": "images/panaderia/pansingluten.jpg",
+                    "descripcion": "Pan especial sin gluten.",
+                    "variantes": [
+                        "$11.000"
                     ]
                 }
             ]
